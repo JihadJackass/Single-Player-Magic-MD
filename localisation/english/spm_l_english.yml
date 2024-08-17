@@ -1,0 +1,252 @@
+﻿l_english:
+
+  # Decisions
+
+      spm_content_disabled: "Disabled Content"
+
+    # Menu Management
+
+      spm_enable_spm_menu: "Enable SPM | §RCurrently Disabled§!"
+      spm_enable_spm_menu_desc: ""
+
+      spm_disable_spm_menu: "Disable SPM | §GCurrently Enabled§!"
+      spm_disable_spm_menu_desc: ""
+
+      spm_enabled_tt: "SPM is currently §RDisabled§!"
+      spm_disabled_tt: "SPM is currently §GEnabled§!"
+
+    # Categories then Decisions
+
+      # Main Menu and Legend
+
+        spm_decisions_categories: "Single Player Magic - Main Menu"
+        spm_decisions_categories_desc: "Legend:\n§7Economy Management§!\n§0Army Management§!\n§9Political Management§!\n§2State Management§!\n§7Equipment Management§!\n§4Production & Construction Management§!\n§OSubject Management§!"
+
+      # Settings
+
+        spm_decisions_settings: "Single Player Magic - Settings"
+        spm_decisions_settings_desc: ""
+
+      # Formable Nations
+
+        spm_decisions_formable_nations: "Single Player Magic - Formable Nations"
+        spm_decisions_formable_nations_desc: "TODO: Currently unused"
+
+      # Economy Management Category - §7
+
+        spm_decisions_economy: "§7SPM - Economy§!"
+        spm_decisions_economy_desc: ""
+
+        spm_add_money: "§7Embezzle §Y$§!§GCash§! to Treasury§!"
+        spm_add_money_desc: ""
+
+        SPM_CASH_BONUS: "We gain $[?cash_bonus|+3] §Ybillion§! in embezzled assets"
+
+      # Army Management Category - §0
+
+        spm_decisions_army: "§0SPM - Army Management§!"
+        spm_decisions_army_desc: ""
+
+        spm_add_combat: "§0§GEnable§! Combat Bonuses§!"
+        spm_add_combat_desc: ""
+
+        spm_remove_combat: "§0§RDisable§! Combat Bonuses§!"
+        spm_remove_combat_desc: ""
+
+        spm_add_manpower: "§0Add 100,000 Manpower§!"
+        spm_add_manpower_desc: ""
+
+      # Political Management Category
+
+        spm_decisions_political: "§9SPM - Political Management§!"
+        spm_decisions_equipment_desc: ""
+
+        spm_decisions_ideology_ban: "§9Ban All Other Ideologies§!"
+        spm_decisions_ideology_ban_desc: ""
+
+        spm_decisions_ideology_western: "§9Add 25% §BWestern§! Influence§!"
+        spm_decisions_ideology_western_desc: ""
+
+        spm_decisions_ideology_emerging: "§9Add 25% §GEmerging§! Influence§!"
+        spm_decisions_ideology_emerging_desc: ""
+
+        spm_decisions_ideology_fascism: "§9Add 25% §bSalafist§! Influence§!"
+        spm_decisions_ideology_fascism_desc: ""
+
+        spm_decisions_ideology_neutrality: "§9Add 25% §WNeutral§! Influence§!"
+        spm_decisions_ideology_neutrality_desc: ""
+
+        spm_decisions_ideology_nationalist: "§9Add 25% §bNationalist§! Influence§!"
+        spm_decisions_ideology_nationalist_desc: ""
+
+      # State Management - §6
+
+        spm_decisions_state: "§6SPM - State Management§!"
+        spm_decisions_equipment_desc: ""
+
+        spm_add_compliance_growth: "§6Add Compliance Growth§!"
+        spm_add_compliance_growth_desc: ""
+
+        spm_core_states: "§6Core All States§!"
+        spm_core_states_desc: ""
+
+      # Equipment Management Category
+
+        spm_decisions_equipment: "SPM - Equipment Management"
+        spm_decisions_equipment_desc: ""
+
+        spm_add_convoy: "§7Add 100 Convoys§!"
+        spm_add_convoy_desc: ""
+
+        spm_add_train: "§7Add 100 Trains§!"
+        spm_add_train_desc: ""
+
+        spm_add_truck: "§7Add 500 Trucks§!"
+        spm_add_truck_desc: ""
+
+        spm_add_plane: "§7Add §G500§! F-16C Block 40/42§!"
+        spm_add_plane_desc: ""
+
+        spm_add_tank: "§7Add §G500§! Leopard 2A6§!"
+        spm_add_tank_desc: ""
+
+        spm_add_tank_m60a1: "§7Add M60A1§!"
+
+      # Production & Construction Management Category - §4
+
+        spm_decisions_production: "SPM - Production & Construction Management"
+        spm_decisions_production_desc: ""
+
+        spm_add_industrial_bonus: "§4§GEnable§! Industrial Bonus§!"
+        spm_add_industrial_bonus_desc: ""
+
+        spm_remove_industrial_bonus: "§4§GEnable§! Industrial Bonus§!"
+        spm_remove_industrial_bonus_desc: ""
+
+        spm_add_construction_speed: "§4§GEnable§! Construction Speed§!"
+        spm_add_construction_speed_desc: ""
+
+        spm_remove_construction_speed: "§4§RDisable§! Construction Speed§!"
+        spm_remove_construction_speed_desc: ""
+
+        spm_add_efficiency_growth: "§4§GEnable§! Efficiency Growth§!"
+        spm_add_efficiency_growth_desc: ""
+
+        spm_remove_efficiency_growth: "§4§RDisable§! Efficiency Growth§!"
+        spm_remove_efficiency_growth_desc: ""
+
+      # Subject Management Category
+
+        spm_add_subject_integration_policy: "§O§GEnable§! Subject Integration§!"
+        spm_add_subject_integration_policy_desc: ""
+
+        spm_remove_subject_integration_policy: "§O§RDisable§! Subject Integration§!"
+        spm_remove_integration_policy_desc: ""
+
+      # Subject Management Category
+
+      spm_decisions_subject: "SPM - Subject Management"
+      spm_decisions_subject_desc: ""
+
+      # War Management Category
+
+      spm_decisions_war: "SPM - War Management"
+      spm_decisions_war_desc: ""
+
+      # War Management - §2
+
+        # Wargoal Reductions
+        spm_wargoal_reductions: "§2Add Wargoal Reductions§!"
+        spm_wargoal_reductions_desc: ""
+        spm_wargoal_reductions: "§2Remove Wargoal Reductions§!"
+        spm_wargoal_reductions_desc: ""
+        # Volunteers
+        spm_volunteer_reductions: "§2Add Volunteer Reductions§!"
+        spm_volunteer_reductions_desc: ""
+        spm_volunteer_reductions: "§2Remove Volunteer Reductions§!"
+        spm_volunteer_reductions_desc: ""
+        spm_end_current_war: "§2End Current War for Overlord and Puppets§!"
+
+      # World Tension Management - §1
+
+        # +20 World Tension
+        spm_increase_world_tension_5: "§1Increase World Tension | §!§R+20§!"
+        spm_increase_world_tension_5_desc: ""
+        # +10 World Tension
+        spm_increase_world_tension_0: "§1Increase World Tension | §!§R+10§!"
+        spm_increase_world_tension_0_desc: ""
+        # -10 World Tension
+        spm_reduce_world_tension_1: "§1Reduce World Tension | §!§G-10§!"
+        spm_reduce_world_tension_1_desc: ""
+        # -30 World Tension
+        spm_reduce_world_tension_2: "§1Reduce World Tension | §!§G-30§!"
+        spm_reduce_world_tension_2_desc: ""
+        # -50 World Tension
+        spm_reduce_world_tension_3: "§1Reduce World Tension | §!§G-50§!"
+        spm_reduce_world_tension_3_desc: ""
+        # -100 World Tension
+        spm_reduce_world_tension_4: "§1Reduce World Tension | §!§G-100§!"
+        spm_reduce_world_tension_4_desc: ""
+
+      # Faction Management
+
+        spm_enable_create_faction: "§0Enable Game Rule:§! Create Faction"
+
+        spm_disable_create_faction: "Remove Faction"
+
+        spm_kaiserdux_custom_faction: "Create Faction - Moscow Axis"
+
+      # Soviet Union Management
+
+        spm_add_paranoia: "Add 10 Paranoia"
+        spm_remove_paranoia: "Remove 10 Paranoia"
+
+      # Game Rule Management
+
+      # Puppet Management
+
+        spm_can_puppet: "§0Enable Game Rule:§! Can Puppet"
+        spm_can_puppet_desc: ""
+
+      # Gamerules
+
+        spm_decisions_gamerules: "SPM - Game Rules"
+
+        # Volunteers
+        spm_can_send_volunteers: "§0Enable Game Rule:§! Can Send Volunteers"
+        spm_can_send_volunteers_desc: ""
+        spm_can_send_volunteers: "§0Disable Game Rule:§! Can Send Volunteers"
+        spm_can_send_volunteers_desc: ""
+        # Can Declare War Same Ideology
+        spm_can_declare_war_same_ideology: "§0Enable Game Rule:§! Can Declare War Same Ideology"
+        spm_can_declare_war_same_ideology_desc: ""
+        # Can Declare War without World Tension
+        spm_can_declare_war_tension: "§0Enable Game Rule:§! Can Declare War Without World Tension Generation"
+        spm_can_declare_war_tension_desc: ""
+
+  # End Decisions
+
+  # Ideas
+
+    spm_add_production_efficiency_idea: "Production Efficiency"
+    spm_add_production_efficiency_idea_desc: ""
+
+    spm_decrease_production_efficiency_idea: "Production Efficiency"
+    spm_decrease_production_efficiency_idea_desc: ""
+
+    spm_add_compliance_growth_idea: "Compliance Growth"
+    spm_add_compliance_growth_idea_desc: ""
+
+    spm_add_volunteer_reductions: "Volunteer Reductions"
+    spm_add_volunteer_reductions_desc: ""
+
+    spm_add_wargoal_reductions: "Wargoal Reduction"
+    spm_add_wargoal_reductions_desc: ""
+
+    spm_add_civilian_production_idea: "Contruction Speed"
+    spm_add_civilian_production_idea_desc: ""
+
+    spm_add_combat_idea: "Combat Bonus"
+    spm_add_combat_idea_desc: ""
+
+  # End Ideas

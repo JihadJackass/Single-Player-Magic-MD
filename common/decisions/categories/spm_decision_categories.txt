@@ -1,0 +1,121 @@
+# Categories
+
+	# Menu Management
+
+		spm_decisions_categories = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				#has_country_flag = spm_disabled
+			}
+		}
+
+	# Economy Management
+
+		spm_decisions_economy = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}	
+		}
+		
+	# Army Management
+
+		spm_decisions_army = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+		}
+
+	# Political Management
+
+		spm_decisions_political	= {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+		}
+
+	# State Management
+
+		spm_decisions_state = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+		}
+
+	# Equipment Management
+
+		spm_decisions_equipment = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+		}
+
+	# Production Management
+
+		spm_decisions_production = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+		}
+
+		spm_decisions_formable_nations = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+		}
+
+	# Compliance Management
+
+	# Subject Management
+
+	spm_decisions_subject = {
+		icon = decision_category_jihadijackass
+		visible = {
+			is_ai = no
+			has_country_flag = spm_enabled
+		}
+	}
+
+	# War Management
+
+	spm_decisions_war = {
+		icon = decision_category_jihadijackass
+		visible = {
+			is_ai = no
+			has_country_flag = spm_enabled
+		}
+	}
+
+	spm_decisions_wt = {
+		icon = decision_category_jihadijackass
+		visible = {
+			is_ai = no
+			has_country_flag = spm_enabled
+		}
+	}
+
+	# Faction Management
+
+	# Game Rule Management
+
+	spm_decisions_gamerules = {
+		icon = decision_category_jihadijackass
+		visible = {
+			is_ai = no
+			has_country_flag = spm_enabled
+		}
+	}

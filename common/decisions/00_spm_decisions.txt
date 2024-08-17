@@ -1,0 +1,890 @@
+# Single player Magic - Main Menu
+#---------------------------------------------------------#
+spm_decisions_categories = {
+
+	# ENABLE SPM MENU (IT IS CURRENTLY DISABLED)
+
+	spm_enable_spm_menu = {
+		icon = generic_research
+
+		available = {
+			NOT = { has_country_flag = spm_enabled }
+			is_ai = no
+		}
+
+		visible = {
+			NOT = { has_country_flag = spm_enabled }
+			hidden_trigger = {
+				NOT = { has_country_flag = spm_enabled }
+			}
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = spm_disabled
+			set_country_flag = spm_enabled
+			custom_effect_tooltip = spm_enabled_tt
+		}
+	}
+
+	# Disable SPM MENU (IT IS CURRENTLY ENABLED)
+
+	spm_disable_spm_menu = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			hidden_trigger = {
+				OR = {
+					always = no
+					custom_trigger_tooltip = {
+						tooltip = spm_disabled_tt
+						has_country_flag = spm_enabled
+					}
+				}
+			}
+		}
+
+		visible = {
+			hidden_trigger = {
+				OR = {
+					always = no
+					custom_trigger_tooltip = {
+						tooltip = spm_disabled_tt
+						has_country_flag = spm_enabled
+					}
+				}
+			}
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = spm_enabled
+			set_country_flag = spm_disabled
+			custom_effect_tooltip = spm_disabled_tt
+		}
+	}
+}
+#---------------------------------------------------------#
+	# Economy Management
+	spm_decisions_economy = {
+		spm_add_money = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+
+			complete_effect = {
+				set_temp_variable = { cash_bonus = gdp_total }
+				divide_temp_variable = { cash_bonus = 15 }
+				add_to_variable = { treasury = cash_bonus }
+				custom_effect_tooltip = SPM_CASH_BONUS
+			}
+		}
+	}
+#---------------------------------------------------------#
+	# Army Management
+	spm_decisions_army = {
+
+		# Military
+
+		spm_add_combat = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				#NOT = { has_country_flag = spm_combat_disabled }
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				#NOT = { has_country_flag = spm_combat_disabled }
+				NOT = { has_country_flag = spm_combat_enabled }
+			}
+			cost = 0
+
+			complete_effect = {
+				add_ideas = spm_add_combat_idea
+				set_country_flag = spm_combat_enabled
+				clr_country_flag = spm_combat_disabled
+			}
+		}
+
+		spm_remove_combat = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_country_flag = spm_combat_disabled }
+			}
+			cost = 0
+
+			complete_effect = {
+				remove_ideas = spm_add_combat_idea
+				set_country_flag = spm_combat_disabled
+				clr_country_flag = spm_combat_enabled
+			}
+		}
+
+		# Give 100,000 manpower
+
+		spm_add_manpower = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+
+			complete_effect = {
+				add_manpower = 100000
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+
+		# Remove 100,000 manpower
+
+		# Remove Compliance Gain
+
+	}
+#---------------------------------------------------------#
+	# Political Management
+	spm_decisions_political = {
+		# Ideology - Ban all parties you currently are not
+		spm_decisions_ideology_ban = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				has_country_flag = spm_content_disabled
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				custom_effect_tooltip = spm_content_disabled
+			}
+		}
+		# Ideology - Western
+		spm_decisions_ideology_western = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.25
+				}
+			}
+		}
+		# Ideology - Emerging
+		spm_decisions_ideology_emerging = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.25
+				}
+			}
+		}
+		# Dismantle All Factions
+	}
+#---------------------------------------------------------#
+	# State Management
+	spm_decisions_state = {
+		# Core all states
+		spm_core_states = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				every_owned_state = {
+					limit = {
+						NOT = { is_core_of = ROOT }
+					}
+					add_core_of = ROOT
+				}
+			}
+		}
+		# Add Compliance Gain
+		spm_add_compliance_growth = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				add_ideas = spm_add_compliance_growth_idea
+			}
+		}
+	}
+#---------------------------------------------------------#
+	# Equipment Management
+	spm_decisions_equipment = {
+		# Give 500 Tanks (Leopard 2A6 - Gen 2/3)
+		spm_add_tank_leo = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				ROOT = {
+					add_equipment_to_stockpile = {
+						type = mbt_hull_1
+						variant_name = "Leopard 2A6"
+						amount = 500
+						producer = GER
+					}
+					if = {
+						limit = {
+							NOT = { has_country_flag = spm_2a6_variant }
+						}
+						create_equipment_variant = {
+							name = "M1 Abrams"
+							type = mbt_hull_1
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_medium_cannon_2
+								turret_type_slot = tank_base_tank_turret
+								suspension_type_slot = tank_torsion_bar_suspension
+								armor_type_slot = tank_composite_armor_gen2
+								engine_type_slot = tank_gas_turbine_engine_gen3
+								reload_type_slot = manual_loading
+								special_type_slot_1 = additional_machine_guns
+								special_type_slot_2 = smoke_launchers_2
+								special_type_slot_3 = wet_ammo_storage
+								special_type_slot_4 = tank_battlestation_2
+							}
+							upgrades = {
+								tank_nsb_armor_upgrade = 1
+							}
+							obsolete = yes
+							icon = "gfx/interface/technologies/USA/LAND/M1.dds"
+							model = "USA_MD4_medium_armor_entity"
+							design_team = mio:USA_general_dynamics_materiel_manufacturer
+						}
+						create_equipment_variant = {
+							name = "Leopard 2A6"
+							type = mbt_hull_1
+							parent_version = 3
+							modules = {
+								main_armament_slot = tank_medium_cannon_2
+								turret_type_slot = tank_base_tank_turret
+								suspension_type_slot = tank_torsion_bar_suspension
+								armor_type_slot = tank_composite_armor_gen2
+								engine_type_slot = tank_diesel_engine_gen4
+								reload_type_slot = manual_loading
+								special_type_slot_1 = smoke_launchers_2
+								special_type_slot_2 = wet_ammo_storage
+								special_type_slot_3 = additional_machine_guns
+								special_type_slot_4 = tank_battlestation_3		#Battlestation
+								special_type_slot_5 = spaced_armor_gen2		#ERA/Spaced
+							}
+							upgrades = {
+								tank_nsb_armor_upgrade = 4
+							}
+							icon = "GFX_GER_MBT_4"
+						}
+					}
+					set_country_flag = spm_2a6_variant
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+		# Add M60A1
+		spm_add_tank_m60a1 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				ROOT = {
+					create_equipment_variant = {
+						name = "M60A1"
+						type = mbt_hull_0
+						parent_version = 2
+						modules = {
+							main_armament_slot = tank_small_medium_cannon
+							turret_type_slot = tank_soviet_turret
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_steel_armor_gen1
+							engine_type_slot = tank_diesel_engine_gen2
+							reload_type_slot = manual_loading
+							special_type_slot_1 = additional_machine_guns
+							special_type_slot_2 = smoke_launchers
+							special_type_slot_4 = tank_battlestation_1
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = 4
+						}
+						#obsolete = yes
+						icon = "gfx/interface/technologies/USA/LAND/MBT1.dds"
+						model = "M60A1_entity"
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+		# Give 500 Planes (F-16)
+		spm_add_plane = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				ROOT = {
+					add_equipment_to_stockpile = {
+						type = small_plane_strike_airframe_2
+						variant_name = "F-16C Blk 40/42"
+						amount = 500
+						producer = USA
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+		# Give 100 Convoy
+		spm_add_convoy = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 100
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+		# Give 50 Train
+		spm_add_train = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 50
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+		# Give 500 trucks
+		spm_add_truck = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 500
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+#---------------------------------------------------------#
+	# Production & Construction Management
+	spm_decisions_production = {
+		# Add Industrial Bonuses - TODO
+		spm_add_industrial_bonus = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				always = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_idea = spm_add_civilian_production_idea }
+				always = no
+			}
+			cost = 0
+
+			complete_effect = {
+				add_ideas = spm_add_civilian_production_idea
+			}
+		}
+		# Remove Industrial Bonuses - TODO
+		spm_remove_industrial_bonus = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				always = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				has_idea = spm_add_civilian_production_idea
+				always = no
+			}
+			cost = 0
+
+			complete_effect = {
+				remove_ideas = spm_add_civilian_production_idea
+			}
+		}
+		# Add Construction Speed
+		spm_add_construction_speed = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_idea = spm_add_civilian_production_idea }
+			}
+			cost = 0
+
+			complete_effect = {
+				add_ideas = spm_add_civilian_production_idea
+			}
+		}
+		# Remove Construction Speed
+		spm_remove_construction_speed = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				has_idea = spm_add_civilian_production_idea
+			}
+			cost = 0
+
+			complete_effect = {
+				remove_ideas = spm_add_civilian_production_idea
+			}
+		}
+		# Add Efficiency Growth
+		spm_add_efficiency_growth = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_idea = spm_add_production_efficiency_idea }
+			}
+			cost = 0
+
+			complete_effect = {
+				add_ideas = spm_add_production_efficiency_idea
+			}
+		}
+		# Remove Efficiency Growth
+		spm_remove_efficiency_growth = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				has_idea = spm_add_production_efficiency_idea
+			}
+			cost = 0
+
+			complete_effect = {
+				remove_ideas = spm_add_production_efficiency_idea
+			}
+		}
+
+	}
+#---------------------------------------------------------#
+	# War Management
+	spm_decisions_war = {
+		# Send Volunteers Reductions
+		spm_volunteer_reductions = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+
+			complete_effect = {
+				add_ideas = spm_add_volunteer_reductions
+			}
+		}
+		# Wargoal Reductions
+		spm_wargoal_reductions = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+
+			complete_effect = {
+				add_ideas = spm_add_wargoal_reductions
+			}
+		}
+		# End Current War for Player and Puppets
+		spm_end_current_war = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				every_enemy_country = {
+					white_peace = FROM
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+#---------------------------------------------------------#
+	# World Tension Management
+	spm_decisions_wt = {
+		# World Tension - +20
+		spm_increase_world_tension_5 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = 20
+			}
+		}
+		# World Tension - +10
+		spm_increase_world_tension_0 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = 10
+			}
+		}
+		# World Tension - -10
+		spm_reduce_world_tension_1 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = -10
+			}
+		}
+		# World Tension - -30
+		spm_reduce_world_tension_2 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = -30
+			}
+		}
+		# World Tension - -50
+		spm_reduce_world_tension_3 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = -50
+			}
+		}
+		# World Tension - -100
+		spm_reduce_world_tension_4 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = -100
+			}
+		}
+	}
+#---------------------------------------------------------#
+	# Subject Management
+	spm_decisions_subject = {
+			# Add Subject Intergration Policy
+			spm_add_subject_integration_policy = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+				}
+				visible = {
+					num_subjects > 0
+				}
+				complete_effect = {
+					add_ideas = spm_subject_integration_policy
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}
+			# Remove Subject Integration Policy
+			spm_remove_subject_integration_policy = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+				}
+				visible = {
+					num_subjects > 0
+				}
+				complete_effect = {
+					remove_ideas = spm_subject_integration_policy
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}
+			# Remove Subject Integration Policy
+	}
+#---------------------------------------------------------#
+	# Gamerule Management
+	spm_decisions_gamerules = {
+
+		# Enable Gamerule: Can Puppet
+
+		spm_can_puppet = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			complete_effect = {
+				#set_rule = { can_puppet = yes }
+			}
+		}
+
+		# Enable Gamerule: Can creat factions
+
+		spm_enable_create_faction = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			complete_effect = {
+				#set_rule = { can_create_factions = yes }
+			}
+		}
+
+		# Enable Gamerule: Can Send Volunteers
+
+		spm_can_send_volunteers = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			complete_effect = {
+				#set_rule = { can_send_volunteers = yes }
+			}
+		}
+
+		# Can declare war on same ideology
+
+		spm_can_declare_war_same_ideology = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			complete_effect = {
+				#set_rule = { can_declare_war_on_same_ideology = yes }
+			}
+		}
+
+		# Can declare war without world tension
+
+		spm_can_declare_war_tension = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			complete_effect = {
+				set_rule = { can_only_justify_war_on_threat_country = no }
+			}
+		}
+
+	}
+#---------------------------------------------------------#
