@@ -8,6 +8,20 @@
 				is_ai = no
 				#has_country_flag = spm_disabled
 			}
+			priority = {
+				base = 510
+			}
+		}
+
+		spm_options_menu = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			priority = {
+				base = 509
+			}
 		}
 
 	# Economy Management
@@ -17,7 +31,10 @@
 			visible = {
 				is_ai = no
 				has_country_flag = spm_enabled
-			}	
+			}
+			priority = {
+				base = 500
+			}
 		}
 		
 	# Army Management
@@ -27,6 +44,9 @@
 			visible = {
 				is_ai = no
 				has_country_flag = spm_enabled
+			}
+			priority = {
+				base = 500
 			}
 		}
 
@@ -38,6 +58,9 @@
 				is_ai = no
 				has_country_flag = spm_enabled
 			}
+			priority = {
+				base = 500
+			}
 		}
 
 	# State Management
@@ -47,6 +70,9 @@
 			visible = {
 				is_ai = no
 				has_country_flag = spm_enabled
+			}
+			priority = {
+				base = 500
 			}
 		}
 
@@ -58,6 +84,9 @@
 				is_ai = no
 				has_country_flag = spm_enabled
 			}
+			priority = {
+				base = 500
+			}
 		}
 
 	# Production Management
@@ -68,6 +97,9 @@
 				is_ai = no
 				has_country_flag = spm_enabled
 			}
+			priority = {
+				base = 500
+			}
 		}
 
 		spm_decisions_formable_nations = {
@@ -75,6 +107,9 @@
 			visible = {
 				is_ai = no
 				has_country_flag = spm_enabled
+			}
+			priority = {
+				base = 500
 			}
 		}
 
@@ -88,6 +123,9 @@
 			is_ai = no
 			has_country_flag = spm_enabled
 		}
+		priority = {
+			base = 500
+		}
 	}
 
 	# War Management
@@ -98,6 +136,9 @@
 			is_ai = no
 			has_country_flag = spm_enabled
 		}
+		priority = {
+			base = 500
+		}
 	}
 
 	spm_decisions_wt = {
@@ -105,6 +146,9 @@
 		visible = {
 			is_ai = no
 			has_country_flag = spm_enabled
+		}
+		priority = {
+			base = 500
 		}
 	}
 
@@ -117,5 +161,8 @@
 		visible = {
 			is_ai = no
 			has_country_flag = spm_enabled
+		}
+		priority = {
+			base = 500
 		}
 	}

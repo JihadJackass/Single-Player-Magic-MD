@@ -15,6 +15,8 @@
       spm_enabled_tt: "SPM is currently §RDisabled§!"
       spm_disabled_tt: "SPM is currently §GEnabled§!"
 
+      spm_options_menu: "SPM | Settings"
+
     # Categories then Decisions
 
       # Main Menu and Legend
@@ -107,10 +109,12 @@
         spm_add_plane: "§7Add §G500§! F-16C Block 40/42§!"
         spm_add_plane_desc: ""
 
-        spm_add_tank: "§7Add §G500§! Leopard 2A6§!"
-        spm_add_tank_desc: ""
+        spm_add_tank_leo: "§7Add §G500§! Leopard 2A6§! + Variant"
+        spm_add_tank_leo_desc: ""
 
-        spm_add_tank_m60a1: "§7Add M60A1§!"
+        spm_add_tank_m60a1: "§7Add §G500§! M60A1§! + Variant"
+
+        spm_add_tank_m1abrams: "§7Add §G500§! M1 Abrams§! + Variant"
 
       # Production & Construction Management Category - §4
 

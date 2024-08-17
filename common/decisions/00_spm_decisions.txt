@@ -68,6 +68,32 @@ spm_decisions_categories = {
 			custom_effect_tooltip = spm_disabled_tt
 		}
 	}
+
+	spm_options_menu = {
+		available = {
+			is_ai = no
+			hidden_trigger = {
+				OR = {
+					always = no
+					custom_trigger_tooltip = {
+						tooltip = spm_disabled_tt
+						has_country_flag = spm_enabled
+					}
+				}
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				OR = {
+					always = no
+					custom_trigger_tooltip = {
+						tooltip = spm_disabled_tt
+						has_country_flag = spm_enabled
+					}
+				}
+			}
+		}
+	}
 }
 #---------------------------------------------------------#
 	# Economy Management
@@ -125,7 +151,8 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
-				has_country_flag = spm_enabled
+				#has_country_flag = spm_enabled
+				has_country_flag = spm_combat_enabled
 				NOT = { has_country_flag = spm_combat_disabled }
 			}
 			cost = 0
@@ -199,6 +226,9 @@ spm_decisions_categories = {
 					ideology = democratic
 					popularity = 0.25
 				}
+				#set_temp_variable = { party_index = 0 }
+				#set_temp_variable = { party_popularity_increase = 0.025 }
+				#add_relative_party_popularity = yes
 			}
 		}
 		# Ideology - Emerging
@@ -280,39 +310,9 @@ spm_decisions_categories = {
 
 			complete_effect = {
 				ROOT = {
-					add_equipment_to_stockpile = {
-						type = mbt_hull_1
-						variant_name = "Leopard 2A6"
-						amount = 500
-						producer = GER
-					}
 					if = {
 						limit = {
 							NOT = { has_country_flag = spm_2a6_variant }
-						}
-						create_equipment_variant = {
-							name = "M1 Abrams"
-							type = mbt_hull_1
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_small_medium_cannon_2
-								turret_type_slot = tank_base_tank_turret
-								suspension_type_slot = tank_torsion_bar_suspension
-								armor_type_slot = tank_composite_armor_gen2
-								engine_type_slot = tank_gas_turbine_engine_gen3
-								reload_type_slot = manual_loading
-								special_type_slot_1 = additional_machine_guns
-								special_type_slot_2 = smoke_launchers_2
-								special_type_slot_3 = wet_ammo_storage
-								special_type_slot_4 = tank_battlestation_2
-							}
-							upgrades = {
-								tank_nsb_armor_upgrade = 1
-							}
-							obsolete = yes
-							icon = "gfx/interface/technologies/USA/LAND/M1.dds"
-							model = "USA_MD4_medium_armor_entity"
-							design_team = mio:USA_general_dynamics_materiel_manufacturer
 						}
 						create_equipment_variant = {
 							name = "Leopard 2A6"
@@ -337,7 +337,72 @@ spm_decisions_categories = {
 							icon = "GFX_GER_MBT_4"
 						}
 					}
+					add_equipment_to_stockpile = {
+						type = mbt_hull_1
+						variant_name = "Leopard 2A6"
+						amount = 500
+						producer = GER
+					}
 					set_country_flag = spm_2a6_variant
+				}
+			}
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+		# Add M1 Abrams
+		spm_add_tank_m1abrams = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+			}
+
+			fire_only_once = no
+			cost = 0
+
+			complete_effect = {
+				ROOT = {
+					if = {
+						limit = {
+							NOT = { has_country_flag = spm_m1_variant }
+						}
+						create_equipment_variant = {
+							name = "M1 Abrams"
+							type = mbt_hull_1
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_medium_cannon_2
+								turret_type_slot = tank_base_tank_turret
+								suspension_type_slot = tank_torsion_bar_suspension
+								armor_type_slot = tank_composite_armor_gen2
+								engine_type_slot = tank_gas_turbine_engine_gen3
+								reload_type_slot = manual_loading
+								special_type_slot_1 = additional_machine_guns
+								special_type_slot_2 = smoke_launchers_2
+								special_type_slot_3 = wet_ammo_storage
+								special_type_slot_4 = tank_battlestation_2
+							}
+							upgrades = {
+								tank_nsb_armor_upgrade = 1
+							}
+							icon = "gfx/interface/technologies/USA/LAND/M1.dds"
+							model = "USA_MD4_medium_armor_entity"
+							design_team = mio:USA_general_dynamics_materiel_manufacturer
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = mbt_hull_1
+						variant_name = "M1 Abrams"
+						amount = 500
+						producer = USA
+					}
+					set_country_flag = spm_m1_variant
 				}
 			}
 
@@ -380,9 +445,14 @@ spm_decisions_categories = {
 						upgrades = {
 							tank_nsb_armor_upgrade = 4
 						}
-						#obsolete = yes
 						icon = "gfx/interface/technologies/USA/LAND/MBT1.dds"
 						model = "M60A1_entity"
+					}
+					add_equipment_to_stockpile = {
+						type = mbt_hull_1
+						variant_name = "M60A1"
+						amount = 500
+						producer = USA
 					}
 				}
 			}
@@ -473,32 +543,7 @@ spm_decisions_categories = {
 				base = 0
 			}
 		}
-		# Give 500 trucks
-		spm_add_truck = {
-			icon = generic_research
-
-			available = {
-				is_ai = no
-			}
-
-			visible = {
-				has_country_flag = spm_enabled
-			}
-
-			fire_only_once = no
-			cost = 0
-
-			complete_effect = {
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 500
-				}
-			}
-
-			ai_will_do = {
-				base = 0
-			}
-		}
+		# ADD 500 trucks
 	}
 #---------------------------------------------------------#
 	# Production & Construction Management
