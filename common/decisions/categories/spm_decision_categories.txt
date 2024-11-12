@@ -13,6 +13,8 @@
 			}
 		}
 
+	# Options Menu
+
 		spm_options_menu = {
 			icon = decision_category_jihadijackass
 			visible = {
@@ -21,6 +23,19 @@
 			}
 			priority = {
 				base = 509
+			}
+		}
+
+	# Formables
+		spm_decisions_formable_nations = {
+			icon = decision_category_jihadijackass
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+				always = no
+			}
+			priority = {
+				base = 500
 			}
 		}
 
@@ -92,17 +107,6 @@
 	# Production Management
 
 		spm_decisions_production = {
-			icon = decision_category_jihadijackass
-			visible = {
-				is_ai = no
-				has_country_flag = spm_enabled
-			}
-			priority = {
-				base = 500
-			}
-		}
-
-		spm_decisions_formable_nations = {
 			icon = decision_category_jihadijackass
 			visible = {
 				is_ai = no

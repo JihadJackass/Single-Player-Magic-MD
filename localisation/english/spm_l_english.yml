@@ -22,7 +22,7 @@
       # Main Menu and Legend
 
         spm_decisions_categories: "Single Player Magic - Main Menu"
-        spm_decisions_categories_desc: "Legend:\n§7Economy Management§!\n§0Army Management§!\n§9Political Management§!\n§2State Management§!\n§7Equipment Management§!\n§4Production & Construction Management§!\n§OSubject Management§!"
+        spm_decisions_categories_desc: "Legend:\n§7Economic§!\n§0Army, Airforce, Navy§!\n§9Politics & Ideology§!\n§2Compliance & State Control§!\n§7Equipment and Supply§!\n§4Production & Construction§!\n§OSubjects & Puppets§!\n§YWar and Command§!"
 
       # Settings
 
@@ -92,9 +92,9 @@
         spm_core_states: "§6Core All States§!"
         spm_core_states_desc: ""
 
-      # Equipment Management Category
+      # Equipment Management Category §7
 
-        spm_decisions_equipment: "SPM - Equipment Management"
+        spm_decisions_equipment: "§7SPM - Equipment Management§!"
         spm_decisions_equipment_desc: ""
 
         spm_add_convoy: "§7Add 100 Convoys§!"
@@ -118,7 +118,7 @@
 
       # Production & Construction Management Category - §4
 
-        spm_decisions_production: "SPM - Production & Construction Management"
+        spm_decisions_production: "§4SPM - Production & Construction Management§!"
         spm_decisions_production_desc: ""
 
         spm_add_industrial_bonus: "§4§GEnable§! Industrial Bonus§!"
@@ -141,16 +141,23 @@
 
       # Subject Management Category
 
+        spm_decisions_subject: "§OSPM - Subject Management§!"
+        spm_decisions_subject_desc: ""
+
         spm_add_subject_integration_policy: "§O§GEnable§! Subject Integration§!"
         spm_add_subject_integration_policy_desc: ""
 
         spm_remove_subject_integration_policy: "§O§RDisable§! Subject Integration§!"
         spm_remove_integration_policy_desc: ""
 
-      # Subject Management Category
+        spm_end_puppet: "End Subject Status"
+        spm_end_puppet_desc: ""
 
-      spm_decisions_subject: "SPM - Subject Management"
-      spm_decisions_subject_desc: ""
+        spm_end_all_puppet: "Release all subjects"
+        spm_end_all_puppet_desc: ""
+
+        spm_add_autonomy: "Add Autonomy"
+        spm_add_autonomy_desc: ""
 
       # War Management Category
 
@@ -160,6 +167,9 @@
       # War Management - §2
 
         # Wargoal Reductions
+        spm_decisions_wt: "SPM - World Tension Management"
+        spm_decisions_wt_desc: ""
+
         spm_wargoal_reductions: "§2Add Wargoal Reductions§!"
         spm_wargoal_reductions_desc: ""
         spm_wargoal_reductions: "§2Remove Wargoal Reductions§!"
@@ -173,8 +183,11 @@
 
       # World Tension Management - §1
 
+        # +50 World Tension
+        spm_increase_world_tension_6: "§1Increase World Tension | §!§R+50§!"
+        spm_increase_world_tension_6_desc: ""
         # +20 World Tension
-        spm_increase_world_tension_5: "§1Increase World Tension | §!§R+20§!"
+        spm_increase_world_tension_5: "§1Increase World Tension | §!§R+50§!"
         spm_increase_world_tension_5_desc: ""
         # +10 World Tension
         spm_increase_world_tension_0: "§1Increase World Tension | §!§R+10§!"
@@ -231,6 +244,8 @@
   # End Decisions
 
   # Ideas
+
+    spm_subject_integration_policy: "Subject Integration Policy"
 
     spm_add_production_efficiency_idea: "Production Efficiency"
     spm_add_production_efficiency_idea_desc: ""

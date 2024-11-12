@@ -69,7 +69,14 @@ spm_decisions_categories = {
 		}
 	}
 
-	spm_options_menu = {
+	# Become TPP host
+	toolpack_become_host = {
+		icon = generic_nationalism
+
+		allowed = {
+			always = yes
+		}
+
 		available = {
 			is_ai = no
 			hidden_trigger = {
@@ -81,8 +88,15 @@ spm_decisions_categories = {
 					}
 				}
 			}
+			NOT = {
+				any_country = {
+					has_country_flag = tp_is_host
+				}
+			}
 		}
+
 		visible = {
+			is_ai = no
 			hidden_trigger = {
 				OR = {
 					always = no
@@ -92,9 +106,56 @@ spm_decisions_categories = {
 					}
 				}
 			}
+			NOT = {
+				has_country_flag = tp_is_host
+			}
+		}
+
+		complete_effect = {				
+			set_country_flag = tp_is_host
+			set_variable = {
+				global.tp_host_tag = THIS.id
+			}		
+		}
+	}
+	toolpack_relinquish_host = {
+		icon = generic_nationalism
+
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			is_ai = no
+			has_country_flag = tp_is_host
+		}
+
+		complete_effect = {				
+			clr_country_flag = tp_is_host
 		}
 	}
 }
+#---------------------------------------------------------#
+	# Formables
+	spm_decisions_formable_nations = {
+		# Montenegrin Empire
+		spm_montenegrin_empire = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				always = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+
+			complete_effect = {
+				#set_cosmetic_tag = MON
+			}
+		}
+	}
 #---------------------------------------------------------#
 	# Economy Management
 	spm_decisions_economy = {
@@ -245,6 +306,60 @@ spm_decisions_categories = {
 			complete_effect = {
 				add_popularity = {
 					ideology = communism
+					popularity = 0.25
+				}
+			}
+		}
+		# Ideology - Salafist
+		spm_decisions_ideology_fascism = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.25
+				}
+			}
+		}
+		# Ideology - Neutral
+		spm_decisions_ideology_neutrality = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.25
+				}
+			}
+		}
+		# Ideology - Nationalist
+		spm_decisions_ideology_nationalist = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				add_popularity = {
+					ideology = nationalist
 					popularity = 0.25
 				}
 			}
@@ -716,6 +831,20 @@ spm_decisions_categories = {
 #---------------------------------------------------------#
 	# World Tension Management
 	spm_decisions_wt = {
+		# World Tension - +50
+		spm_increase_world_tension_6 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = 50
+			}
+		}
 		# World Tension - +20
 		spm_increase_world_tension_5 = {
 			icon = generic_research
@@ -812,7 +941,7 @@ spm_decisions_categories = {
 					is_ai = no
 				}
 				visible = {
-					num_subjects > 0
+					#num_subjects > 0
 				}
 				complete_effect = {
 					add_ideas = spm_subject_integration_policy
@@ -830,7 +959,7 @@ spm_decisions_categories = {
 					is_ai = no
 				}
 				visible = {
-					num_subjects > 0
+					#num_subjects > 0
 				}
 				complete_effect = {
 					remove_ideas = spm_subject_integration_policy
@@ -840,7 +969,67 @@ spm_decisions_categories = {
 					base = 0
 				}
 			}
-			# Remove Subject Integration Policy
+			# Release all subjects 
+			spm_end_all_puppet = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+				}
+				visible = {
+					#num_subjects > 0
+				}
+				complete_effect = {
+					every_subject_country = {
+						FROM = {
+							end_puppet = PREV
+						}
+					}
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}	
+			# END PUPPET (TEST)
+			spm_end_puppet = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+				}
+				visible = {
+					#num_subjects > 0
+				}
+				complete_effect = {
+					overlord = { end_puppet = ROOT }
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}
+			# Add autonomy
+			spm_add_autonomy = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+				}
+				visible = {
+					#num_subjects > 0
+				}
+				complete_effect = {
+					add_autonomy_score = {
+						value = 2000
+						#localization = EXAMPLE
+					}
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}
 	}
 #---------------------------------------------------------#
 	# Gamerule Management
