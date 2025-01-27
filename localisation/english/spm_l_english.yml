@@ -72,6 +72,9 @@
         spm_decisions_ideology_emerging: "§9Add 25% §GEmerging§! Influence§!"
         spm_decisions_ideology_emerging_desc: ""
 
+        spm_decisions_ideology_change_to_emerging: "Change to emerging"
+        spm_decisions_ideology_change_to_emerging_desc: ""
+
         spm_decisions_ideology_fascism: "§9Add 25% §bSalafist§! Influence§!"
         spm_decisions_ideology_fascism_desc: ""
 
@@ -240,6 +243,50 @@
         # Can Declare War without World Tension
         spm_can_declare_war_tension: "§0Enable Game Rule:§! Can Declare War Without World Tension Generation"
         spm_can_declare_war_tension_desc: ""
+
+      # Name/Flag Manangement
+
+        #
+        spm_decisions_nameflag: "Name & Flag Management"
+        spm_decisions_nameflag_desc: ""
+
+        spm_nameflag_franco_iberian_union: "Franco-Iberian Union"
+        spm_nameflag_franco_iberian_union_desc: ""
+
+        spm_nameflag_ussr: "The Soviet Union"
+        spm_nameflag_ussr_desc: ""
+
+        # COSMETIC TAGS
+
+          # Franco-Iberian Union
+          SPR_FRANCO_IBERIA_communism: "Union Hespéro-Française"
+          SPR_FRANCO_IBERIA_communism_ADJ: "L’Union Hespéro-Française"
+          SPR_FRANCO_IBERIA_communism_DEF: "La Unión Hespéro-Francesa"
+
+          SPR_FRANCO_IBERIA_fascism: "Franco-Iberian Socialist Union"
+          SPR_FRANCO_IBERIA_fascism_ADJ: "Franco-Iberian"
+          SPR_FRANCO_IBERIA_fascism_DEF: "The Franco-Iberian Socialist Union"
+
+          SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
+          SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
+          SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
+
+          SPR_FRANCO_IBERIA_nationalist: "Franco-Iberian Union"
+          SPR_FRANCO_IBERIA_nationalist_ADJ: "Franco-Iberian"
+          SPR_FRANCO_IBERIA_nationalist_DEF: "The Franco-Iberian Union"
+
+          SPR_FRANCO_IBERIA_neutrality: "Franco-Iberian Union"
+          SPR_FRANCO_IBERIA_neutrality_ADJ: "Franco-Iberian"
+          SPR_FRANCO_IBERIA_neutrality_DEF: "The Franco-Iberian Union"
+
+          SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
+          SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
+          SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
+
+          # Soviet Union
+          SOV_USSR_communism: "Soviet Union of Socialist Republics"
+          SOV_USSR_communism_ADJ: "Soviet"
+          SOV_USSR_communism_DEF: "The Soviet Union of Socialist Republics"
 
   # End Decisions
 

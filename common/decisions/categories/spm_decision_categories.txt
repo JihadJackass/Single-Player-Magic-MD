@@ -170,3 +170,16 @@
 			base = 500
 		}
 	}
+
+	# Name/Flag Manangement
+
+	spm_decisions_nameflag = {
+		icon = decision_category_jihadijackass
+		visible = {
+			is_ai = no
+			has_country_flag = spm_enabled
+		}
+		priority = {
+			base = 500
+		}
+	}

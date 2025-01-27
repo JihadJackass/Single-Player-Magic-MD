@@ -1,0 +1,33 @@
+# Iberian Union
+
+SPR_FRANCO_IBERIA_communism = { # Spain - Franco-Iberia - communism
+    color = rgb { 222 33 43 }
+    color_ui = rgb { 222 33 43 }
+}
+
+SPR_FRANCO_IBERIA_fascism = { # Spain - Franco-Iberia - fascism
+    color = rgb { 135 112 70 }
+    color_ui = rgb { 135 112 70 }
+}
+
+SPR_FRANCO_IBERIA_neutrality = { # Spain - Franco-Iberia - neutrality
+    color = rgb { 191 190 151 }
+    color_ui = rgb { 191 190 151 }
+}
+
+SPR_FRANCO_IBERIA_democratic = { # Spain - Franco-Iberia - democratic
+    color = rgb { 93 106 194 }
+    color_ui = rgb { 93 106 194 }
+}
+
+SPR_FRANCO_IBERIA_nationalist = { # Spain - Franco-Iberia - nationalist
+    color = rgb { 212 176 110 }
+    color_ui = rgb { 212 176 110 }
+}
+
+# soviet union
+
+SOV_USSR_communism = { # Russia - Soviet Socialist Republics - communism
+    color = rgb { 125 13 24 }
+    color_ui = rgb { 125 13 24 }
+}

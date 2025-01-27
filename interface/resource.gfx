@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_grain"
+		texturefile = "gfx/interface/decisions/grain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_wood"
+		texturefile = "gfx/interface/decisions/wood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_coal"
+		texturefile = "gfx/interface/decisions/coal.dds"
+	}
+}	

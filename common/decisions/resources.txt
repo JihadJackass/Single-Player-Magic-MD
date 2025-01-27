@@ -1,0 +1,272 @@
+resources ={
+	
+
+	resources_oil1 = {
+		icon = oil
+		
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+		
+		custom_cost_text = cost_0
+		
+		
+		remove_effect = {
+    		random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT            			
+				}
+				add_resource = {
+    				type = oil
+    				amount = 10
+					state = THIS
+				}
+			}
+			
+    	}
+		
+		days_remove = 180
+		days_re_enable = 180
+		
+		complete_effect = {
+			set_temp_variable = { money = gdp_total }
+			divide_temp_variable = { money = -2000 }
+			multiply_temp_variable = { money = 1.5 }
+			set_temp_variable = { treasury_change = money }
+			modify_treasury_effect = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+		}
+		
+	}
+
+	
+
+	resources_rubber1 = {
+		icon = rubber
+		
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+		
+		custom_cost_text = cost_0
+		
+		
+		remove_effect = {
+    		random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT            			
+				}
+				add_resource = {
+    				type = rubber
+    				amount = 10
+					state = THIS
+				}
+			}
+			
+    	}
+		
+		days_remove = 180
+		days_re_enable = 180
+		
+		complete_effect = {
+			set_temp_variable = { money = gdp_total }
+			divide_temp_variable = { money = -2000 }
+			multiply_temp_variable = { money = 1.5 }
+			set_temp_variable = { treasury_change = money }
+			modify_treasury_effect = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
+	
+
+	resources_steel1 = {
+		icon = steel
+		
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+		
+		custom_cost_text = cost_0
+		
+		
+		remove_effect = {
+    		random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT            			
+				}
+				add_resource = {
+    				type = steel
+    				amount = 10
+					state = THIS
+				}
+			}
+			
+    	}
+		
+		days_remove = 180
+		days_re_enable = 180
+		
+		complete_effect = {
+			set_temp_variable = { money = gdp_total }
+			divide_temp_variable = { money = -2000 }
+			multiply_temp_variable = { money = 1.5 }
+			set_temp_variable = { treasury_change = money }
+			modify_treasury_effect = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
+	
+
+	resources_aluminum1 = {
+		icon = aluminium
+		
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+		
+		custom_cost_text = cost_0
+		
+		
+		remove_effect = {
+    		random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT            			
+				}
+				add_resource = {
+    				type = aluminium
+    				amount = 10
+					state = THIS
+				}
+			}
+			
+    	}
+		
+		days_remove = 180
+		days_re_enable = 180
+		
+		complete_effect = {
+			set_temp_variable = { money = gdp_total }
+			divide_temp_variable = { money = -2000 }
+			multiply_temp_variable = { money = 1.5 }
+			set_temp_variable = { treasury_change = money }
+			modify_treasury_effect = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
+	
+
+	resources_tungsten1 = {
+		icon = tungsten
+		
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+		
+		custom_cost_text = cost_0
+		
+		
+		remove_effect = {
+    		random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT            			
+				}
+				add_resource = {
+    				type = tungsten
+    				amount = 10
+					state = THIS
+				}
+			}
+			
+    	}
+		
+		days_remove = 180
+		days_re_enable = 180
+		
+		complete_effect = {
+			set_temp_variable = { money = gdp_total }
+			divide_temp_variable = { money = -2000 }
+			multiply_temp_variable = { money = 1.5 }
+			set_temp_variable = { treasury_change = money }
+			modify_treasury_effect = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
+	
+
+	resources_chrome1 = {
+		icon = chromium
+		
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+		
+		custom_cost_text = cost_0
+		
+		
+		remove_effect = {
+    		random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT            			
+				}
+				add_resource = {
+    				type = chromium
+    				amount = 10
+					state = THIS
+				}
+			}
+			
+    	}
+		
+		days_remove = 180
+		days_re_enable = 180
+		
+		complete_effect = {
+			set_temp_variable = { money = gdp_total }
+			divide_temp_variable = { money = -2000 }
+			multiply_temp_variable = { money = 1.5 }
+			set_temp_variable = { treasury_change = money }
+			modify_treasury_effect = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
+	
+
+	
+
+
+}

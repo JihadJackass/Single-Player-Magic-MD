@@ -1,0 +1,37 @@
+# linked to the calculation of the interim price of the decision according to GDP
+# author: Fredy
+Price_calculated_one = {							# for small expansion of raw materials
+	set_temp_variable = { money_amount = gdp_total }
+	divide_temp_variable = { money_amount = -300 }
+	multiply_temp_variable = { money_amount = 0.14 }
+	multiply_temp_variable = { money_amount = 4 }
+	set_temp_variable = { treasury_change = money_amount }
+	modify_treasury_effect = yes
+}
+
+Price_calculated_two = {							# for mid expansion of raw materials
+	set_temp_variable = { money_amount = gdp_total }		
+	divide_temp_variable = { money_amount = -300 }
+	multiply_temp_variable = { money_amount = 0.14 }
+	multiply_temp_variable = { money_amount = 8 }
+	set_temp_variable = { treasury_change = money_amount }
+	modify_treasury_effect = yes	
+}
+
+Price_calculated_three = {							# for big expansion of raw materials
+	set_temp_variable = { money_amount = gdp_total }		
+	divide_temp_variable = { money_amount = -300 }
+	multiply_temp_variable = { money_amount = 0.14 }
+	multiply_temp_variable = { money_amount = 16 }
+	set_temp_variable = { treasury_change = money_amount }
+	modify_treasury_effect = yes
+}
+
+Price_calculated_four = {							# for new expansion of raw materials
+	set_temp_variable = { money_amount = gdp_total }
+	divide_temp_variable = { money_amount = -300 }
+	multiply_temp_variable = { money_amount = 0.5 }
+	multiply_temp_variable = { money_amount = 2 }
+	set_temp_variable = { treasury_change = money_amount }
+	modify_treasury_effect = yes
+}

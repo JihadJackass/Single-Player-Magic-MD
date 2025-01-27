@@ -292,6 +292,22 @@ spm_decisions_categories = {
 				#add_relative_party_popularity = yes
 			}
 		}
+		spm_decisions_ideology_change_to_democratic = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+		}
 		# Ideology - Emerging
 		spm_decisions_ideology_emerging = {
 			icon = generic_research
@@ -307,6 +323,22 @@ spm_decisions_categories = {
 				add_popularity = {
 					ideology = communism
 					popularity = 0.25
+				}
+			}
+		}
+		spm_decisions_ideology_change_to_communism = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = communism
 				}
 			}
 		}
@@ -328,6 +360,22 @@ spm_decisions_categories = {
 				}
 			}
 		}
+		spm_decisions_ideology_change_to_fascism = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+		}
 		# Ideology - Neutral
 		spm_decisions_ideology_neutrality = {
 			icon = generic_research
@@ -343,6 +391,22 @@ spm_decisions_categories = {
 				add_popularity = {
 					ideology = neutrality
 					popularity = 0.25
+				}
+			}
+		}
+		spm_decisions_ideology_change_to_neutrality = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = neutrality
 				}
 			}
 		}
@@ -364,7 +428,24 @@ spm_decisions_categories = {
 				}
 			}
 		}
-		# Dismantle All Factions
+		spm_decisions_ideology_change_to_nationalist = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = nationalist
+				}
+			}
+		}
+		# TODO: Dismantle All Factions
+		# TODO: Hold Illegal Election
 	}
 #---------------------------------------------------------#
 	# State Management
@@ -1122,3 +1203,122 @@ spm_decisions_categories = {
 
 	}
 #---------------------------------------------------------#
+	# Name/Flag Manangement
+	spm_decisions_nameflag = {
+		# Franco Iberian Union
+		spm_nameflag_franco_iberian_union = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = SPR
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = SPR
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = SPR_FRANCO_IBERIA_communism
+						has_cosmetic_tag = SPR_FRANCO_IBERIA_fascism
+						has_cosmetic_tag = SPR_FRANCO_IBERIA_nationalist
+						has_cosmetic_tag = SPR_FRANCO_IBERIA_neutrality
+						has_cosmetic_tag = SPR_FRANCO_IBERIA_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # DEMOCRATIC
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = SPR_FRANCO_IBERIA_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = SPR_FRANCO_IBERIA_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = SPR_FRANCO_IBERIA_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = SPR_FRANCO_IBERIA_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = SPR_FRANCO_IBERIA_democratic
+				}
+			}
+		}
+		# USSR
+		spm_nameflag_ussr = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = SOV
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = SOV
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = SOV_USSR_communism
+						has_cosmetic_tag = SOV_USSR_fascism
+						has_cosmetic_tag = SOV_USSR_nationalist
+						has_cosmetic_tag = SOV_USSR_neutrality
+						has_cosmetic_tag = SOV_USSR_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # communism
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = SOV_USSR_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = SOV_USSR_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = SOV_USSR_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = SOV_USSR_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = SOV_USSR_democratic
+				}
+			}
+		}
+	}
+#---------------------------------------------------------#
+

@@ -1,0 +1,4 @@
+Category_resource_expandet_1 = {
+	icon = resource_production
+	priority = 10
+}
