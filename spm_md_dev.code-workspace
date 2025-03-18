@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../logs"
+		},
+		{
+			"path": "../../../../../../../Steam/steamapps/workshop/content/394360/2777392649"
 		}
 	],
 	"settings": {}

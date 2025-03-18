@@ -43,20 +43,41 @@ ideas = {
 				required_garrison_factor = -0.1
 			}
 		}
-		# Enable Combat Bonuses
-		spm_add_combat_idea = {
+		# Enable Land Combat Bonuses
+		spm_add_land_combat_idea = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = 0.65
-				army_defence_factor = 0.65
+				army_attack_factor = 0.70
+				army_defence_factor = 0.70
 				breakthrough_factor = 0.70
 				railway_gun_bombardment_factor = 2.5
-				submarine_attack = 10
-				naval_damage_factor = 0.65
+
+			}
+		}
+		# Enable Naval Combat Bonuses
+		spm_add_naval_combat_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				submarine_attack = 35
+				naval_damage_factor = 0.40
+			}
+		}
+		# Enable Air Combat Bonuses
+		spm_add_air_combat_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
 				air_cas_efficiency = 0.65
 			}
 		}

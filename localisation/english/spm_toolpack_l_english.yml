@@ -38,8 +38,8 @@
  #multiplayer
  toolpack_category: "Toolpack"
  toolpack_category_desc: "Decide who gets to use the tools, one at a time! [TP_controller_status]"
- toolpack_become_host: "Become Host Controller"
- toolpack_relinquish_host: "Relinquish Host Control"
+ toolpack_become_host: "§CBecome Host Controller§!"
+ toolpack_relinquish_host: "§CRelinquish Host Control§!"
  tp_is_host: "Is Controller"
  toolpack_hide_decisions: "Dismiss Decisions"
  toolpack_hide_decisions_tt: "Moves this decision category to the bottom."

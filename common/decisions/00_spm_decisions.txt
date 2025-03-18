@@ -135,7 +135,7 @@ spm_decisions_categories = {
 		}
 	}
 }
-#---------------------------------------------------------#
+#---------------------------------------------------------# Formables
 	# Formables
 	spm_decisions_formable_nations = {
 		# Montenegrin Empire
@@ -156,7 +156,7 @@ spm_decisions_categories = {
 			}
 		}
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Economy Management
 	# Economy Management
 	spm_decisions_economy = {
 		spm_add_money = {
@@ -171,6 +171,7 @@ spm_decisions_categories = {
 			cost = 0
 
 			complete_effect = {
+				increase_corruption = yes
 				set_temp_variable = { cash_bonus = gdp_total }
 				divide_temp_variable = { cash_bonus = 15 }
 				add_to_variable = { treasury = cash_bonus }
@@ -178,52 +179,101 @@ spm_decisions_categories = {
 			}
 		}
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Army Management
 	# Army Management
 	spm_decisions_army = {
 
 		# Military
 
-		spm_add_combat = {
-			icon = generic_research
+			# Land Combat Bonus
 
-			available = {
-				is_ai = no
-				#NOT = { has_country_flag = spm_combat_disabled }
-			}
-			visible = {
-				has_country_flag = spm_enabled
-				#NOT = { has_country_flag = spm_combat_disabled }
-				NOT = { has_country_flag = spm_combat_enabled }
-			}
-			cost = 0
+			spm_add_land_combat = {
+				icon = generic_research
 
-			complete_effect = {
-				add_ideas = spm_add_combat_idea
-				set_country_flag = spm_combat_enabled
-				clr_country_flag = spm_combat_disabled
-			}
-		}
+				available = {
+					is_ai = no
+					#NOT = { has_country_flag = spm_combat_disabled }
+				}
+				visible = {
+					has_country_flag = spm_enabled
+					#NOT = { has_country_flag = spm_combat_disabled }
+					NOT = { has_country_flag = spm_combat_enabled }
+				}
+				cost = 0
 
-		spm_remove_combat = {
-			icon = generic_research
+				complete_effect = {
+					add_ideas = spm_add_land_combat_idea
+					set_country_flag = spm_combat_enabled
+					clr_country_flag = spm_combat_disabled
+				}
+			}
 
-			available = {
-				is_ai = no
-			}
-			visible = {
-				#has_country_flag = spm_enabled
-				has_country_flag = spm_combat_enabled
-				NOT = { has_country_flag = spm_combat_disabled }
-			}
-			cost = 0
+			spm_remove_land_combat = {
+				icon = generic_research
 
-			complete_effect = {
-				remove_ideas = spm_add_combat_idea
-				set_country_flag = spm_combat_disabled
-				clr_country_flag = spm_combat_enabled
+				available = {
+					is_ai = no
+				}
+				visible = {
+					#has_country_flag = spm_enabled
+					has_country_flag = spm_combat_enabled
+					NOT = { has_country_flag = spm_combat_disabled }
+				}
+				cost = 0
+
+				complete_effect = {
+					remove_ideas = spm_add_land_combat_idea
+					set_country_flag = spm_combat_disabled
+					clr_country_flag = spm_combat_enabled
+				}
 			}
-		}
+
+			# Naval Combat Bonus
+
+			spm_add_naval_combat = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+					#NOT = { has_country_flag = spm_combat_disabled }
+				}
+				visible = {
+					has_country_flag = spm_enabled
+					NOT = { has_country_flag = spm_combat_enabled }
+				}
+				cost = 0
+
+				complete_effect = {
+					add_ideas = spm_add_naval_combat_idea
+					set_country_flag = spm_naval_combat_enabled
+					clr_country_flag = spm_naval_combat_disabled
+				}
+			}
+
+			spm_remove_naval_combat = {
+				icon = generic_research
+
+				available = {
+					is_ai = no
+				}
+				visible = {
+					is_ai = no
+					AND = {
+						has_country_flag = spm_enabled
+						has_country_flag = spm_naval_combat_enabled
+					}
+					NOT = { has_country_flag = spm_naval_combat_disabled }
+				}
+				cost = 0
+
+				complete_effect = {
+					remove_ideas = spm_add_naval_combat_idea
+					set_country_flag = spm_naval_combat_disabled
+					clr_country_flag = spm_naval_combat_enabled
+				}
+			}
+
+			# Air Combat Bonus
 
 		# Give 100,000 manpower
 
@@ -234,6 +284,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -252,25 +303,9 @@ spm_decisions_categories = {
 		# Remove Compliance Gain
 
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Political Management
 	# Political Management
 	spm_decisions_political = {
-		# Ideology - Ban all parties you currently are not
-		spm_decisions_ideology_ban = {
-			icon = generic_research
-
-			available = {
-				is_ai = no
-				has_country_flag = spm_content_disabled
-			}
-			visible = {
-				has_country_flag = spm_enabled
-			}
-			cost = 0
-			complete_effect = {
-				custom_effect_tooltip = spm_content_disabled
-			}
-		}
 		# Ideology - Western
 		spm_decisions_ideology_western = {
 			icon = generic_research
@@ -279,6 +314,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -287,18 +323,20 @@ spm_decisions_categories = {
 					ideology = democratic
 					popularity = 0.25
 				}
+				add_political_power = -50
 				#set_temp_variable = { party_index = 0 }
 				#set_temp_variable = { party_popularity_increase = 0.025 }
 				#add_relative_party_popularity = yes
 			}
 		}
-		spm_decisions_ideology_change_to_democratic = {
+		spm_decisions_ideology_change_to_western_wo_elections = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -306,6 +344,26 @@ spm_decisions_categories = {
 				set_politics = {
 					ruling_party = democratic
 				}
+				add_political_power = -100
+			}
+		}
+		spm_decisions_ideology_change_to_western_w_elections = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				add_political_power = -100
 			}
 		}
 		# Ideology - Emerging
@@ -316,6 +374,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -324,15 +383,17 @@ spm_decisions_categories = {
 					ideology = communism
 					popularity = 0.25
 				}
+				add_political_power = -50
 			}
 		}
-		spm_decisions_ideology_change_to_communism = {
+		spm_decisions_ideology_change_to_emerging_wo_elections = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -340,16 +401,37 @@ spm_decisions_categories = {
 				set_politics = {
 					ruling_party = communism
 				}
+				add_political_power = -100
 			}
 		}
-		# Ideology - Salafist
-		spm_decisions_ideology_fascism = {
+		spm_decisions_ideology_change_to_emerging_w_elections = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+				}
+				add_political_power = -100
+			}
+		}
+		# Ideology - Salafist
+		spm_decisions_ideology_salafist = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -358,15 +440,17 @@ spm_decisions_categories = {
 					ideology = fascism
 					popularity = 0.25
 				}
+				add_political_power = -50
 			}
 		}
-		spm_decisions_ideology_change_to_fascism = {
+		spm_decisions_ideology_change_to_salafist_wo_election = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -374,6 +458,26 @@ spm_decisions_categories = {
 				set_politics = {
 					ruling_party = fascism
 				}
+				add_political_power = -100
+			}
+		}
+		spm_decisions_ideology_change_to_salafist_w_election = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_political_power = -100
 			}
 		}
 		# Ideology - Neutral
@@ -384,6 +488,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -392,15 +497,17 @@ spm_decisions_categories = {
 					ideology = neutrality
 					popularity = 0.25
 				}
+				add_political_power = -50
 			}
 		}
-		spm_decisions_ideology_change_to_neutrality = {
+		spm_decisions_ideology_change_to_neutrality_wo_election = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -408,6 +515,26 @@ spm_decisions_categories = {
 				set_politics = {
 					ruling_party = neutrality
 				}
+				add_political_power = -100
+			}
+		}
+		spm_decisions_ideology_change_to_neutrality_w_election = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+				}
+				add_political_power = -100
 			}
 		}
 		# Ideology - Nationalist
@@ -418,6 +545,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -426,15 +554,17 @@ spm_decisions_categories = {
 					ideology = nationalist
 					popularity = 0.25
 				}
+				add_political_power = -50
 			}
 		}
-		spm_decisions_ideology_change_to_nationalist = {
+		spm_decisions_ideology_change_to_nationalist_wo_election = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -442,12 +572,30 @@ spm_decisions_categories = {
 				set_politics = {
 					ruling_party = nationalist
 				}
+				add_political_power = -100
 			}
 		}
-		# TODO: Dismantle All Factions
-		# TODO: Hold Illegal Election
+		spm_decisions_ideology_change_to_nationalist_w_election = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			cost = 0
+			complete_effect = {
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = yes
+				}
+				add_political_power = -100
+			}
+		}
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# State Management
 	# State Management
 	spm_decisions_state = {
 		# Core all states
@@ -486,7 +634,7 @@ spm_decisions_categories = {
 			}
 		}
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Equipment Management
 	# Equipment Management
 	spm_decisions_equipment = {
 		# Give 500 Tanks (Leopard 2A6 - Gen 2/3)
@@ -741,7 +889,7 @@ spm_decisions_categories = {
 		}
 		# ADD 500 trucks
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Production & Construction Management
 	# Production & Construction Management
 	spm_decisions_production = {
 		# Add Industrial Bonuses - TODO
@@ -796,6 +944,7 @@ spm_decisions_categories = {
 			cost = 0
 
 			complete_effect = {
+				add_political_power = -200
 				add_ideas = spm_add_civilian_production_idea
 			}
 		}
@@ -813,6 +962,7 @@ spm_decisions_categories = {
 			cost = 0
 
 			complete_effect = {
+				add_political_power = 50
 				remove_ideas = spm_add_civilian_production_idea
 			}
 		}
@@ -830,6 +980,7 @@ spm_decisions_categories = {
 			cost = 0
 
 			complete_effect = {
+				add_political_power = -200
 				add_ideas = spm_add_production_efficiency_idea
 			}
 		}
@@ -847,12 +998,13 @@ spm_decisions_categories = {
 			cost = 0
 
 			complete_effect = {
+				add_political_power = 50
 				remove_ideas = spm_add_production_efficiency_idea
 			}
 		}
 
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# War Management
 	# War Management
 	spm_decisions_war = {
 		# Send Volunteers Reductions
@@ -863,6 +1015,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -879,6 +1032,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -895,6 +1049,7 @@ spm_decisions_categories = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			cost = 0
@@ -909,31 +1064,78 @@ spm_decisions_categories = {
 			}
 		}
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# World Tension Management
 	# World Tension Management
 	spm_decisions_wt = {
-		# World Tension - +50
-		spm_increase_world_tension_6 = {
+		# World Tension - +100
+		spm_increase_world_tension_plus100 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = 100
+			}
+		}
+		# World Tension - +50
+		spm_increase_world_tension_plus50 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
 				add_threat = 50
 			}
 		}
-		# World Tension - +20
-		spm_increase_world_tension_5 = {
+		# World Tension - +40
+		spm_increase_world_tension_plus40 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = 40
+			}
+		}
+		# World Tension - +30
+		spm_increase_world_tension_plus30 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = 30
+			}
+		}
+		# World Tension - +20
+		spm_increase_world_tension_plus20 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
@@ -941,13 +1143,14 @@ spm_decisions_categories = {
 			}
 		}
 		# World Tension - +10
-		spm_increase_world_tension_0 = {
+		spm_increase_world_tension_plus10 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
@@ -955,41 +1158,74 @@ spm_decisions_categories = {
 			}
 		}
 		# World Tension - -10
-		spm_reduce_world_tension_1 = {
+		spm_reduce_world_tension_minus10 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
 				add_threat = -10
 			}
 		}
-		# World Tension - -30
-		spm_reduce_world_tension_2 = {
+		# World Tension - -20
+		spm_reduce_world_tension_minus20 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = -20
+			}
+		}
+		# World Tension - -30
+		spm_reduce_world_tension_minus30 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
 				add_threat = -30
 			}
 		}
-		# World Tension - -50
-		spm_reduce_world_tension_3 = {
+		# World Tension - -40
+		spm_reduce_world_tension_minus40 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			complete_effect = {
+				add_threat = -40
+			}
+		}
+		# World Tension - -50
+		spm_reduce_world_tension_minus50 = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
@@ -997,13 +1233,14 @@ spm_decisions_categories = {
 			}
 		}
 		# World Tension - -100
-		spm_reduce_world_tension_4 = {
+		spm_reduce_world_tension_minus100 = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
 			}
 			visible = {
+				is_ai = no
 				has_country_flag = spm_enabled
 			}
 			complete_effect = {
@@ -1011,9 +1248,8 @@ spm_decisions_categories = {
 			}
 		}
 	}
-#---------------------------------------------------------#
-	# Subject Management
-	spm_decisions_subject = {
+#---------------------------------------------------------# Subject Management
+	spm_decisions_subject = { # Subject Management
 			# Add Subject Intergration Policy
 			spm_add_subject_integration_policy = {
 				icon = generic_research
@@ -1022,7 +1258,8 @@ spm_decisions_categories = {
 					is_ai = no
 				}
 				visible = {
-					#num_subjects > 0
+					is_ai = no
+					NOT = { has_idea = spm_subject_integration_policy }
 				}
 				complete_effect = {
 					add_ideas = spm_subject_integration_policy
@@ -1040,7 +1277,8 @@ spm_decisions_categories = {
 					is_ai = no
 				}
 				visible = {
-					#num_subjects > 0
+					is_ai = no
+					has_idea = spm_subject_integration_policy
 				}
 				complete_effect = {
 					remove_ideas = spm_subject_integration_policy
@@ -1056,9 +1294,11 @@ spm_decisions_categories = {
 
 				available = {
 					is_ai = no
+					num_subjects > 1
 				}
 				visible = {
-					#num_subjects > 0
+					is_ai = no
+					num_subjects > 1
 				}
 				complete_effect = {
 					every_subject_country = {
@@ -1078,9 +1318,11 @@ spm_decisions_categories = {
 
 				available = {
 					is_ai = no
+					is_puppet = yes
 				}
 				visible = {
-					#num_subjects > 0
+					is_ai = no
+					is_puppet = yes
 				}
 				complete_effect = {
 					overlord = { end_puppet = ROOT }
@@ -1111,8 +1353,9 @@ spm_decisions_categories = {
 					base = 0
 				}
 			}
+			# TODO: add Ban Autonomus Movements feature to prevent subjects from raising autonomy via cont.focus	
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Gamerule Management
 	# Gamerule Management
 	spm_decisions_gamerules = {
 
@@ -1202,9 +1445,126 @@ spm_decisions_categories = {
 		}
 
 	}
-#---------------------------------------------------------#
+#---------------------------------------------------------# Name/Flag Manangement
 	# Name/Flag Manangement
 	spm_decisions_nameflag = {
+		
+		# Qing
+		spm_nameflag_qing = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = CHI
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = CHI
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = CHI_QING_communism
+						has_cosmetic_tag = CHI_QING_fascism
+						has_cosmetic_tag = CHI_QING_nationalist
+						has_cosmetic_tag = CHI_QING_neutrality
+						has_cosmetic_tag = CHI_QING_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # DEMOCRATIC
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = CHI_QING_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = CHI_QING_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = CHI_QING_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = CHI_QING_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = CHI_QING_democratic
+				}
+			}
+		}
+
+		# Roman Empire
+		spm_nameflag_rome = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = ITA
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = ITA
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = ITA_ROME_communism
+						has_cosmetic_tag = ITA_ROME_fascism
+						has_cosmetic_tag = ITA_ROME_nationalist
+						has_cosmetic_tag = ITA_ROME_neutrality
+						has_cosmetic_tag = ITA_ROME_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # DEMOCRATIC
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = ITA_ROME_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = ITA_ROME_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = ITA_ROME_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = ITA_ROME_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = ITA_ROME_democratic
+				}
+			}
+		}
+
 		# Franco Iberian Union
 		spm_nameflag_franco_iberian_union = {
 			icon = generic_research
@@ -1262,6 +1622,7 @@ spm_decisions_categories = {
 				}
 			}
 		}
+
 		# USSR
 		spm_nameflag_ussr = {
 			icon = generic_research
@@ -1319,6 +1680,182 @@ spm_decisions_categories = {
 				}
 			}
 		}
+		
+		# British Empire
+		spm_nameflag_britishempire = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = ENG
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = ENG
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = ENG_BRITISHEMPIRE_communism
+						has_cosmetic_tag = ENG_BRITISHEMPIRE_fascism
+						has_cosmetic_tag = ENG_BRITISHEMPIRE_nationalist
+						has_cosmetic_tag = ENG_BRITISHEMPIRE_neutrality
+						has_cosmetic_tag = ENG_BRITISHEMPIRE_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # communism
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = ENG_BRITISHEMPIRE_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = ENG_BRITISHEMPIRE_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = ENG_BRITISHEMPIRE_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = ENG_BRITISHEMPIRE_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = ENG_BRITISHEMPIRE_democratic
+				}
+			}
+		}
+
+		# UAA
+		spm_nameflag_ecuador = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = ECU
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = ECU
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = ECU_UAA_communism
+						has_cosmetic_tag = ECU_UAA_fascism
+						has_cosmetic_tag = ECU_UAA_nationalist
+						has_cosmetic_tag = ECU_UAA_neutrality
+						has_cosmetic_tag = ECU_UAA_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # communism
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = ECU_UAA_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = ECU_UAA_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = ECU_UAA_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = ECU_UAA_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = ECU_UAA_democratic
+				}
+			}
+		}	
+
+		# Visegrad
+		spm_nameflag_HUN_VISEGRAD = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = HUN
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				tag = HUN
+				NOT = { 
+					OR = {
+						has_cosmetic_tag = HUN_VISEGRAD_communism
+						has_cosmetic_tag = HUN_VISEGRAD_fascism
+						has_cosmetic_tag = HUN_VISEGRAD_nationalist
+						has_cosmetic_tag = HUN_VISEGRAD_neutrality
+						has_cosmetic_tag = HUN_VISEGRAD_democratic
+					}
+				}
+			}
+
+			complete_effect = {
+				# CHECK IDEOLOGY AND SET TAG FOR THAT - 4 FLAGS NEEDED
+				# TODO: add event so that the player can choose
+				if = {  # communism
+					limit = {
+						has_government = communism
+					}
+					set_cosmetic_tag = HUN_VISEGRAD_communism
+				}
+				if = { # EMERGING
+					limit = {
+						has_government = fascism
+					}
+					set_cosmetic_tag = HUN_VISEGRAD_fascism
+				}
+				if = { # salafist?
+					limit = {
+						has_government = nationalist
+					}
+					set_cosmetic_tag = HUN_VISEGRAD_nationalist
+				}
+				if = { 
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = HUN_VISEGRAD_neutrality
+				}
+				if = { 
+					limit = {
+						has_government = democratic
+					}
+					set_cosmetic_tag = HUN_VISEGRAD_democratic
+				}
+				country_event = toolpack.6
+			}
+		}	
+
 	}
 #---------------------------------------------------------#
 

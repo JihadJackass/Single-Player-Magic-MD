@@ -1,0 +1,101 @@
+﻿add_namespace = toolpack
+
+# Toolpack Events
+
+	# Help CPT
+	country_event = {
+		id = toolpack.1
+		title = toolpack.1.t
+		desc = toolpack.1.d
+		is_triggered_only = yes
+
+		option = {
+			name = toolpack.1.a
+		}
+	}
+
+	# Help Upper Window DST
+	country_event = {
+		id = toolpack.2
+		title = toolpack.1.t
+		desc = toolpack.2.d
+		is_triggered_only = yes
+
+		option = {
+			name = toolpack.2.a
+		}
+	}
+
+	# Help Lower Window DST
+	country_event = {
+		id = toolpack.3
+		title = toolpack.1.t
+		desc = toolpack.3.d
+		is_triggered_only = yes
+
+		option = {
+			name = toolpack.2.a
+		}
+	}
+
+	# Help SST
+	country_event = {
+		id = toolpack.4
+		title = toolpack.1.t
+		desc = toolpack.4.d
+		is_triggered_only = yes
+
+		option = {
+			name = toolpack.1.a
+		}
+	}
+
+	# Help MST
+	country_event = {
+		id = toolpack.5
+		title = toolpack.5.t
+		desc = toolpack.5.d
+		is_triggered_only = yes
+
+		option = {
+			name = toolpack.1.a
+		}
+	}
+
+# SPM Events
+
+	# CountryFlag Formation Events (Low Tier Formables without unique focus trees - can have some custom focuses)
+
+		# Formation of Visegrad
+
+
+		country_event = {
+			id = toolpack.6
+			#title = toolpack.6.t
+			#desc = toolpack.6.d
+			title = "The Birth of Visegrád"
+			desc = "Following years of political corruption and authoritarianism under Viktor Orbán, the Hungarian people had enough. Mass protests erupted across the nation, demanding change. As the movement gained traction, chaos spread, culminating in Orbán being dragged into the streets by an enraged mob. His brutal demise marked the definitive end of his rule, and with it, the systemic corruption he had built. What followed was a transition to a new government—one that sought to restore Hungarian pride under a more nationalistic and traditionalist vision. Thus, the Republic of Hungary was formally dissolved, giving rise to the State of Visegrád, with its new capital in the historic town of the same name."
+			picture = GFX_report_event_hungary
+			major = yes
+
+			is_triggered_only = yes
+		
+			option = {
+				name = "A new dawn for our people!"
+				add_victory_points = { province = 9690 value = 40 }
+				set_province_name = { id = 9690 name = "Visegrad" }
+				#set_capital = { state = 211 }
+			}
+		}		
+
+		# Formation of UAA
+
+
+
+	#
+
+
+
+	#
+
+
