@@ -2,10 +2,11 @@
  
  DST_OPEN:0 "§HActivate 'Ideology Changing Tool'§!"
  DST_CLOSE:0 "§HDeactivate 'Ideology Changing Tool'§!"
- DST_ACTIVITY_ON_A:0 "DST A: £trigger_no"
- DST_ACTIVITY_OFF_A:0 "DST A: £trigger_yes"
- DST_ACTIVITY_ON_B:0 "DST B: £trigger_no"
- DST_ACTIVITY_OFF_B:0 "DST B: £trigger_yes"
+  # "DST A: £trigger_no" IS DISABLED
+ DST_ACTIVITY_ON_A:0 "DISABLED: £trigger_no"
+ DST_ACTIVITY_OFF_A:0 "DISABLED: £trigger_yes"
+ DST_ACTIVITY_ON_B:0 "DISABLED: £trigger_no"
+ DST_ACTIVITY_OFF_B:0 "DISABLED: £trigger_yes"
  DST_HELP:0 "Help"
  DST_DELETE:0 "§HDelete all units of every selected kind.§W"
  DST_TEMPLATE:0 "Create Template"

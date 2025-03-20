@@ -1,0 +1,39 @@
+﻿namespace = covid19_events
+
+	# Initial COVID-19 related events - COVID-19 Handler
+
+	#	id = covid19_events.1
+	#	title = "COVID-19 Outbreak in Wuhan"
+	#	desc = "A mysterious pneumonia-like illness has begun spreading in Wuhan, China. 
+	#   Doctors report high infection rates, and the Chinese government is deciding its course of action."
+	#	picture = GFX_covid_wuhan
+
+	# Country-specific COVID-19 events
+
+		# USA
+
+		# CHINA
+
+		# FRANCE
+
+		# UNITED KINGDOM
+
+		# GERMANY
+
+		# CANADA
+
+		# MEXICO
+
+	# Lockdown-Related Events (Western-Style Lockdown - Semi-Passive)
+
+	# Lockdown-Related Events (Eastern-Style Lockdown - Aggressive)
+
+	# Lockdown
+
+	# Vaccine-Related Events
+
+	# Stimulus Checks (Boost stability, debt rises) 
+		# // Business Bailouts (Rich get richer, unrest risk) 
+		# // Austerity (Lower debt, high protests)
+
+	# Actual Vaccine Event - Vaccine Progression System

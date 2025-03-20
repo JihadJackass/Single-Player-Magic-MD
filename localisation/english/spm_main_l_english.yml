@@ -460,24 +460,21 @@
     spm_subject_integration_policy: "Subject Integration Policy"
 
     spm_add_production_efficiency_idea: "Production Efficiency"
-    spm_add_production_efficiency_idea_desc: ""
 
     spm_decrease_production_efficiency_idea: "Production Efficiency"
-    spm_decrease_production_efficiency_idea_desc: ""
 
     spm_add_compliance_growth_idea: "Compliance Growth"
-    spm_add_compliance_growth_idea_desc: ""
 
     spm_add_volunteer_reductions: "Volunteer Reductions"
-    spm_add_volunteer_reductions_desc: ""
 
     spm_add_wargoal_reductions: "Wargoal Reduction"
-    spm_add_wargoal_reductions_desc: ""
 
     spm_add_civilian_production_idea: "Contruction Speed"
-    spm_add_civilian_production_idea_desc: ""
 
-    spm_add_combat_idea: "Combat Bonus"
-    spm_add_combat_idea_desc: ""
+    spm_add_land_combat_idea: "Land Combat Bonus"
+
+    spm_add_air_combat_idea: "Air Combat Bonus"
+
+    spm_add_naval_combat_idea: "Naval Combat Bonus"
 
   # End Ideas

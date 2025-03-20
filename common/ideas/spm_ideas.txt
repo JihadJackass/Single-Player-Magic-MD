@@ -117,9 +117,10 @@ ideas = {
 			#hidden = yes
 
 			modifier = {
-				send_volunteers_tension = -0.50
-				send_volunteer_factor = 0.50
-				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				send_volunteers_tension = -1
+				send_volunteer_factor = 0.5
+				send_volunteer_divisions_required = -1
 			}
 		}
 		# Enable Wargoal Reductions
