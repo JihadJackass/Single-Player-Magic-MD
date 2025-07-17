@@ -8,30 +8,25 @@
     # Menu Management
 
       spm_enable_spm_menu: "Enable SPM | §RCurrently Disabled§!"
-      spm_enable_spm_menu_desc: ""
 
       spm_disable_spm_menu: "Disable SPM | §GCurrently Enabled§!"
-      spm_disable_spm_menu_desc: ""
 
       spm_enabled_tt: "SPM is currently §RDisabled§!"
       spm_disabled_tt: "SPM is currently §GEnabled§!"
 
-      spm_options_menu: "SPM | Settings"
+      spm_enable_settings_menu: "SPM Settings | §RCurrently Disabled§!"
+      spm_disable_settings_menu: "SPM Settings | §GCurrently Enabled§!"
+
+      spm_disable_political_lobbying: "Disable Political Lobbying"
+      spm_enable_political_lobbying: "Enable Political Lobbying"
 
     # Main Menu and Legend
 
       spm_decisions_categories: "Single Player Magic - Main Menu"
-      spm_decisions_categories_desc: ""
 
     # Settings
 
       spm_decisions_settings: "Single Player Magic - Settings"
-      spm_decisions_settings_desc: ""
-
-    # Formable Nations
-
-      spm_decisions_formable_nations: "Single Player Magic - Formable Nations"
-      spm_decisions_formable_nations_desc: "TODO: Currently unused"
 
     # Economy Management Category - §7
 
@@ -290,10 +285,10 @@
       #buildings
       Build_industry_building: "Industry Buildings"
       Build_industry_building_desc: "Building and investing in factories, shipyards and infrastructure will help our industry and economy through better times and worse."
-      Build_infrastructure: "Infrastructure"
-      Build_infrastructure_desc: "Building ifrastructure is an important landmark of the economy and helps the transportation of materials and products for our economy."
-      Build_civilian_factory: "Civilian factory"
-      Build_civilian_factory_desc: "Building ifrastructure is an important landmark of the economy and helps the transportation of materials and products for our economy."
+      Build_infrastructure: "Invest in Infrastructure Projects"
+      Build_infrastructure_desc: "Building infrastructure is an important landmark of the economy and helps the transportation of materials and products for our economy."
+      Build_civilian_factory: "Subsidize Local Small & Medium Business Owners"
+      Build_civilian_factory_desc: "Small business owners are the backbone of our industrial capability and must be invested in."
       Build_military_factory: "Military factory"
       Build_military_factory_desc: "Increasing our industrial military base will allow us to rearm more quickly."
       Build_offices_sector: "Offices sector"
@@ -315,16 +310,13 @@
       cost_0blocked: "£treasury §§!"
       cost_0tooltip: "This purchase will cost §Hbillions§!"
 
-      #resource
-      Category_resource: "Resource"
-      Category_resource_desc: "Our resources are an important part of our economy and security. Therefore, we must invest in expanding our resource acquisition and look for new resources in our territory."
-      small_oil_expand: "Small oil"
+      small_oil_expand: "Invest in Small-Scale Pertrolium Production"
       small_oil_expand_desc: "A small expansion of our mining will help meet the growing consumption of our population."
-      medium_oil_expand: "Medium oil"
+      medium_oil_expand: "Seek Investors for Medium-Scale Pertrolium Production"
       medium_oil_expand_desc: "Our mining needs decent investment. To get more raw materials for our factories."
-      big_oil_expand: "Big oil"
+      big_oil_expand: "Fully Invest in Large-Scale Big-Oil Conglomerates"
       big_oil_expand_desc: "The large expansion will satisfy both the population and the food industry."
-      oil_new_discovery: "New discovery oil"
+      oil_new_discovery: "Seek Oil Discoveries in our 'Untapped Regions'"
       oil_new_discovery_desc: "Our prospectors are looking for new deposits of resources for our industry and population."
       small_aluminium_expand: "Small aluminium"
       small_aluminium_expand_desc: "A small extension of the aluminum plant."
@@ -442,11 +434,10 @@
 
     # Political Related Decisions
 
-      political_trade: "Political Decisions"
       army_trade: "Military Training & Exercises"
       army_trade_desc: "Military eraining & exercises take 30 days to complete. There is a 30 day cooldown on these decisions."
-      resources: "Resource Development Projects"
-      resources_desc: "Resource development projects can be costly and take 180 days to develop. There is a 180 day cooldown on these decisions."
+      resources: "Resource Development Projects & Contracts"
+      resources_desc: "Our resources are an important part of our economy and security. Therefore, we must invest in expanding our resource acquisition and look for new resources in our territory.\n\nResource development projects can be costly and take 180 days to develop. There is a 180 day cooldown on these decisions."
       ideology: "Lobby Ideology Support"
       ideology_desc: "There is a 30 day cooldown on these decisions."
       
@@ -472,8 +463,8 @@
       pol_trade_army_exercises: "Army exercises £army_experience 10"
       pol_trade_navy_exercises: "Naval exercises £navy_experience 10"
       pol_trade_air_exercises:  "Air exercises £air_experience 10"
-      pol_trade_sell_pp: "Sell Political Power"
-      pol_trade_sell_pp2: "Sell Political Power"
+      pol_trade_sell_pp: "Backdoor-Sell Political Power (1000)"
+      pol_trade_sell_pp2: "Backdoor-Sell Political Power (5000)"
 
       resources_oil1:      "Subsidize development of oil fields"
       resources_rubber1:   "Subsidize development of synthetic rubber"
@@ -496,6 +487,7 @@
       ideology_d_party: "Lobby the western party"
       
       investments: "Investments & Domestic Development Projects"
+      investments_desc: "Building and investing in factories, shipyards and infrastructure will help our industry and economy through better times and worse."
       invest_science:"Fund Science Development Projects"
       invest_science_desc: "There is a 90 day cooldown on this decision."
       invest_political:"Political Power Fundraisers"

@@ -325,6 +325,8 @@
       BRA_TC_nationalist_ADJ: "Companhia Imperial Africana de Comercio do Brasil"
       BRA_TC_nationalist_DEF: "Brasil-Africano"
 
+# Custom Cosmetic Spheres of Influence Categories [NEW COSMETIC CATS HERE]
 
+spm_decisions_cat_coptic_egypt: "[ROOT.GetFlag] [ROOT.GetAdjective] Sphere of Influence"
 
 # end of file

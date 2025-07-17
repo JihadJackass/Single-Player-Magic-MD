@@ -1398,13 +1398,13 @@ scripted_gui = {
 					}
 					OWNER = {
 						set_technology = {
-							radio_detection = 1
-							decimetric_radar = 1
-							improved_decimetric_radar = 1
-							centimetric_radar = 1
-							improved_centimetric_radar = 1
-							advanced_centimetric_radar = 1
-							advanced_centimetric_radar = 1
+							#radio_detection = 1
+							#decimetric_radar = 1
+							#improved_decimetric_radar = 1
+							#centimetric_radar = 1
+							#improved_centimetric_radar = 1
+							#advanced_centimetric_radar = 1
+							#advanced_centimetric_radar = 1
 						}
 					}
 				}
@@ -1420,13 +1420,13 @@ scripted_gui = {
 						}
 						OWNER = {
 							set_technology = {
-								radio_detection = 1
-								decimetric_radar = 1
-								improved_decimetric_radar = 1
-								centimetric_radar = 1
-								improved_centimetric_radar = 1
-								advanced_centimetric_radar = 1
-								advanced_centimetric_radar = 1
+								#radio_detection = 1
+								#decimetric_radar = 1
+								#improved_decimetric_radar = 1
+								#centimetric_radar = 1
+								#improved_centimetric_radar = 1
+								#advanced_centimetric_radar = 1
+								#advanced_centimetric_radar = 1
 							}
 						}
 					}
@@ -1554,7 +1554,7 @@ scripted_gui = {
 					}
 					OWNER = {
 						set_technology = {
-							synth_oil_experiments = 1
+							#synth_oil_experiments = 1
 							# oil_processing = 1
 							# improved_oil_processing = 1
 							# advanced_oil_processing = 1
@@ -1578,7 +1578,7 @@ scripted_gui = {
 						}
 						OWNER = {
 							set_technology = {
-								synth_oil_experiments = 1
+								#synth_oil_experiments = 1
 								# oil_processing = 1
 								# improved_oil_processing = 1
 								# advanced_oil_processing = 1
@@ -1714,10 +1714,10 @@ scripted_gui = {
 					}
 					OWNER = {
 						set_technology = {
-							experimental_rockets = 1
-							rocket_engines = 1
-							improved_rocket_engines = 1
-							advanced_rocket_engines = 1
+							#experimental_rockets = 1
+							#rocket_engines = 1
+							#improved_rocket_engines = 1
+							#advanced_rocket_engines = 1
 						}
 					}
 				}
@@ -1733,10 +1733,10 @@ scripted_gui = {
 						}
 						OWNER = {
 							set_technology = {
-								experimental_rockets = 1
-								rocket_engines = 1
-								improved_rocket_engines = 1
-								advanced_rocket_engines = 1
+								#experimental_rockets = 1
+								#rocket_engines = 1
+								#improved_rocket_engines = 1
+								#advanced_rocket_engines = 1
 							}
 						}
 					}
@@ -1762,11 +1762,11 @@ scripted_gui = {
 					}
 					every_state = {
 						limit = { has_state_flag = bst_marked }
-						set_building_level = {
-							type = nuclear_reactor
-							level = 0
-							instant_build = yes
-						}
+					#	set_building_level = {
+					#		type = nuclear_reactor
+					#		level = 0
+					#		instant_build = yes
+					#	}
 						clr_state_flag = bst_marked
 					}
 				}
@@ -1779,10 +1779,10 @@ scripted_gui = {
 							NOT = { has_state_flag = bst_marked }
 						}
 					}
-					remove_building = {
-    					type = nuclear_reactor
-    					level = 1
-					}
+				#	remove_building = {
+    			#		type = nuclear_reactor
+    			#		level = 1
+				#	}
 				}
 				if = {
 					limit = {
@@ -1790,10 +1790,10 @@ scripted_gui = {
 					}
 					every_state = {
 						limit = { has_state_flag = bst_marked }
-						remove_building = {
-							type = nuclear_reactor
-							level = 1
-						}
+				#		remove_building = {
+				#			type = nuclear_reactor
+				#			level = 1
+				#		}
 					}
 				}
 				bst_count_buildings = yes
@@ -1805,11 +1805,11 @@ scripted_gui = {
 							NOT = { has_state_flag = bst_marked }
 						}
 					}
-					add_building_construction = {
-    					type = nuclear_reactor
-    					level = 1
-    					instant_build = yes
-					}
+				#	add_building_construction = {
+    			#		type = nuclear_reactor
+    			#		level = 1
+    			#		instant_build = yes
+				#	}
 				}
 				if = {
 					limit = {
@@ -1817,11 +1817,11 @@ scripted_gui = {
 					}
 					every_state = {
 						limit = { has_state_flag = bst_marked }
-						add_building_construction = {
-							type = nuclear_reactor
-							level = 1
-							instant_build = yes
-						}
+				#		add_building_construction = {
+				#			type = nuclear_reactor
+				#			level = 1
+				#			instant_build = yes
+				#		}
 					}
 				}
 				bst_count_buildings = yes
@@ -3360,13 +3360,13 @@ scripted_gui = {
 						}
 						OWNER = {
 							NOT = {
-								has_tech = radio_detection
-								has_tech = decimetric_radar
-								has_tech = improved_decimetric_radar
-								has_tech = centimetric_radar
-								has_tech = improved_centimetric_radar
-								has_tech = advanced_centimetric_radar
-								has_tech = advanced_centimetric_radar
+								#has_tech = radio_detection
+								#has_tech = decimetric_radar
+								#has_tech = improved_decimetric_radar
+								#has_tech = centimetric_radar
+								#has_tech = improved_centimetric_radar
+								#has_tech = advanced_centimetric_radar
+								#has_tech = advanced_centimetric_radar
 							}
 						}
 					}
@@ -3374,13 +3374,13 @@ scripted_gui = {
 						has_state_flag = bst_marked
 						OWNER = {
 							NOT = {
-								has_tech = radio_detection
-								has_tech = decimetric_radar
-								has_tech = improved_decimetric_radar
-								has_tech = centimetric_radar
-								has_tech = improved_centimetric_radar
-								has_tech = advanced_centimetric_radar
-								has_tech = advanced_centimetric_radar
+								#has_tech = radio_detection
+								#has_tech = decimetric_radar
+								#has_tech = improved_decimetric_radar
+								#has_tech = centimetric_radar
+								#has_tech = improved_centimetric_radar
+								#has_tech = advanced_centimetric_radar
+								#has_tech = advanced_centimetric_radar
 							}
 						}
 					}
@@ -3470,7 +3470,7 @@ scripted_gui = {
 						}
 						OWNER = {
 							NOT = {
-								has_tech = synth_oil_experiments
+								#has_tech = synth_oil_experiments
 								# has_tech = oil_processing
 								# has_tech = improved_oil_processing
 								# has_tech = advanced_oil_processing
@@ -3486,7 +3486,7 @@ scripted_gui = {
 						has_state_flag = bst_marked
 						OWNER = {
 							NOT = {
-								has_tech = synth_oil_experiments
+								#has_tech = synth_oil_experiments
 								# has_tech = oil_processing
 								# has_tech = improved_oil_processing
 								# has_tech = advanced_oil_processing
@@ -3568,10 +3568,10 @@ scripted_gui = {
 						}
 						OWNER = {
 							NOT = {
-								has_tech = experimental_rockets
-								has_tech = rocket_engines
-								has_tech = improved_rocket_engines
-								has_tech = advanced_rocket_engines
+								#has_tech = experimental_rockets
+								#has_tech = rocket_engines
+								#has_tech = improved_rocket_engines
+								#has_tech = advanced_rocket_engines
 							}
 						}
 					}
@@ -3579,10 +3579,10 @@ scripted_gui = {
 						has_state_flag = bst_marked
 						OWNER = {
 							NOT = {
-								has_tech = experimental_rockets
-								has_tech = rocket_engines
-								has_tech = improved_rocket_engines
-								has_tech = advanced_rocket_engines
+								#has_tech = experimental_rockets
+								#has_tech = rocket_engines
+								#has_tech = improved_rocket_engines
+								#has_tech = advanced_rocket_engines
 							}
 						}
 					}

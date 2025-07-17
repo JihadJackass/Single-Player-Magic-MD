@@ -1,5 +1,6 @@
-	# Coptic Egypt
-	spm_decisions_coptic_egypt = {
+	# Formables/cosmetics sphere of influence (content for cosmetics)
+
+	spm_decisions_sphere_of_influence = {
 
 		# Establish Coptic Jeruslem
 		spm_nameflag_establish_coptic_jerusalem = {
@@ -29,23 +30,6 @@
 						owns_state = 203
 						owns_state = 553
 					}
-				}
-			}
-			highlight_states = {
-				highlight_states_trigger = {
-					owns_state = 206
-					owns_state = 209
-					owns_state = 208
-					owns_state = 207
-					owns_state = 204
-					owns_state = 205
-					owns_state = 201
-					owns_state = 210
-					owns_state = 184
-					owns_state = 185
-					owns_state = 202
-					owns_state = 203
-					owns_state = 553
 				}
 			}
 

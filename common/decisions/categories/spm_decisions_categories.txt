@@ -172,20 +172,6 @@
 		}
 	}
 
-# Custom Sphere of Influence Decision Categories
-
-	spm_decisions_coptic_egypt = {
-		icon = decision_category_jihadijackass
-		visible_when_empty = yes
-		visible = {
-			tag = EGY
-			is_ai = no
-		}
-		priority = {
-			base = 500
-		}
-	}	
-
 ############ 
 # TOOLPACK #
 ############
@@ -249,18 +235,6 @@
 		visible_when_empty = yes	
 	}
 
-	political_trade ={
-		icon =	generic_political_actions
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		priority = 100
-		visible_when_empty = yes	
-	}
-
 	army_trade ={
 		icon =	generic_arms_trade
 		allowed = {
@@ -282,18 +256,6 @@
 			always = yes
 		}
 		priority = 80
-		visible_when_empty = yes	
-	}
-
-	ideology ={
-		icon =	generic_propaganda
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		priority = 70
 		visible_when_empty = yes	
 	}
 

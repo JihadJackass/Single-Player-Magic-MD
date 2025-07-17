@@ -69,6 +69,128 @@ spm_decisions_categories = {
 		}
 	}
 
+	# Settings
+
+		# Enable Settings
+		spm_enable_settings_menu = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_country_flag = spm_settings_menu_enabled }
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_settings_menu_disabled
+				set_country_flag = spm_settings_menu_enabled
+			}
+		}
+		# Disable Settings
+		spm_disable_settings_menu = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				has_country_flag = spm_settings_menu_enabled
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_settings_menu_enabled
+				set_country_flag = spm_settings_menu_disabled
+			}
+		}
+
+		# Disable Political Lobbying (For if you intend to keep your party)
+		spm_disable_political_lobbying = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_country_flag = spm_political_lobbying_disabled }
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_political_lobbying_enabled
+				set_country_flag = spm_political_lobbying_disabled
+			}
+		}
+
+		spm_enable_political_lobbying = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				NOT = { has_country_flag = spm_political_lobbying_enabled }
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_political_lobbying_disabled
+				set_country_flag = spm_political_lobbying_enabled
+			}
+		}
+
+		# Enable Political Lobbying
+
+		# Disable Political Borrowing
+
+		# Enable Political Borrowing
+
+		# Disable Political Selling
+
+		# Enable Political Selling
+
+		# Clear Cosmetic TAG
+		spm_reset_cosmetic_tag = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				#original_tag = var:my_country
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				has_country_flag = spm_settings_menu_enabled
+				#original_tag = var:my_country
+			}
+
+			complete_effect = {
+				drop_cosmetic_tag = yes
+			}
+		}
+
+		# Clear ALL Subject Cosmetic TAGs
+		spm_reset_subject_cosmetic_tag = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				#original_tag = var:my_country
+			}
+			visible = {
+				has_country_flag = spm_enabled
+				has_country_flag = spm_settings_menu_enabled
+			}
+
+			complete_effect = {
+				drop_cosmetic_tag = yes # TODO: fix this not targeting subjects
+			}
+		}
+	#
+
 	# Become TPP host
 	toolpack_become_host = {
 		icon = generic_nationalism
@@ -118,6 +240,7 @@ spm_decisions_categories = {
 			}		
 		}
 	}
+
 	toolpack_relinquish_host = {
 		icon = generic_nationalism
 
@@ -134,28 +257,8 @@ spm_decisions_categories = {
 			clr_country_flag = tp_is_host
 		}
 	}
+
 }
-#---------------------------------------------------------# Formables
-	# Formables
-	spm_decisions_formable_nations = {
-		# Montenegrin Empire
-		spm_montenegrin_empire = {
-			icon = generic_research
-
-			available = {
-				is_ai = no
-				always = no
-			}
-			visible = {
-				has_country_flag = spm_enabled
-			}
-			cost = 0
-
-			complete_effect = {
-				#set_cosmetic_tag = MON
-			}
-		}
-	}
 #---------------------------------------------------------# Economy Management
 	# Economy Management
 	spm_decisions_economy = {
@@ -1294,41 +1397,6 @@ spm_decisions_categories = {
 #---------------------------------------------------------# Name/Flag Manangement
 	# Name/Flag Manangement
 	spm_decisions_nameflag = {
-		
-		#
-		spm_reset_cosmetic_tag = {
-			icon = generic_research
-
-			available = {
-				is_ai = no
-				#original_tag = var:my_country
-			}
-			visible = {
-				has_country_flag = spm_enabled
-				#original_tag = var:my_country
-			}
-
-			complete_effect = {
-				drop_cosmetic_tag = yes
-			}
-		}
-
-		spm_reset_subject_cosmetic_tag = {
-			icon = generic_research
-
-			available = {
-				is_ai = no
-				#original_tag = var:my_country
-			}
-			visible = {
-				has_country_flag = spm_enabled
-				#original_tag = var:my_country
-			}
-
-			complete_effect = {
-				all_subject_countries = { drop_cosmetic_tag = yes }
-			}
-		}
 
 		# Qing
 		spm_nameflag_qing = {
@@ -1601,9 +1669,9 @@ spm_decisions_categories = {
 						trickster 
 						brilliant_strategist 
 						engineer_officer 
-						modern_theocrat_warlord
-						crusader_commander
-						protector_of_the_faithful
+						#modern_theocrat_warlord
+						#crusader_commander
+						#protector_of_the_faithful
 					}
 					skill = 11
 					attack_skill = 12
