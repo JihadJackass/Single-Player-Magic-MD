@@ -1,330 +1,330 @@
 ﻿l_english:
 
-  # Country Leaders
+# Country Leaders
 
-    # prophet muhammad
-    spm_prophet: "Prophet of Islam"
-    spm_prophet_desc: "Prophet Muhammad II of Umayyad-Cordoba has declared his vision of the right to rule given by Allah himself inshallah"
-    spm_experienced: "Experienced"
-    spm_pedophile: "Pedophile"
-    spm_pedophile_desc: "As Prophet Muhammad II is legally allowed to take a child as his wife, he is clearly and certainly a Pro-Pedophile supporter."
+  # Egypt
 
-    spm_coptic_papal_authority: "Supreme Papal Authority"
+    # Prophet Muhammad II
 
-  # Name/Flag Manangement
+      spm_prophet: "Prophet of Islam"
+      spm_prophet_desc: "Prophet Muhammad II of Umayyad-Cordoba has declared his vision of the right to rule given by Allah himself inshallah"
+      spm_experienced: "Experienced"
+      spm_pedophile: "Pedophile"
+      spm_pedophile_desc: "As Prophet Muhammad II is legally allowed to take a child as his wife, he is clearly and certainly a Pro-Pedophile supporter."
 
-    spm_decisions_nameflag: "Name & Flag Management"
-    spm_decisions_nameflag_desc: ""
+# Country Leader Traits
 
-    spm_nameflag_franco_iberian_union: "Franco-Iberian Union"
-    spm_nameflag_franco_iberian_union_desc: ""
+  # Egypt
 
-    
+    # Prophet Muhammad II
 
-    spm_nameflag_umayyad_caliphate: "Umayyad Caliphate"
-    spm_nameflag_umayyad_caliphate_desc: ""
+      spm_coptic_papal_authority: "Supreme Papal Authority"
 
-    spm_nameflag_ussr: "The Soviet Union"
-    spm_nameflag_ussr_desc: ""
+# Name/Flag Manangement (Actual Formable Decisions)
 
-    spm_nameflag_rome: "The Roman Empire"
-    spm_nameflag_rome_desc: ""
+      spm_decisions_nameflag: "Name & Flag Management"
 
-    spm_nameflag_qing: "The Qing Dynasty"
-    spm_nameflag_qing_desc: ""
+      spm_nameflag_franco_iberian_union: "Franco-Iberian Union"
 
-    spm_nameflag_ecuador: "UAA Unification"
-    spm_nameflag_ecuador_desc: ""
+      spm_nameflag_umayyad_caliphate: "Umayyad Caliphate"
 
-    spm_nameflag_britishempire: "Proclaim Greater British Empire"
-    spm_nameflag_britishempire_desc: ""
+      spm_nameflag_ussr: "The Soviet Union"
 
-    spm_nameflag_HUN_VISEGRAD: "Unification of Visegrad"
-    spm_nameflag_HUN_VISEGRAD_desc: ""
+      spm_nameflag_rome: "The Roman Empire"
 
-    spm_nameflag_brazil: "Declare Foundation of Imperial Brazil"
-    spm_nameflag_brazil_desc: ""
+      spm_nameflag_qing: "The Qing Dynasty"
 
-    spm_nameflag_ethiopia: "Declare Greater Ethiopia"
-    spm_nameflag_ethiopia_desc: ""
+      spm_nameflag_ecuador: "UAA Unification"
 
-    spm_nameflag_brazil_TC: "Establish Brazil-Africa Trade Company"
-    spm_nameflag_brazil_TC_desc: ""
+      spm_nameflag_britishempire: "Proclaim Greater British Empire"
 
-    spm_nameflag_COM_EAF: "Establish East African Federation"
-    spm_nameflag_COM_EAF_desc: ""
+      spm_nameflag_HUN_VISEGRAD: "Unification of Visegrad"
 
-    spm_nameflag_FRA_EMPIRE: "Proclaim French Empire"
-    spm_nameflag_FRA_EMPIRE_desc: ""
+      spm_nameflag_brazil: "Declare Foundation of Imperial Brazil"
 
-    spm_nameflag_coptic_egypt: "Coptic Egypt"
+      spm_nameflag_ethiopia: "Declare Greater Ethiopia"
 
-    spm_nameflag_coptic_jerusalem: "Establish Coptic Jerusalem"
+      spm_nameflag_brazil_TC: "Establish Brazil-Africa Trade Company"
 
-    # COSMETIC TAGS
+      spm_nameflag_COM_EAF: "Establish East African Federation"
 
-    # spm_reset_cosmetic_tag
+      spm_nameflag_FRA_EMPIRE: "Proclaim French Empire"
 
-    spm_reset_cosmetic_tag: "Clear Cosmetic TAG"
+      spm_nameflag_coptic_egypt: "Coptic Egypt"
 
-    spm_reset_subject_cosmetic_tag: "Clear All Subject Cosmetic TAGs"
+      spm_nameflag_coptic_jerusalem: "Establish Coptic Jerusalem"
+
+# Cosmetic Country & Formable Country Localization
+
+  spm_reset_cosmetic_tag: "Clear Cosmetic TAG"
+  spm_reset_subject_cosmetic_tag: "Clear All Subject Cosmetic TAGs"
 
   # The Franco-Iberian Union
-    SPR_FRANCO_IBERIA_communism: "Unión Socialista Franco-Ibérica del Pueblo"
-    SPR_FRANCO_IBERIA_communism_ADJ: "Franco-Ibérica"
-    SPR_FRANCO_IBERIA_communism_DEF: "La Unión Socialista Franco-Ibérica del Pueblo"
+      SPR_FRANCO_IBERIA_communism: "Unión Socialista Franco-Ibérica del Pueblo"
+      SPR_FRANCO_IBERIA_communism_ADJ: "Franco-Ibérica"
+      SPR_FRANCO_IBERIA_communism_DEF: "La Unión Socialista Franco-Ibérica del Pueblo"
 
-    SPR_FRANCO_IBERIA_fascism: "Franco-Iberian Socialist Union"
-    SPR_FRANCO_IBERIA_fascism_ADJ: "Franco-Iberian"
-    SPR_FRANCO_IBERIA_fascism_DEF: "The Franco-Iberian Socialist Union"
+      SPR_FRANCO_IBERIA_fascism: "Franco-Iberian Socialist Union"
+      SPR_FRANCO_IBERIA_fascism_ADJ: "Franco-Iberian"
+      SPR_FRANCO_IBERIA_fascism_DEF: "The Franco-Iberian Socialist Union"
 
-    SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
-    SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
-    SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
+      SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
 
-    SPR_FRANCO_IBERIA_nationalist: "Franco-Iberian Union"
-    SPR_FRANCO_IBERIA_nationalist_ADJ: "Franco-Iberian"
-    SPR_FRANCO_IBERIA_nationalist_DEF: "The Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_nationalist: "Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_nationalist_ADJ: "Franco-Iberian"
+      SPR_FRANCO_IBERIA_nationalist_DEF: "The Franco-Iberian Union"
 
-    SPR_FRANCO_IBERIA_neutrality: "Franco-Iberian Union"
-    SPR_FRANCO_IBERIA_neutrality_ADJ: "Franco-Iberian"
-    SPR_FRANCO_IBERIA_neutrality_DEF: "The Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_neutrality: "Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_neutrality_ADJ: "Franco-Iberian"
+      SPR_FRANCO_IBERIA_neutrality_DEF: "The Franco-Iberian Union"
 
-    SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
-    SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
-    SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
+      SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
+      SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
 
   # Ummayad Caliphate
 
-    SPR_FRANCO_IBERIA_communism: "Unión Socialista Franco-Ibérica del Pueblo"
-    SPR_FRANCO_IBERIA_communism_ADJ: "Franco-Ibérica"
-    SPR_FRANCO_IBERIA_communism_DEF: "La Unión Socialista Franco-Ibérica del Pueblo"
+      SPR_FRANCO_IBERIA_communism: "Unión Socialista Franco-Ibérica del Pueblo"
+      SPR_FRANCO_IBERIA_communism_ADJ: "Franco-Ibérica"
+      SPR_FRANCO_IBERIA_communism_DEF: "La Unión Socialista Franco-Ibérica del Pueblo"
 
-    SPR_UMMAYAD_communism: "People's Republic of Hispania"
-    SPR_UMMAYAD_communism_ADJ: "Hispanian"
-    SPR_UMMAYAD_communism_DEF: "The People's Republic of Greater Hispania"
+      SPR_UMMAYAD_communism: "People's Republic of Hispania"
+      SPR_UMMAYAD_communism_ADJ: "Hispanian"
+      SPR_UMMAYAD_communism_DEF: "The People's Republic of Greater Hispania"
 
-    SPR_UMMAYAD_fascism: "Umayyad Caliphate"
-    SPR_UMMAYAD_fascism_ADJ: "Umayyad"
-    SPR_UMMAYAD_fascism_DEF: "The Umayyad-Cordoba Caliphate"
+      SPR_UMMAYAD_fascism: "Umayyad Caliphate"
+      SPR_UMMAYAD_fascism_ADJ: "Umayyad"
+      SPR_UMMAYAD_fascism_DEF: "The Umayyad-Cordoba Caliphate"
 
-    SPR_UMMAYAD_nationalist: "Great Spanish Empire"
-    SPR_UMMAYAD_nationalist_ADJ: "Franco-Iberian"
-    SPR_UMMAYAD_nationalist_DEF: "The Franco-Iberian Union"
+      SPR_UMMAYAD_nationalist: "Great Spanish Empire"
+      SPR_UMMAYAD_nationalist_ADJ: "Franco-Iberian"
+      SPR_UMMAYAD_nationalist_DEF: "The Franco-Iberian Union"
 
-    SPR_UMMAYAD_neutrality: "Kingdom of Spain"
-    SPR_UMMAYAD_neutrality_ADJ: "Spanish"
-    SPR_UMMAYAD_neutrality_DEF: "The Kingdom of Spain"
+      SPR_UMMAYAD_neutrality: "Kingdom of Spain"
+      SPR_UMMAYAD_neutrality_ADJ: "Spanish"
+      SPR_UMMAYAD_neutrality_DEF: "The Kingdom of Spain"
 
-    SPR_UMMAYAD_democratic: "United Spanish Republic"
-    SPR_UMMAYAD_democratic_ADJ: "Spanish"
-    SPR_UMMAYAD_democratic_DEF: "The Spanish Republic"
+      SPR_UMMAYAD_democratic: "United Spanish Republic"
+      SPR_UMMAYAD_democratic_ADJ: "Spanish"
+      SPR_UMMAYAD_democratic_DEF: "The Spanish Republic"
 
   # The Soviet Union
-    SOV_USSR_communism: "Union of Soviet Socialist Republics"
-    SOV_USSR_communism_ADJ: "Soviet"
-    SOV_USSR_communism_DEF: "The Union of Soviet Socialist Republics"
+
+      SOV_USSR_communism: "Union of Soviet Socialist Republics"
+      SOV_USSR_communism_ADJ: "Soviet"
+      SOV_USSR_communism_DEF: "The Union of Soviet Socialist Republics"
 
   # The Roman Empire
-    ITA_ROME_communism: "People's Legion"
-    ITA_ROME_communism_ADJ: "Roman"
-    ITA_ROME_communism_DEF: "the Roman People's Legion"
 
-    ITA_ROME_fascism: "The Roman Empire"
-    ITA_ROME_fascism_ADJ: "Roman"
-    ITA_ROME_fascism_DEF: "The Roman Empire"
+      ITA_ROME_communism: "People's Legion"
+      ITA_ROME_communism_ADJ: "Roman"
+      ITA_ROME_communism_DEF: "the Roman People's Legion"
 
-    ITA_ROME_democratic: "Roman Republic"
-    ITA_ROME_democratic_ADJ: "Roman"
-    ITA_ROME_democratic_DEF: "The Roman Republic"
+      ITA_ROME_fascism: "The Roman Empire"
+      ITA_ROME_fascism_ADJ: "Roman"
+      ITA_ROME_fascism_DEF: "The Roman Empire"
 
-    ITA_ROME_nationalist: "The Roman Empire"
-    ITA_ROME_nationalist_ADJ: "Roman"
-    ITA_ROME_nationalist_DEF: "The Roman Empire"
+      ITA_ROME_democratic: "Roman Republic"
+      ITA_ROME_democratic_ADJ: "Roman"
+      ITA_ROME_democratic_DEF: "The Roman Republic"
 
-    ITA_ROME_neutrality: "Rome"
-    ITA_ROME_neutrality_ADJ: "Roman"
-    ITA_ROME_neutrality_DEF: "The Roman State"
+      ITA_ROME_nationalist: "The Roman Empire"
+      ITA_ROME_nationalist_ADJ: "Roman"
+      ITA_ROME_nationalist_DEF: "The Roman Empire"
+
+      ITA_ROME_neutrality: "Rome"
+      ITA_ROME_neutrality_ADJ: "Roman"
+      ITA_ROME_neutrality_DEF: "The Roman State"
 
   # East Africa Federation
 
-    COM_EAF_democratic: "East African Federation"
-    COM_EAF_democratic_ADJ: "East African"
-    COM_EAF_democratic_DEF: "the East African Federation"
+      COM_EAF_democratic: "East African Federation"
+      COM_EAF_democratic_ADJ: "East African"
+      COM_EAF_democratic_DEF: "the East African Federation"
 
   # French Empire
 
-    FRA_EMPIRE_nationalist: "The Third French Empire"
-    FRA_EMPIRE_nationalist_ADJ: "French"
-    FRA_EMPIRE_nationalist_DEF: "the Third French Empire"
+      FRA_EMPIRE_nationalist: "The Third French Empire"
+      FRA_EMPIRE_nationalist_ADJ: "French"
+      FRA_EMPIRE_nationalist_DEF: "the Third French Empire"
 
   # Qing
-    CHI_QING_communism: "Qing Commune"
-    CHI_QING_communism_ADJ: "Qing"
-    CHI_QING_communism_DEF: "the Commune of Qing"
 
-    CHI_QING_fascism: "Heavenly Kingdom"
-    CHI_QING_fascism_ADJ: "Manchu"
-    CHI_QING_fascism_DEF: "The Manchu Heavenly Kingdom"
+      CHI_QING_communism: "Qing Commune"
+      CHI_QING_communism_ADJ: "Qing"
+      CHI_QING_communism_DEF: "the Commune of Qing"
 
-    CHI_QING_democratic: "Five-Race Republic"
-    CHI_QING_democratic_ADJ: "Five-Race"
-    CHI_QING_democratic_DEF: "The Five-Race Republic"
+      CHI_QING_fascism: "Heavenly Kingdom"
+      CHI_QING_fascism_ADJ: "Manchu"
+      CHI_QING_fascism_DEF: "The Manchu Heavenly Kingdom"
 
-    CHI_QING_nationalist: "Great Qing"
-    CHI_QING_nationalist_ADJ: "Qing"
-    CHI_QING_nationalist_DEF: "The Great Qing Dynasty"
+      CHI_QING_democratic: "Five-Race Republic"
+      CHI_QING_democratic_ADJ: "Five-Race"
+      CHI_QING_democratic_DEF: "The Five-Race Republic"
 
-    CHI_QING_neutrality: "Qingunate"
-    CHI_QING_neutrality_ADJ: "Qingunate"
-    CHI_QING_neutrality_DEF: "The Qingunate State"
+      CHI_QING_nationalist: "Great Qing"
+      CHI_QING_nationalist_ADJ: "Qing"
+      CHI_QING_nationalist_DEF: "The Great Qing Dynasty"
 
-  # coptic egypt
-    EGY_coptic_egypt_neutrality: "Holy Brotherhood of the Cross"
-    EGY_coptic_egypt_neutrality_ADJ: "Brotherian Coptic"
-    EGY_coptic_egypt_neutrality_DEF: "the Holy Brotherhood of the Coptic Cross"
+      CHI_QING_neutrality: "Qingunate"
+      CHI_QING_neutrality_ADJ: "Qingunate"
+      CHI_QING_neutrality_DEF: "The Qingunate State"
 
-  # coptic jerusalem
-    EGY_coptic_jerusalem_neutrality: "Yerushalem en-Keme"
-    EGY_coptic_jerusalem_neutrality_ADJ: "Yerushalem"
-    EGY_coptic_jerusalem_neutrality_DEF: "the Yerushalem Brotherhood of Egypt"
+  # Coptic Egypt
 
-  # coptic arabia
-    EGY_coptic_arabia_neutrality: "Hejaz en-Keme"
-    EGY_coptic_arabia_neutrality_ADJ: "Hejaz"
-    EGY_coptic_arabia_neutrality_DEF: "the Brotherhood Hejaz of Egypt"
+      EGY_coptic_egypt_neutrality: "Holy Brotherhood of the Cross"
+      EGY_coptic_egypt_neutrality_ADJ: "Brotherian Coptic"
+      EGY_coptic_egypt_neutrality_DEF: "the Holy Brotherhood of the Coptic Cross"
+
+  # Coptic Jerusalem
+
+      EGY_coptic_jerusalem_neutrality: "Yerushalem en-Keme"
+      EGY_coptic_jerusalem_neutrality_ADJ: "Yerushalem"
+      EGY_coptic_jerusalem_neutrality_DEF: "the Yerushalem Brotherhood of Egypt"
+
+  # Coptic Arabia
+
+      EGY_coptic_arabia_neutrality: "Hejaz en-Keme"
+      EGY_coptic_arabia_neutrality_ADJ: "Hejaz"
+      EGY_coptic_arabia_neutrality_DEF: "the Brotherhood Hejaz of Egypt"
 
   # Visegrad
-    HUN_VISEGRAD_communism: "Visegrad Communes"
-    HUN_VISEGRAD_communism_ADJ: "Visegrad"
-    HUN_VISEGRAD_communism_DEF: "the Communal Republics of Visegrad"
 
-    HUN_VISEGRAD_fascism: "Visegrad Junta"
-    HUN_VISEGRAD_fascism_ADJ: "Visegrad"
-    HUN_VISEGRAD_fascism_DEF: "The Visegrad Junta"
+      HUN_VISEGRAD_communism: "Visegrad Communes"
+      HUN_VISEGRAD_communism_ADJ: "Visegrad"
+      HUN_VISEGRAD_communism_DEF: "the Communal Republics of Visegrad"
 
-    HUN_VISEGRAD_democratic: "Visegrad Republic"
-    HUN_VISEGRAD_democratic_ADJ: "Visegrad"
-    HUN_VISEGRAD_democratic_DEF: "The Visegrad Republic"
+      HUN_VISEGRAD_fascism: "Visegrad Junta"
+      HUN_VISEGRAD_fascism_ADJ: "Visegrad"
+      HUN_VISEGRAD_fascism_DEF: "The Visegrad Junta"
 
-    HUN_VISEGRAD_nationalist: "Empire of Visegrad"
-    HUN_VISEGRAD_nationalist_ADJ: "Visegrad"
-    HUN_VISEGRAD_nationalist_DEF: "The Imperial State of Visegrad"
+      HUN_VISEGRAD_democratic: "Visegrad Republic"
+      HUN_VISEGRAD_democratic_ADJ: "Visegrad"
+      HUN_VISEGRAD_democratic_DEF: "The Visegrad Republic"
 
-    HUN_VISEGRAD_neutrality: "Visegrad"
-    HUN_VISEGRAD_neutrality_ADJ: "Visegrad"
-    HUN_VISEGRAD_neutrality_DEF: "The Visegrad State"
+      HUN_VISEGRAD_nationalist: "Empire of Visegrad"
+      HUN_VISEGRAD_nationalist_ADJ: "Visegrad"
+      HUN_VISEGRAD_nationalist_DEF: "The Imperial State of Visegrad"
+
+      HUN_VISEGRAD_neutrality: "Visegrad"
+      HUN_VISEGRAD_neutrality_ADJ: "Visegrad"
+      HUN_VISEGRAD_neutrality_DEF: "The Visegrad State"
 
   # British Empire
-    ENG_BRITISHEMPIRE_democratic: "British Republic"
-    ENG_BRITISHEMPIRE_democratic_ADJ: "British"
-    ENG_BRITISHEMPIRE_democratic_DEF: "The British Republic"
 
-    ENG_BRITISHEMPIRE_communism: "Commonwealth of Communes"
-    ENG_BRITISHEMPIRE_communism_ADJ: "Commonwealth"
-    ENG_BRITISHEMPIRE_communism_DEF: "the Commonwealth of England"
+      ENG_BRITISHEMPIRE_democratic: "British Republic"
+      ENG_BRITISHEMPIRE_democratic_ADJ: "British"
+      ENG_BRITISHEMPIRE_democratic_DEF: "The British Republic"
 
-    ENG_BRITISHEMPIRE_neutrality: "England"
-    ENG_BRITISHEMPIRE_neutrality_ADJ: "English"
-    ENG_BRITISHEMPIRE_neutrality_DEF: "The English State"   
+      ENG_BRITISHEMPIRE_communism: "Commonwealth of Communes"
+      ENG_BRITISHEMPIRE_communism_ADJ: "Commonwealth"
+      ENG_BRITISHEMPIRE_communism_DEF: "the Commonwealth of England"
 
-    ENG_BRITISHEMPIRE_fascism: "British Caliphate"
-    ENG_BRITISHEMPIRE_fascism_ADJ: "British"
-    ENG_BRITISHEMPIRE_fascism_DEF: "The British Caliphate"
+      ENG_BRITISHEMPIRE_neutrality: "England"
+      ENG_BRITISHEMPIRE_neutrality_ADJ: "English"
+      ENG_BRITISHEMPIRE_neutrality_DEF: "The English State"   
 
-    ENG_BRITISHEMPIRE_nationalist: "The British Empire"
-    ENG_BRITISHEMPIRE_nationalist_ADJ: "British"
-    ENG_BRITISHEMPIRE_nationalist_DEF: "The British Empire"  
+      ENG_BRITISHEMPIRE_fascism: "British Caliphate"
+      ENG_BRITISHEMPIRE_fascism_ADJ: "British"
+      ENG_BRITISHEMPIRE_fascism_DEF: "The British Caliphate"
 
-  # Ecuador - UAA
+      ENG_BRITISHEMPIRE_nationalist: "The British Empire"
+      ENG_BRITISHEMPIRE_nationalist_ADJ: "British"
+      ENG_BRITISHEMPIRE_nationalist_DEF: "The British Empire"  
 
-    ECU_UAA_democratic: "Commonwealth of the Condor"
-    ECU_UAA_democratic_ADJ: "Condorian"
-    ECU_UAA_democratic_DEF: "The Condorian Commonwealth"
+  # Ecuador
 
-    ECU_UAA_communism: "Worker Vanguard the Americas"
-    ECU_UAA_communism_ADJ: "Condorian"
-    ECU_UAA_communism_DEF: "the Worker Vanguard the Americas"
+      ECU_UAA_democratic: "Commonwealth of the Condor"
+      ECU_UAA_democratic_ADJ: "Condorian"
+      ECU_UAA_democratic_DEF: "The Condorian Commonwealth"
 
-    ECU_UAA_neutrality: "Condor Compact"
-    ECU_UAA_neutrality_ADJ: "Condorians"
-    ECU_UAA_neutrality_DEF: "The Condorian Compact"  
+      ECU_UAA_communism: "Worker Vanguard the Americas"
+      ECU_UAA_communism_ADJ: "Condorian"
+      ECU_UAA_communism_DEF: "the Worker Vanguard the Americas"
 
-    ECU_UAA_fascism: "Great Dar al-America"
-    ECU_UAA_fascism_ADJ: "Donar"
-    ECU_UAA_fascism_DEF: "The Great Dar al-America"
+      ECU_UAA_neutrality: "Condor Compact"
+      ECU_UAA_neutrality_ADJ: "Condorians"
+      ECU_UAA_neutrality_DEF: "The Condorian Compact"  
 
-    ECU_UAA_nationalist: "The Golden Realm"
-    ECU_UAA_nationalist_ADJ: "Golder"
-    ECU_UAA_nationalist_DEF: "The Golden Realm"
+      ECU_UAA_fascism: "Great Dar al-America"
+      ECU_UAA_fascism_ADJ: "Donar"
+      ECU_UAA_fascism_DEF: "The Great Dar al-America"
+
+      ECU_UAA_nationalist: "The Golden Realm"
+      ECU_UAA_nationalist_ADJ: "Golder"
+      ECU_UAA_nationalist_DEF: "The Golden Realm"
 
   # Ethiopia
-    # Democratic Group
-    ETH_EM_democratic: "Federal Union Of Abyssinia"
-    ETH_EM_democratic_ADJ: "Abyssinian"
-    ETH_EM_democratic_DEF: "The Federal Union Of Abyssinia"
-    # Emerging Group
-    ETH_EM_communism: "Abyssinian Red Commonwealth"
-    ETH_EM_communism_ADJ: "Abyssinian"
-    ETH_EM_communism_DEF: "the Red Commonwealth of Abyssinia"
-    # Salafist Group
-    ETH_EM_fascism: "Divine Sultanate of the Mountains"
-    ETH_EM_fascism_ADJ: "Abyssinian"
-    ETH_EM_fascism_DEF: "The Divine Abyssinian Sultanate of the Mountains"
-    # Neutral Group
-    ETH_EM_neutrality: "Republic of the Horn"
-    ETH_EM_neutrality_ADJ: "Abyssinian"
-    ETH_EM_neutrality_DEF: "The Republic of the Horn"   
-    # Fascist Group
-    ETH_EM_nationalist: "Holy Dominion of the Lion Throne"
-    ETH_EM_nationalist_ADJ: "Abyssinian"
-    ETH_EM_nationalist_DEF: "The Lion Throne Holy Dominion"
+
+      # Democratic Group
+      ETH_EM_democratic: "Federal Union Of Abyssinia"
+      ETH_EM_democratic_ADJ: "Abyssinian"
+      ETH_EM_democratic_DEF: "The Federal Union Of Abyssinia"
+      # Emerging Group
+      ETH_EM_communism: "Abyssinian Red Commonwealth"
+      ETH_EM_communism_ADJ: "Abyssinian"
+      ETH_EM_communism_DEF: "the Red Commonwealth of Abyssinia"
+      # Salafist Group
+      ETH_EM_fascism: "Divine Sultanate of the Mountains"
+      ETH_EM_fascism_ADJ: "Abyssinian"
+      ETH_EM_fascism_DEF: "The Divine Abyssinian Sultanate of the Mountains"
+      # Neutral Group
+      ETH_EM_neutrality: "Republic of the Horn"
+      ETH_EM_neutrality_ADJ: "Abyssinian"
+      ETH_EM_neutrality_DEF: "The Republic of the Horn"   
+      # Fascist Group
+      ETH_EM_nationalist: "Holy Dominion of the Lion Throne"
+      ETH_EM_nationalist_ADJ: "Abyssinian"
+      ETH_EM_nationalist_DEF: "The Lion Throne Holy Dominion"
 
   # Brazil
-    # Democratic Group
-    BRA_EM_democratic: "United States of Brazil"
-    BRA_EM_democratic_ADJ: "the United States of Brazil"
-    BRA_EM_democratic_DEF: "Brazilian"
-    # Emerging Group
-    BRA_EM_communism: "Brazil"
-    BRA_EM_communism_ADJ: "the United States of Brazil"
-    BRA_EM_communism_DEF: "Brazilian"
-    # Salafist Group
-    BRA_EM_fascism: "Califado do Brasil"
-    BRA_EM_fascism_ADJ: "TODO"
-    BRA_EM_fascism_DEF: "Brasileiro"
-    # Neutral Group
-    BRA_EM_neutrality: "Brazil"
-    BRA_EM_neutrality_ADJ: "Brazil"
-    BRA_EM_neutrality_DEF: "Brazilian"   
-    # Fascist Group
-    BRA_EM_nationalist: "Imperio do Brasil"
-    BRA_EM_nationalist_ADJ: "Imperial Brasileiro"
-    BRA_EM_nationalist_DEF: "Brasileiro"
+
+      # Democratic Group
+      BRA_EM_democratic: "United States of Brazil"
+      BRA_EM_democratic_ADJ: "the United States of Brazil"
+      BRA_EM_democratic_DEF: "Brazilian"
+      # Emerging Group
+      BRA_EM_communism: "Brazil"
+      BRA_EM_communism_ADJ: "the United States of Brazil"
+      BRA_EM_communism_DEF: "Brazilian"
+      # Salafist Group
+      BRA_EM_fascism: "Califado do Brasil"
+      BRA_EM_fascism_ADJ: "TODO"
+      BRA_EM_fascism_DEF: "Brasileiro"
+      # Neutral Group
+      BRA_EM_neutrality: "Brazil"
+      BRA_EM_neutrality_ADJ: "Brazil"
+      BRA_EM_neutrality_DEF: "Brazilian"   
+      # Fascist Group
+      BRA_EM_nationalist: "Imperio do Brasil"
+      BRA_EM_nationalist_ADJ: "Imperial Brasileiro"
+      BRA_EM_nationalist_DEF: "Brasileiro"
 
   # Brazil Africa Trade Company
 
-    # Democratic Group
-    BRA_TC_democratic: "Brazil-Africa Trade Company"
-    BRA_TC_democratic_ADJ: "the Brazil-Africa Trade Company"
-    BRA_TC_democratic_DEF: "Brasil-Africano"
-    # Emerging Group
-    BRA_TC_communism: "Brazil-Africa Trade Company"
-    BRA_TC_communism_ADJ: "the Brazil-Africa Trade Company"
-    BRA_TC_communism_DEF: "Brasil-Africano"
-    # Salafist Group
-    BRA_TC_fascism: "Brazil-Africa Trade Company"
-    BRA_TC_fascism_ADJ: "the Brazil-Africa Trade Company"
-    BRA_TC_fascism_DEF: "Brasil-Africano"
-    # Neutral Group
-    BRA_TC_neutrality: "Brazil-Africa Trade Company"
-    BRA_TC_neutrality_ADJ: "the Brazil-Africa Trade Company"
-    BRA_TC_neutrality_DEF: "Brasil-Africano"   
-    # Fascist Group
-    BRA_TC_nationalist: "Imperial Companhia de Comercio Brasil-Africa"
-    BRA_TC_nationalist_ADJ: "Companhia Imperial Africana de Comercio do Brasil"
-    BRA_TC_nationalist_DEF: "Brasil-Africano"
+      # Democratic Group
+      BRA_TC_democratic: "Brazil-Africa Trade Company"
+      BRA_TC_democratic_ADJ: "the Brazil-Africa Trade Company"
+      BRA_TC_democratic_DEF: "Brasil-Africano"
+      # Emerging Group
+      BRA_TC_communism: "Brazil-Africa Trade Company"
+      BRA_TC_communism_ADJ: "the Brazil-Africa Trade Company"
+      BRA_TC_communism_DEF: "Brasil-Africano"
+      # Salafist Group
+      BRA_TC_fascism: "Brazil-Africa Trade Company"
+      BRA_TC_fascism_ADJ: "the Brazil-Africa Trade Company"
+      BRA_TC_fascism_DEF: "Brasil-Africano"
+      # Neutral Group
+      BRA_TC_neutrality: "Brazil-Africa Trade Company"
+      BRA_TC_neutrality_ADJ: "the Brazil-Africa Trade Company"
+      BRA_TC_neutrality_DEF: "Brasil-Africano"   
+      # Fascist Group
+      BRA_TC_nationalist: "Imperial Companhia de Comercio Brasil-Africa"
+      BRA_TC_nationalist_ADJ: "Companhia Imperial Africana de Comercio do Brasil"
+      BRA_TC_nationalist_DEF: "Brasil-Africano"
 
 
 
-
+# end of file

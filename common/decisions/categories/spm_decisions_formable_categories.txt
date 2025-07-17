@@ -15,3 +15,18 @@
 			base = 500
 		}
 	}
+
+	# Spanish Cordoba Caliphate
+
+		spm_decisions_cordoba_caliphate = {
+		icon = decision_category_jihadijackass
+		visible_when_empty = yes
+		visible = {
+			is_ai = no
+			#has_country_flag = spm_enabled
+		}
+		priority = {
+			base = 500
+		}
+	}
+

@@ -1556,6 +1556,7 @@ spm_decisions_categories = {
 			}
 		}
 
+		# Coptic Egypt
 		spm_nameflag_coptic_egypt = {
 			icon = generic_research
 

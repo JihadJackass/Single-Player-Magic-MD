@@ -2,7 +2,7 @@
 	spm_decisions_coptic_egypt = {
 
 		# Establish Coptic Jeruslem
-		spm_nameflag_coptic_jerusalem = {
+		spm_nameflag_establish_coptic_jerusalem = {
 			icon = generic_research
 
 			available = {
@@ -62,3 +62,5 @@
 			}
 		}				
 	}
+
+	
