@@ -64,6 +64,7 @@
 
 # SPM Events
 
+
 	# CountryFlag Formation Events (Low Tier Formables without unique focus trees - can have some custom focuses)
 
 		# Formation of Visegrad

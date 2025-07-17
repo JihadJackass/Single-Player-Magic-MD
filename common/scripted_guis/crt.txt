@@ -20,10 +20,10 @@ scripted_gui = {
 		}
 
 		effects = {
-			crt_unlock_templates_button_click = {
-				country_lock_all_division_template = no
-				tpt_remove_template_lock = yes	#can leave on old code
-			}
+			#crt_unlock_templates_button_click = {
+			#	country_lock_all_division_template = no
+			#	tpt_remove_template_lock = yes	#can leave on old code
+			#}
 			crt_faction_creation_toggle_on_button_click = {
 				set_rule = {
 					can_create_factions = yes

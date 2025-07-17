@@ -1,0 +1,19 @@
+characters = {
+	SPR_prophet_muhammad_ii = {
+		name = "Prophet Muhammad II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/prophet_muhammad_ii.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = caliphate
+			traits = {  
+				spm_prophet
+				spm_pedophile
+				spm_experienced
+			}
+		}
+	}
+}

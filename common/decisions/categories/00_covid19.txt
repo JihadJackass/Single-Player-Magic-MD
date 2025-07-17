@@ -1,9 +1,0 @@
-covid19_decision_category = {
-	icon = resource_production
-	priority = 200
-	visible_when_empty = no
-	picture=GFX_MD_COVID19
-	visible = {
-		has_global_flag = spm_disabled_content
-	}
-}

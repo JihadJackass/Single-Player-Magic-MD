@@ -1,0 +1,69 @@
+scripted_map_modes = {
+	# COVID-19 map mode
+	covid19_map_mode = {
+		top = {
+			type = country
+			color = {
+				# Base mode (SAFE)
+				set_temp_variable = { red = 1 }
+				divide_temp_variable = { red = 255 }
+				set_temp_variable = { blue = 1 }
+				divide_temp_variable = { blue = 255 }
+				set_temp_variable = { green = 255 }
+				divide_temp_variable = { green = 255 }
+				FROM = {
+					is_in_array = {
+						array = global.COVID19_SAFE
+						value = THIS
+					}
+					if = {
+						limit = {
+							OR = {
+								has_idea = COVID19_INFECTED
+								has_idea = COVID19_GUARDED
+							}
+						}
+						# STOCK - SAFE
+						set_temp_variable = { red = 1 }
+						divide_temp_variable = { red = 255 }
+						set_temp_variable = { blue = 1 }
+						divide_temp_variable = { blue = 255 }
+						set_temp_variable = { green = 255 }
+						divide_temp_variable = { green = 255 }
+					}
+				}
+				set_temp_variable = { alpha = 1.0 }
+				set_temp_variable = { thickness = 10.0 }
+			}
+			targets = {
+				target_array = global.COVID19_SAFE
+			}
+		}
+		bottom = {
+			type = country
+			color = {
+				set_temp_variable = { red = 148 }
+				divide_temp_variable = { red = 255 }
+				set_temp_variable = { blue = 206 }
+				divide_temp_variable = { blue = 255 }
+				set_temp_variable = { green = 156 }
+				divide_temp_variable = { green = 255 }
+				set_temp_variable = { alpha = 1.0 }
+				FROM = {
+					is_in_array = {
+						array = global.COVID19_RISK
+						value = THIS
+					}
+				}
+			}
+			targets = {
+				target_array = global.COVID19_RISK
+			}
+		}
+
+		far_text = country
+		near_text = none
+
+		update_daily = no
+	}
+}

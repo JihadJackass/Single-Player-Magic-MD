@@ -25,145 +25,270 @@ SPR_FRANCO_IBERIA_nationalist = { # Spain - Franco-Iberia - nationalist
     color_ui = rgb { 212 176 110 }
 }
 
-# soviet union
+# Ummayad Caliphate
+	 # Democratic Group
+    SPR_UMMAYAD_democratic = {
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Emerging Group
+    SPR_UMMAYAD_communism = { 
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Salafist Group
+    SPR_UMMAYAD_fascism = { 
+        color = rgb { 206 213 224 }
+        color_ui = rgb { 206 213 224 }
+    }
+    # Neutral Group
+    SPR_UMMAYAD_neutrality = {
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Fascist Group
+    SPR_UMMAYAD_nationalist = {
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
 
-SOV_USSR_communism = { # Russia - Soviet Socialist Republics - communism
-    color = rgb { 125 13 24 }
-    color_ui = rgb { 125 13 24 }
-}
+# Soviet Union
+    # Emerging Group
+    SOV_USSR_communism = {
+        color = rgb { 125 13 24 }
+        color_ui = rgb { 125 13 24 }
+    }
 
 # Rome
-
-ITA_ROME_communism = { # Spain - Franco-Iberia - communism
-    color = rgb { 130 0 8 }
-    color_ui = rgb { 130 0 8 }
-}
-
-ITA_ROME_fascism = { # Spain - Franco-Iberia - fascism
-    color = rgb { 130 0 8 }
-    color_ui = rgb { 130 0 8 }
-}
-
-ITA_ROME_neutrality = { # Spain - Franco-Iberia - neutrality
-    color = rgb { 130 0 8 }
-    color_ui = rgb { 130 0 8 }
-}
-
-ITA_ROME_democratic = { # Spain - Franco-Iberia - democratic
-    color = rgb { 130 0 8 }
-    color_ui = rgb { 130 0 8 }
-}
-
-ITA_ROME_nationalist = { # Spain - Franco-Iberia - nationalist
-    color = rgb { 130 0 8 }
-    color_ui = rgb { 130 0 8 }
-}
+    # Democratic Group
+    ITA_ROME_democratic = {
+        color = rgb { 130 0 8 }
+        color_ui = rgb { 130 0 8 }
+    }
+    # Emerging Group
+    ITA_ROME_communism = {
+        color = rgb { 130 0 8 }
+        color_ui = rgb { 130 0 8 }
+    }
+    # Salafist Group
+    ITA_ROME_fascism = {
+        color = rgb { 130 0 8 }
+        color_ui = rgb { 130 0 8 }
+    }
+    # Neutral Group
+    ITA_ROME_neutrality = {
+        color = rgb { 130 0 8 }
+        color_ui = rgb { 130 0 8 }
+    }
+    # Fascist Group - Roman Empire
+    ITA_ROME_nationalist = {
+        color = rgb { 130 0 8 }
+        color_ui = rgb { 130 0 8 }
+    }
 
 # QING
-
-CHI_QING_communism = { # Spain - Franco-Iberia - communism
-    color = rgb { 232 225 81 }
-    color_ui = rgb { 232 225 81 }
-}
-
-CHI_QING_fascism = { # Spain - Franco-Iberia - fascism
-    color = rgb { 232 225 81 }
-    color_ui = rgb { 232 225 81 }
-}
-
-CHI_QING_neutrality = { # Spain - Franco-Iberia - neutrality
-    color = rgb { 232 225 81 }
-    color_ui = rgb { 232 225 81 }
-}
-
-CHI_QING_democratic = { # Spain - Franco-Iberia - democratic
-    color = rgb { 26 72 143 }
-    color_ui = rgb { 26 72 143 }
-}
-
-CHI_QING_nationalist = { # Spain - Franco-Iberia - nationalist
-    color = rgb { 204 204 2 }
-    color_ui = rgb { 204 204 2 }
-}
+    # Democratic Group
+    CHI_QING_democratic = {
+        color = rgb { 26 72 143 }
+        color_ui = rgb { 26 72 143 }
+    }
+    # Emerging Group
+    CHI_QING_communism = {
+        color = rgb { 232 225 81 }
+        color_ui = rgb { 232 225 81 }
+    }
+    # Salafist Group
+    CHI_QING_fascism = {
+        color = rgb { 232 225 81 }
+        color_ui = rgb { 232 225 81 }
+    }
+    # Neutral Group
+    CHI_QING_neutrality = {
+        color = rgb { 232 225 81 }
+        color_ui = rgb { 232 225 81 }
+    }
+    # Fascist Group
+    CHI_QING_nationalist = {
+        color = rgb { 204 204 2 }
+        color_ui = rgb { 204 204 2 }
+    }
 
 # Visegrad
-
-HUN_VISEGRAD_communism = { # Spain - Franco-Iberia - communism
-    color = rgb { 17 69 126 }
-    color_ui = rgb { 17 69 126 }
-}
-
-HUN_VISEGRAD_fascism = { # Spain - Franco-Iberia - fascism
-    color = rgb { 17 69 126 }
-    color_ui = rgb { 17 69 126 }
-}
-
-HUN_VISEGRAD_democratic = { # Spain - Franco-Iberia - neutrality
-    color = rgb { 17 69 126 }
-    color_ui = rgb { 17 69 126 }
-}
-
-HUN_VISEGRAD_nationalist = { # Spain - Franco-Iberia - democratic
-    color = rgb { 17 69 126 }
-    color_ui = rgb { 17 69 126 }
-}
-
-HUN_VISEGRAD_neutrality = { # Great Qing - nationalist
-    color = rgb { 17 69 126 }
-    color_ui = rgb { 17 69 126 }
-}
+    # Democratic Group
+    HUN_VISEGRAD_democratic = {
+        color = rgb { 17 69 126 }
+        color_ui = rgb { 17 69 126 }
+    }
+    # Emerging Group
+    HUN_VISEGRAD_communism = {
+        color = rgb { 17 69 126 }
+        color_ui = rgb { 17 69 126 }
+    }
+    # Salafist Group
+    HUN_VISEGRAD_fascism = {
+        color = rgb { 17 69 126 }
+        color_ui = rgb { 17 69 126 }
+    }
+    # Neutral Group
+    HUN_VISEGRAD_neutrality = {
+        color = rgb { 17 69 126 }
+        color_ui = rgb { 17 69 126 }
+    }
+    # Fascist Group
+    HUN_VISEGRAD_nationalist = {
+        color = rgb { 17 69 126 }
+        color_ui = rgb { 17 69 126 }
+    }
 
 # British Empire
+    # Democratic Group
+    ENG_BRITISHEMPIRE_democratic = {
+        color = rgb { 209 42 23 }
+        color_ui = rgb { 209 42 23 }
+    }
+    # Emerging Group
+    ENG_BRITISHEMPIRE_communism = { 
+        color = rgb { 209 42 23 }
+        color_ui = rgb { 209 42 23 }
+    }
+    # Salafist Group
+    ENG_BRITISHEMPIRE_fascism = { 
+        color = rgb { 209 42 23 }
+        color_ui = rgb { 209 42 23 }
+    }
+    # Neutral Group
+    ENG_BRITISHEMPIRE_neutrality = {
+        color = rgb { 209 42 23 }
+        color_ui = rgb { 209 42 23 }
+    }
+    # Fascist Group
+    ENG_BRITISHEMPIRE_nationalist = {
+        color = rgb { 209 42 23 }
+        color_ui = rgb { 209 42 23 }
+    }
 
-ENG_BRITISHEMPIRE_communism = { 
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
+# Ecuador
+    # Democratic Group
+    ECU_UAA_democratic = {
+        color = rgb { 174 179 32 }
+        color_ui = rgb { 174 179 32 }
+    }
+    # Emerging Group
+    ECU_UAA_communism = { 
+        color = rgb { 174 179 32 }
+        color_ui = rgb { 174 179 32 }
+    }
+    # Salafist Group
+    ECU_UAA_fascism = { 
+        color = rgb { 174 179 32 }
+        color_ui = rgb { 174 179 32 }
+    }
+    # Neutral Group
+    ECU_UAA_neutrality = {
+        color = rgb { 174 179 32 }
+        color_ui = rgb { 174 179 32 }
+    }
+    # Fascist Group
+    ECU_UAA_nationalist = {
+        color = rgb { 174 179 32 }
+        color_ui = rgb { 174 179 32 }
+    }
 
-ENG_BRITISHEMPIRE_fascism = { 
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ENG_BRITISHEMPIRE_democratic = {
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ENG_BRITISHEMPIRE_nationalist = {
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ENG_BRITISHEMPIRE_neutrality = {
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-
-# uaa
-
-ECU_UAA_communism = { 
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ECU_UAA_fascism = { 
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ECU_UAA_democratic = {
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ECU_UAA_nationalist = {
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
-
-ECU_UAA_neutrality = {
-    color = rgb { 171 75 81 }
-    color_ui = rgb { 171 75 81 }
-}
+# Ethiopia
+    # Democratic Group
+    ETH_EM_democratic = {
+        color = rgb { 229 207 118 }
+        color_ui = rgb { 229 207 118 }
+    }
+    # Emerging Group
+    ETH_EM_communism = { 
+        color = rgb { 229 207 118 }
+        color_ui = rgb { 229 207 118 }
+    }
+    # Salafist Group
+    ETH_EM_fascism = { 
+        color = rgb { 229 207 118 }
+        color_ui = rgb { 229 207 118 }
+    }
+    # Neutral Group
+    ETH_EM_neutrality = {
+        color = rgb { 229 207 118 }
+        color_ui = rgb { 229 207 118 }
+    }
+    # Fascist Group
+    ETH_EM_nationalist = {
+        color = rgb { 27 121 154 }
+        color_ui = rgb { 27 121 154 }
+    }
+# Brazil
+    # Fascist Group
+    BRA_EM_nationalist = {
+        color = rgb { 10 125 18 }
+        color_ui = rgb { 10 125 18 }
+    }
+# Brazil TC
+    # Fascist Group
+    BRA_TC_nationalist = {
+        color = rgb { 10 100 10 }
+        color_ui = rgb { 10 100 10 }
+    }
+# East Africa Federation
+    # Democratic Group
+    COM_EAF_democratic = {
+        color = rgb { 42 94 173 }
+        color_ui = rgb { 42 94 173 }
+    }
+    # Emerging Group
+    COM_EAF_communism = { 
+        color = rgb { 194 60 60 }
+        color_ui = rgb { 194 60 60 }
+    }
+    # Salafist Group
+    COM_EAF_fascism = { 
+        color = rgb { 31 7 7 }
+        color_ui = rgb { 31 7 7 }
+    }
+    # Neutral Group
+    COM_EAF_neutrality = {
+        color = rgb { 229 207 118 }
+        color_ui = rgb { 229 207 118 }
+    }
+    # Fascist Group
+    COM_EAF_nationalist = {
+        color = rgb { 27 121 154 }
+        color_ui = rgb { 27 121 154 }
+    }
+# French Empire
+	 # Democratic Group
+    FRA_EMPIRE_democratic = {
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Emerging Group
+    FRA_EMPIRE_communism = { 
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Salafist Group
+    FRA_EMPIRE_fascism = { 
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Neutral Group
+    FRA_EMPIRE_neutrality = {
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+    # Fascist Group
+    FRA_EMPIRE_nationalist = {
+        color = rgb { 10 29 122 }
+        color_ui = rgb { 10 29 122 }
+    }
+# COPTIC EGYPT
+	# Neutral Group
+    EGY_coptic_egypt_neutrality = {
+        color = rgb { 0 74 127 }
+        color_ui = rgb { 0 74 127 }
+    }
+    
+    

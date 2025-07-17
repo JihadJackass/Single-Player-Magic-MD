@@ -1,4 +1,0 @@
-Category_resource = {
-	icon = resource_production
-	priority = 10
-}

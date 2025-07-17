@@ -411,7 +411,7 @@ scripted_gui = {
 					limit = { has_global_flag = sst_confirm_ship_deletion }
 					random_country = { 
 						limit = { has_country_flag = sst_ship_deletion_target }
-						sst_destroy_ship = yes
+						#sst_destroy_ship = yes
 						clr_country_flag = sst_ship_deletion_target
 					}
 				}

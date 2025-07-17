@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	### categories
+
+
+	spriteType = {
+		name = "GFX_decision_category_jihadijackass"
+		texturefile = "gfx/interface/decisions/decision_category_jihadijackass.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_coptic_crusader_1"
+		texturefile = "gfx/leaders/EGY/EGY_makarios_girgis.dds"
+	}	
+
+}

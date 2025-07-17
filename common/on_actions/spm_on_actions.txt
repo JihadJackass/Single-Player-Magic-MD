@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_to_array = {
+					array = global.COVID19_SAFE
+					value = THIS
+				}
+			}
+		}
+	}
+}

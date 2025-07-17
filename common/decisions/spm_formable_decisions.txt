@@ -1,0 +1,64 @@
+	# Coptic Egypt
+	spm_decisions_coptic_egypt = {
+
+		# Establish Coptic Jeruslem
+		spm_nameflag_coptic_jerusalem = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = EGY
+				AND = {
+					has_subject = ISR
+					PAL = { exists = no }
+					HEZ = { exists = no }
+					HAM = { exists = no }
+					LEB = { exists = no }
+					ISR = {
+						owns_state = 206
+						owns_state = 209
+						owns_state = 208
+						owns_state = 207
+						owns_state = 204
+						owns_state = 205
+						owns_state = 201
+						owns_state = 210
+						owns_state = 184
+						owns_state = 185
+						owns_state = 202
+						owns_state = 203
+						owns_state = 553
+					}
+				}
+			}
+			highlight_states = {
+				highlight_states_trigger = {
+					owns_state = 206
+					owns_state = 209
+					owns_state = 208
+					owns_state = 207
+					owns_state = 204
+					owns_state = 205
+					owns_state = 201
+					owns_state = 210
+					owns_state = 184
+					owns_state = 185
+					owns_state = 202
+					owns_state = 203
+					owns_state = 553
+				}
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+				tag = EGY
+				NOT = { 
+					has_cosmetic_tag = EGY_coptic_egypt_neutrality
+				}
+			}
+
+			complete_effect = {
+				ISR = { set_cosmetic_tag = EGY_coptic_jerusalem_neutrality }
+			}
+		}				
+	}
