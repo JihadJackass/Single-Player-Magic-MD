@@ -1,5 +1,35 @@
 leader_traits = {
 
+	# Empire japan
+
+	spm_jap_sinophobe = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}		
+	}
+
+	spm_jap_bushido = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}		
+	}
+	
+	spm_jap_westernblend = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}		
+	}
+	
+	spm_jap_tokusaku = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}		
+	}	
+
 	# Spain Caliphate
 
 	spm_pedophile = {
@@ -22,6 +52,28 @@ leader_traits = {
 			factor = 0
 		}
 	}	
+
+	spm_mex_drug_dealer = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	spm_mex_kingpin_of_legacy = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	spm_mex_narco_union = {
+		random = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 
 	# Egypt Coptic Brotherhood
 

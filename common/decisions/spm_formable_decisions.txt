@@ -1,6 +1,6 @@
 	# Formables/cosmetics sphere of influence (content for cosmetics)
 
-	spm_decisions_sphere_of_influence = {
+	spm_decisions_category_sphere_of_influence_major = {
 
 		# Establish Coptic Jeruslem
 		spm_nameflag_establish_coptic_jerusalem = {
@@ -8,7 +8,10 @@
 
 			available = {
 				is_ai = no
-				tag = EGY
+				OR = {
+					tag = EGY
+					has_cosmetic_tag = EGY_coptic_egypt_neutrality
+				}
 				AND = {
 					has_subject = ISR
 					PAL = { exists = no }
@@ -44,7 +47,775 @@
 			complete_effect = {
 				ISR = { set_cosmetic_tag = EGY_coptic_jerusalem_neutrality }
 			}
-		}				
-	}
+		}		
+		
+		# Establish Coptic Cyprus
+		spm_nameflag_establish_coptic_cyprus = {
+			icon = generic_research
 
-	
+			available = {
+				is_ai = no
+				OR = {
+					tag = EGY
+					has_cosmetic_tag = EGY_coptic_egypt_neutrality
+				}
+				OR = {
+					AND = {
+						has_subject = CYP
+						NCY = { exists = no }
+						CYP = {
+								owns_state = 812
+								owns_state = 145
+								owns_state = 146
+							}	
+					}
+					AND = {
+						has_subject = NCY
+						CYP = { exists = no }
+						NCY = {
+							owns_state = 812
+							owns_state = 145
+							owns_state = 146
+						}	
+					}											
+				}
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+				tag = EGY
+				NOT = { 
+					has_cosmetic_tag = EGY_coptic_egypt_neutrality
+				}
+			}
+
+			complete_effect = {
+				ISR = { set_cosmetic_tag = EGY_coptic_jerusalem_neutrality }
+			}
+		}	
+
+		# Establish Coptic Turkey
+
+		# Establish Coptic Libya
+
+		# Establish Coptic Sudan
+
+		spm_nameflag_declare_mexican_narco_state = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = MEX
+					has_cosmetic_tag = MEX_narco_state_neutral_dictator
+				}
+			}
+
+			visible = {
+				tag = MEX
+				NOT = { 
+					has_cosmetic_tag = MEX_narco_state_neutral_dictator
+				}
+			}
+
+			complete_effect = {
+				create_country_leader = {
+					name = "Joaquín 'El Chapo' Guzmán"
+					picture = "gfx/leaders/MEX/spm_mexican_cartel_guzman.dds"
+					expire = "2100.1.1"
+					ideology = Nat_Populism
+					traits = {
+						spm_mex_drug_dealer
+						spm_mex_kingpin_of_legacy
+					}
+				}
+				add_country_leader_role = {
+					character = spm_jap_emperor_akhito
+					promote_leader = yes
+					country_leader = {
+						ideology = Nat_Populism
+						expire = "2100.1.1.1"
+						traits = {
+							spm_mex_drug_dealer
+							spm_mex_kingpin_of_legacy
+						}
+					}
+				}
+				create_corps_commander = {
+					name = "Joaquín 'El Chapo' Guzmán"
+					picture = "gfx/leaders/MEX/spm_mexican_cartel_guzman.dds"
+					traits = { 
+						spm_mex_drug_dealer
+						spm_mex_kingpin_of_legacy
+					}
+					skill = 5
+					attack_skill = 7
+					defense_skill = 2
+					planning_skill = 8
+					logistics_skill = 6
+				}
+				MEX = { 
+					set_cosmetic_tag = MEX_narco_state_neutral_dictator
+					set_party_name = {
+						ideology = nationalist
+						long_name = spm_nat_narcomexic_long
+						name = spm_nat_narcomexic
+					}
+				}
+			}
+		}
+		
+		spm_nameflag_declare_mexican_narco_state_texas = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = MEX
+					NOT = { 
+						TEX = { has_cosmetic_tag = MEX_narco_state_neutral_dictator_texas }
+					}
+				}
+			}
+
+			visible = {
+				tag = MEX
+				NOT = { 
+					TEX = { has_cosmetic_tag = MEX_narco_state_neutral_dictator_texas }
+				}
+			}
+
+			complete_effect = {
+				TEX = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Congressional Cartel"
+						picture = "gfx/leaders/MEX/spm_mexican_cartel_texas.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+							spm_mex_narco_union
+						}
+					}
+					add_country_leader_role = {
+						character = spm_jap_emperor_akhito
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+								spm_mex_narco_union
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Congressional Cartel"
+						picture = "gfx/leaders/MEX/spm_mexican_cartel_texas.dds"
+						traits = { 
+							spm_mex_narco_union
+						}
+						skill = 7
+						attack_skill = 8
+						defense_skill = 7
+						planning_skill = 8
+						logistics_skill = 7
+					}
+					TEX = { 
+						set_cosmetic_tag = MEX_narco_state_neutral_dictator_texas
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_narcomexic_TEX_long
+							name = spm_nat_narcomexic_TEX
+						}
+					}
+				}
+			}
+		}	
+
+		# Declare Imperial Japan
+		spm_nameflag_declare_imperial_japan = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					has_cosmetic_tag = JAP_emperor_japan_nationalist
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					has_cosmetic_tag = JAP_emperor_japan_nationalist
+				}
+			}
+
+			complete_effect = {
+				create_country_leader = {
+					name = "Emperor Okurahito 'The Divine Wind Of The Chrysanthemum Throne'"
+					picture = "gfx/leaders/JAP/spm_jap_emperor_akhito.dds"
+					expire = "2100.1.1"
+					ideology = monarchist
+					traits = {
+						spm_jap_sinophobe
+						spm_jap_bushido
+						spm_jap_westernblend
+						spm_jap_tokusaku
+					}
+				}
+				add_country_leader_role = {
+					character = spm_jap_emperor_akhito
+					promote_leader = yes
+					country_leader = {
+						ideology = monarchist
+						expire = "2100.1.1.1"
+						traits = {
+							spm_jap_sinophobe
+							spm_jap_bushido
+							spm_jap_westernblend
+							spm_jap_tokusaku
+						}
+					}
+				}
+				create_corps_commander = {
+					name = "Emperor Okurahito 'The Divine Wind Of The Chrysanthemum Throne'"
+					picture = "gfx/leaders/JAP/spm_jap_emperor_akhito.dds"
+					traits = { 
+						spm_jap_sinophobe
+						spm_jap_bushido
+						spm_jap_westernblend
+						spm_jap_tokusaku
+					}
+					skill = 7
+					attack_skill = 15
+					defense_skill = 12
+					planning_skill = 4
+					logistics_skill = 5
+				}
+				JAP = { 
+					set_cosmetic_tag = JAP_emperor_japan_nationalist
+					set_party_name = {
+						ideology = nationalist
+						long_name = spm_nat_empirejap_long
+						name = spm_nat_empirejap
+					}
+				}
+			}
+		}
+		
+		# tibet
+		spm_nameflag_declare_tibet_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						TIB = { has_cosmetic_tag = SPM_JAP_protectorate_tibet }
+					}
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					TIB = { has_cosmetic_tag = SPM_JAP_protectorate_tibet }
+				}
+			}
+
+			complete_effect = {
+				TIB = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Tenzin Dorje 'Lama Of The Snow Lion'"
+						picture = "gfx/leaders/JAP/spm_jap_tibet.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_tibet
+					add_country_leader_role = {
+						character = spm_jap_tibet
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Tenzin Dorje 'Lama Of The Snow Lion'"
+						picture = "gfx/leaders/MEX/spm_jap_tibet.dds"
+						traits = { 
+							spm_mex_narco_union
+						}
+						skill = 7
+						attack_skill = 8
+						defense_skill = 7
+						planning_skill = 8
+						logistics_skill = 7
+					}
+					TIB = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_tibet
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+			}
+		}
+
+		# cambodia
+		spm_nameflag_declare_cambodia_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						CBD = { has_cosmetic_tag = SPM_JAP_protectorate_cambodia }
+					}
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					CBD = { has_cosmetic_tag = SPM_JAP_protectorate_cambodia }
+				}
+			}
+
+			complete_effect = {
+				CBD = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Emperor Norodom 'Vichearavong of the Empire of Shinra Kōdōkoku'"
+						picture = "gfx/leaders/JAP/spm_jap_cambodia.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_cambodia
+					add_country_leader_role = {
+						character = spm_jap_cambodia
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Emperor Norodom 'Vichearavong of the Empire of Shinra Kōdōkoku'"
+						picture = "gfx/leaders/JAP/spm_jap_cambodia.dds"
+						traits = {
+						}
+						skill = 5
+						attack_skill = 4
+						defense_skill = 9
+						planning_skill = 6
+						logistics_skill = 6
+					}
+					CBD = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_cambodia
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+			}
+		}	
+
+		# china
+		spm_nameflag_declare_china_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						TEX = { has_cosmetic_tag = SPM_JAP_protectorate_china }
+					}
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					CHI = { has_cosmetic_tag = SPM_JAP_protectorate_china }
+				}
+			}
+
+			complete_effect = {
+				CHI = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "General Zhou 'The Liquidizer Of Beijing'"
+						picture = "gfx/leaders/JAP/spm_jap_china.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_china
+					add_country_leader_role = {
+						character = spm_jap_china
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "General Zhou 'The Liquidizer Of Beijing'"
+						picture = "gfx/leaders/JAP/spm_jap_china.dds"
+						traits = { 
+						}
+						skill = 5
+						attack_skill = 5
+						defense_skill = 5
+						planning_skill = 9
+						logistics_skill = 9
+					}
+					CHI = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_china
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+			}
+		}
+
+		# mongolia
+		spm_nameflag_declare_monglia_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						MON = { has_cosmetic_tag = SPM_JAP_protectorate_mongolia }
+					}
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					MON = { has_cosmetic_tag = SPM_JAP_protectorate_mongolia }
+				}
+			}
+
+			complete_effect = {
+				MON = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Khan Taslagch Ungern-Sternberg"
+						picture = "gfx/leaders/JAP/spm_jap_mongolia.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_mongolia
+					add_country_leader_role = {
+						character = spm_jap_mongolia
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Khan Taslagch Ungern-Sternberg"
+						picture = "gfx/leaders/JAP/spm_jap_mongolia.dds"
+						traits = {
+						}
+						skill = 4
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 6
+						logistics_skill = 1
+					}
+					MON = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_mongolia
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+			}
+		}
+
+		# majapahit
+		spm_nameflag_declare_majapahit_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						IND = { has_cosmetic_tag = SPM_JAP_protectorate_majapahit }
+					}
+				}
+			}
+
+			visible = {
+				has_country_flag = spm_enabled
+				tag = JAP
+				NOT = { 
+					IND = { has_cosmetic_tag = SPM_JAP_protectorate_majapahit }
+				}
+			}
+
+			complete_effect = {
+				IND = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Sri Vira Samudrawati 'Spice Queen of the Majapahit Kōdōkoku'"
+						picture = "gfx/leaders/JAP/spm_jap_indonesia.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_indonesia
+					add_country_leader_role = {
+						character = spm_jap_indonesia
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Sri Vira Samudrawati 'Spice Queen of the Majapahit Kōdōkoku'"
+						picture = "gfx/leaders/JAP/spm_jap_indonesia.dds"
+						traits = { 
+						}
+						skill = 7
+						attack_skill = 8
+						defense_skill = 7
+						planning_skill = 8
+						logistics_skill = 7
+					}
+					IND = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_majapahit
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+			}
+		}
+
+		# laos
+		spm_nameflag_declare_laos_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						LAO = { has_cosmetic_tag = SPM_JAP_protectorate_laos }
+					}
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					LAO = { has_cosmetic_tag = SPM_JAP_protectorate_laos }
+				}
+			}
+
+			complete_effect = {
+				LAO = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Chao Fa Vang Ntxawg 'High Elder of the Ancestral Spirits'"
+						picture = "gfx/leaders/JAP/spm_jap_laos.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_laos
+					add_country_leader_role = {
+						character = spm_jap_laos
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Chao Fa Vang Ntxawg 'High Elder of the Ancestral Spirits'"
+						picture = "gfx/leaders/MEX/spm_jap_laos.dds"
+						traits = { 
+						}
+						skill = 3
+						attack_skill = 5
+						defense_skill = 7
+						planning_skill = 8
+						logistics_skill = 2
+					}
+					LAO = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_laos
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+			}
+		}
+
+		# hawaii
+		spm_nameflag_declare_hawaii_protectorate = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = JAP
+					NOT = { 
+						HWI = { has_cosmetic_tag = SPM_JAP_protectorate_hawaii }
+					}
+				}
+			}
+
+			visible = {
+				tag = JAP
+				NOT = { 
+					HWI = { has_cosmetic_tag = SPM_JAP_protectorate_hawaii }
+				}
+			}
+
+			complete_effect = {
+				HWI = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Grand Admiral Robert McKawth 'Supreme Commander of the Pacific Kōdō Dai Kantai'"
+						picture = "gfx/leaders/JAP/spm_jap_hawaii_admiral.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					recruit_character = spm_jap_hawaii_admiral
+					add_country_leader_role = {
+						character = spm_jap_hawaii_admiral
+						promote_leader = yes
+						country_leader = {
+							ideology = Nat_Populism
+							expire = "2100.1.1.1"
+							traits = {
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Grand Admiral Robert McKawth 'Supreme Commander of the Pacific Kōdō Dai Kantai'"
+						picture = "gfx/leaders/JAP/spm_jap_hawaii_admiral.dds"
+						traits = { 
+						}
+						skill = 6
+						attack_skill = 6
+						defense_skill = 4
+						planning_skill = 9
+						logistics_skill = 9
+					}
+					HWI = { 
+						set_cosmetic_tag = SPM_JAP_protectorate_hawaii
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_japan_subject_long
+							name = spm_nat_japan_subject
+						}
+					}
+				}
+				every_country = { 
+					limit = {
+						NOT = { is_ai = yes }
+					}
+					country_event = spm_news.8 
+				}
+				JAP = {
+					create_navy_leader = {
+						name = "Grand Admiral Robert McKawth 'Supreme Commander of the Pacific Kōdō Dai Kantai'"
+						gfx = "GFX_spm_jap_hawaii_admiral"
+						traits = { superior_tactician }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 5
+						maneuvering_skill = 6
+						coordination_skill = 6
+					}
+				}
+			}
+		}
+		
+	}

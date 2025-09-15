@@ -1,63 +1,202 @@
 ﻿l_english:
 
-# Country Leaders
+# LEGEND
+#
+# - 1. Political Party Names
+#
+# - 2. Country Leader Names
+#
+# - 3. Country Leader Traits
+#
+# - 4. Decision/Name/Flag Management (Formable Nations)
+#
+# - 5. Decision/Name/Flag Management (Sub-Formable Nations)
+#
+# - 6. Formable Nation Localization
+#
+# - 7. Sub Formable Nation Localization
+#
+# - 8. Excess Localization
+#
+# - 9. Event localization
+#
+
+# 1. Political Party Names
+
+ spm_nat_empirejap_long: "Shōri Dynasty Of The Chrysanthemum Throne"
+ spm_nat_empirejap: "Shōri Dynasty"
+
+ spm_nat_narcomexic_long: "Jalisco New Generation Cartel"
+ spm_nat_narcomexic: "CJNG"
+
+ spm_nat_narcomexic_TEX_long: "CJNG - Congressional Texas"
+ spm_nat_narcomexic_TEX: "CJNG-Texas"
+
+ spm_nat_japan_subject_long: "Hands Of The Chrysanthemum Throne"
+ spm_nat_japan_subject: "Hands Of The Chrysanthemum Throne"
+
+# 2. Country Leader Names 
+
+ # PRIMARY FORMABLE NATIONS
 
   # Egypt
 
-    # Prophet Muhammad II
+  # Prophet Muhammad II
 
-      spm_prophet: "Prophet of Islam"
-      spm_prophet_desc: "Prophet Muhammad II of Umayyad-Cordoba has declared his vision of the right to rule given by Allah himself inshallah"
-      spm_experienced: "Experienced"
-      spm_pedophile: "Pedophile"
-      spm_pedophile_desc: "As Prophet Muhammad II is legally allowed to take a child as his wife, he is clearly and certainly a Pro-Pedophile supporter."
+    spm_prophet: "Prophet of Islam"
+    spm_prophet_desc: "Prophet Muhammad II of Umayyad-Cordoba has declared his vision of the right to rule given by Allah himself inshallah"
+    spm_experienced: "Experienced"
+    spm_pedophile: "Pedophile"
+    spm_pedophile_desc: "As Prophet Muhammad II is legally allowed to take a child as his wife, he is clearly and certainly a Pro-Pedophile supporter."
 
-# Country Leader Traits
+  # Japan
+
+   # Emperor Akhito
+    spm_jap_emperor_akhito: "Emperor Okurahito 'The Divine Wind Of The Chrysanthemum Throne'"
+
+ # SUB-FORMABLE NATIONS
+
+# 3. Country Leader Traits
+
+  # Japan
+      spm_mex_drug_dealer: "Narco Drug Dealer"
+      spm_mex_kingpin_of_legacy: "Kingpin of Legacy\n"
+
+      spm_jap_sinophobe: "\nGrandson to Emperor Akihito, Emperor Okurahito was a hidden member of the imperial family. At a young age he was sent away to join the Tokushu-sakusengun and was effectively trained as modern Samurai by the Colonel. Upon becoming old enough to enter combat he toured thru various African and Middle Eastern conflicts. As United States collapsed and NATO abandoned Asia the New Wind Party came to power declaring they would re-install the monarch. Considered the only imperial willing to fight for Japan thru more than words the NWP brought him home to Japan to  supplant his pacifists father when Akihito stepped down due to age. Revere the Emperor, Expel the Barbarians!\n\nSinophobe\n§WAfter years of fighting Chinese mercenaries and politicians alike his view of Mainland China has soured..§!\n"
+      spm_jap_sinophobe_desc: ""
+
+      spm_jap_bushido: "Bushido Believer\n§WA practicing Shinto trained as a child in the ways of a Modern Samurai, Okurahito has reference for the old ways.§!\n"
+      spm_jap_bushido_desc: ""
+
+      spm_jap_westernblend: "Western Blended\n§WFighting alongside US and NATO forces Okurahito has observed and adapted some of the greatest western thought and practices incorporating it into his traditional beliefs.§!\n"
+      spm_jap_westernblend_desc: ""
+
+      spm_jap_tokusaku: "Tokushu-Sakusengun\n§WSent to Japanese special forces young and starting off in logistics later joint air coordination the emperor rose to the rank of Lieutenant Colonel. During his time he served in NATO operations in Afghanistan, Sudan, Libya, Moldova Iraq and Liberia.§!\n"
+      spm_jap_tokusaku_desc: ""
 
   # Egypt
-
     # Prophet Muhammad II
 
       spm_coptic_papal_authority: "Supreme Papal Authority"
 
-# Name/Flag Manangement (Actual Formable Decisions)
+# 4. Decision/Name/Flag Management (Formable Nations)
 
-      spm_decisions_nameflag: "Name & Flag Management"
+ spm_decisions_nameflag: "Name & Flag Management"
 
-      spm_nameflag_franco_iberian_union: "Franco-Iberian Union"
+ spm_decisions_category_sphere_of_influence_major: "[ROOT.GetFlag] [ROOT.GetAdjective] Sphere of Influence"
+ #spm_decisions_category_sphere_of_influence_major_desc: ""
 
-      spm_nameflag_umayyad_caliphate: "Umayyad Caliphate"
+ spm_nameflag_franco_iberian_union: "Franco-Iberian Union"
 
-      spm_nameflag_ussr: "The Soviet Union"
+ spm_nameflag_umayyad_caliphate: "Umayyad Caliphate"
 
-      spm_nameflag_rome: "The Roman Empire"
+ spm_nameflag_ussr: "The Soviet Union"
 
-      spm_nameflag_qing: "The Qing Dynasty"
+ spm_nameflag_rome: "The Roman Empire"
 
-      spm_nameflag_ecuador: "UAA Unification"
+ spm_nameflag_qing: "The Qing Dynasty"
 
-      spm_nameflag_britishempire: "Proclaim Greater British Empire"
+ spm_nameflag_ecuador: "UAA Unification"
 
-      spm_nameflag_HUN_VISEGRAD: "Unification of Visegrad"
+ spm_nameflag_britishempire: "Proclaim Greater British Empire"
 
-      spm_nameflag_brazil: "Declare Foundation of Imperial Brazil"
+ spm_nameflag_HUN_VISEGRAD: "Unification of Visegrad"
 
-      spm_nameflag_ethiopia: "Declare Greater Ethiopia"
+ spm_nameflag_brazil: "Declare Foundation of Imperial Brazil"
 
-      spm_nameflag_brazil_TC: "Establish Brazil-Africa Trade Company"
+ spm_nameflag_ethiopia: "Declare Greater Ethiopia"
 
-      spm_nameflag_COM_EAF: "Establish East African Federation"
+ spm_nameflag_brazil_TC: "Establish Brazil-Africa Trade Company"
 
-      spm_nameflag_FRA_EMPIRE: "Proclaim French Empire"
+ spm_nameflag_COM_EAF: "Establish East African Federation"
 
-      spm_nameflag_coptic_egypt: "Coptic Egypt"
+ spm_nameflag_FRA_EMPIRE: "Proclaim French Empire"
 
-      spm_nameflag_coptic_jerusalem: "Establish Coptic Jerusalem"
+ spm_nameflag_coptic_egypt: "Coptic Egypt"
 
-# Cosmetic Country & Formable Country Localization
+ spm_nameflag_coptic_jerusalem: "Establish Coptic Jerusalem"
 
-  spm_reset_cosmetic_tag: "Clear Cosmetic TAG"
-  spm_reset_subject_cosmetic_tag: "Clear All Subject Cosmetic TAGs"
+# 5. Decision/Name/Flag Management (Sub-Formable Nations)
+
+  # Japanese Protectorates
+
+   # Tibet - TIB
+
+    SPM_JAP_protectorate_tibet: "Tōban Kōdōkoku"
+    SPM_JAP_protectorate_tibet_ADJ: "Tōban Kōdō"
+    SPM_JAP_protectorate_tibet_DEF: "The Imperial State of Tōban Kōdōkoku"
+
+   # cambodia - CBD
+
+    SPM_JAP_protectorate_cambodia: "Shinra Kōdōkoku"
+    SPM_JAP_protectorate_cambodia_ADJ: "Byō Kōdō"
+    SPM_JAP_protectorate_cambodia_DEF: "The Imperial State of Shinra Kōdōkoku"
+
+   # china
+
+    SPM_JAP_protectorate_china: "Kakuka Kōdōkoku"
+    SPM_JAP_protectorate_china_ADJ: "Chūka Kōdō"
+    SPM_JAP_protectorate_china_DEF: "The Imperial State of Kakuka Kōdōkoku"
+
+   # mongolia
+
+    SPM_JAP_protectorate_mongolia: "Daikan Kōdōkoku"
+    SPM_JAP_protectorate_mongolia_ADJ: "Mōko Kōdō"
+    SPM_JAP_protectorate_mongolia_DEF: "The Imperial State of Daikan Kōdōkoku"
+
+   # majapahit
+
+    SPM_JAP_protectorate_majapahit: "Majapahit Kōdōkoku"
+    SPM_JAP_protectorate_majapahit_ADJ: "Majapahit Kōdō"
+    SPM_JAP_protectorate_majapahit_DEF: "The Imperial State of Majapahit Kōdōkoku"
+
+   # laos
+
+    SPM_JAP_protectorate_laos: "Byō Kōdōkoku"
+    SPM_JAP_protectorate_laos_ADJ: "Byō Kōdō"
+    SPM_JAP_protectorate_laos_DEF: "The Imperial State of Byō Kōdōkoku"
+
+   # hawaii
+
+    SPM_JAP_protectorate_hawaii: "Hasu-Nanyō Kōdōkoku"
+    SPM_JAP_protectorate_hawaii_ADJ: "Nanyō Kōdō"
+    SPM_JAP_protectorate_hawaii_DEF: "The Imperial State of Hasu-Nanyō Kōdōkoku"
+
+ spm_nameflag_declare_tibet_protectorate: "@TIB Declare Tibetan Protectorate"
+ spm_nameflag_declare_cambodia_protectorate: "@CBD Declare Cambodian Protectorate"
+ spm_nameflag_declare_china_protectorate: "@CHI Declare Protectorate of China"
+ spm_nameflag_declare_monglia_protectorate: "@MON Re-establish Mongolian Khanate"
+ spm_nameflag_declare_majapahit_protectorate: "@IND Declare Protectorate of Indonesians & Establish Majapahit"
+ spm_nameflag_declare_laos_protectorate: "@LAO Grant Laos Protectorate Status"
+ spm_nameflag_declare_hawaii_protectorate: "@HWI Declare Hawaii Protectorate"
+
+ spm_decisions_cat_coptic_egypt: "[ROOT.GetFlag] [ROOT.GetAdjective] Sphere of Influence"
+
+ spm_decisions_cat_imperial_japan: "[ROOT.GetFlag] [ROOT.GetAdjective] Sphere of Influence"
+
+ spm_nameflag_declare_imperial_japan: "Declare Imperial Japan"
+
+ spm_nameflag_declare_mexican_narco_state_texas: "Narco Texas"
+
+# 6. Formable Nation Localization
+
+ # Narco Mexico - CJNG
+
+ MEX_narco_state_neutral_dictator: "Jalisco Cartel"
+ MEX_narco_state_neutral_dictator_ADJ: "CJNG"
+ MEX_narco_state_neutral_dictator_DEF: "The Jalisco New Generation Cartel"
+
+ spm_decisions_cat_narco_mexico: "Narco Mexico"
+
+ spm_nameflag_declare_mexican_narco_state: "Narco State"
+
+ spm_mex_narco_union: "Narco Congressional Union"
+
+ # Empire of Japan - Shinsei Shōri Shogunate
+
+  JAP_emperor_japan_nationalist: "Shinsei Shōri Shogunate"
+  JAP_emperor_japan_nationalist_ADJ: "Shōri"
+  JAP_emperor_japan_nationalist_DEF: "Shinsei Shinkoku Shōri Bakufu Of The Chrysanthemum Throne"
 
   # The Franco-Iberian Union
       SPR_FRANCO_IBERIA_communism: "Unión Socialista Franco-Ibérica del Pueblo"
@@ -67,10 +206,6 @@
       SPR_FRANCO_IBERIA_fascism: "Franco-Iberian Socialist Union"
       SPR_FRANCO_IBERIA_fascism_ADJ: "Franco-Iberian"
       SPR_FRANCO_IBERIA_fascism_DEF: "The Franco-Iberian Socialist Union"
-
-      SPR_FRANCO_IBERIA_democratic: "Franco-Iberian Union"
-      SPR_FRANCO_IBERIA_democratic_ADJ: "Franco-Iberian"
-      SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
 
       SPR_FRANCO_IBERIA_nationalist: "Franco-Iberian Union"
       SPR_FRANCO_IBERIA_nationalist_ADJ: "Franco-Iberian"
@@ -85,10 +220,6 @@
       SPR_FRANCO_IBERIA_democratic_DEF: "The Franco-Iberian Union"
 
   # Ummayad Caliphate
-
-      SPR_FRANCO_IBERIA_communism: "Unión Socialista Franco-Ibérica del Pueblo"
-      SPR_FRANCO_IBERIA_communism_ADJ: "Franco-Ibérica"
-      SPR_FRANCO_IBERIA_communism_DEF: "La Unión Socialista Franco-Ibérica del Pueblo"
 
       SPR_UMMAYAD_communism: "People's Republic of Hispania"
       SPR_UMMAYAD_communism_ADJ: "Hispanian"
@@ -325,8 +456,65 @@
       BRA_TC_nationalist_ADJ: "Companhia Imperial Africana de Comercio do Brasil"
       BRA_TC_nationalist_DEF: "Brasil-Africano"
 
-# Custom Cosmetic Spheres of Influence Categories [NEW COSMETIC CATS HERE]
+# 7. Sub Formable Nation Localization
 
-spm_decisions_cat_coptic_egypt: "[ROOT.GetFlag] [ROOT.GetAdjective] Sphere of Influence"
+ MEX_narco_state_neutral_dictator_texas: "Congressional Texas Cartel"
+ MEX_narco_state_neutral_dictator_texas_ADJ: "CJNG-Texas"
+ MEX_narco_state_neutral_dictator_texas_DEF: "The Congressional Texan Cartel of CJNG"
 
-# end of file
+# 8. Excess Localizaiton
+
+ spm_reset_cosmetic_tag: "Clear Cosmetic TAG"
+ spm_reset_subject_cosmetic_tag: "Clear All Subject Cosmetic TAGs"
+
+# 9. Event localization
+
+ # Narco texas established
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # Tibet
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # Cambodia
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # China
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # Mongolia
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # Majapahit
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # Laos
+
+ spm_news.1.t: ""
+ spm_news.1.d: ""
+ spm_news.1.a: ""
+
+ # Hawaii
+
+ spm_news.8.t: "Grand Admiral Robert McKawth Takes Control of the Japanese Naval Mission in the Pacific Shield"
+ spm_news.8.d: "After weeks of brutal naval skirmishes and clandestine negotiations, the islands of Hawaii have finally fallen. Yet, rather than a clean victory for the Shinsei Shōri Shogunate, a shadow loomed from the other side of the Pacific. The Cártel de Jalisco Nueva Generación (CJNG), seeking to secure trafficking routes and economic influence in the Pacific, openly challenged Japan’s hold.\n\nTensions escalated to the brink of conflict, but neither side wished to drain resources in an open war. A pact was forged: the Shogunate would retain formal claims to Hawaii as a crown possession of the new order, while the CJNG secured lucrative economic rights and political channels in return. Though an uneasy compromise, the deal ensures stability—at least for now.\n\nStill, many within the Shogunate cry betrayal, while others applaud the pragmatic diplomacy that preserves strength for the greater conquest of Asia. The court must decide how this “Pacific Compromise” will be remembered."
+ spm_news.8.a: "The Japanese are once again in Hawaii."
+
+#END

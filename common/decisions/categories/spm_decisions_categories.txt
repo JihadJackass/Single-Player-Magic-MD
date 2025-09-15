@@ -164,6 +164,7 @@
 		icon = decision_category_jihadijackass
 		visible_when_empty = yes
 		visible = {
+			always = no
 			is_ai = no
 			has_country_flag = spm_enabled
 		}
@@ -197,29 +198,6 @@
 	}
 
 ########################
-# Population Decisions #
-########################
-
-	PI_decision_category = {
-		icon = resource_production
-		priority = 10
-	}
-
-#######################
-# Resources Decisions #
-#######################
-
-	Category_resource = {
-		icon = resource_production
-		priority = 10
-	}
-
-	Category_resource_expandet_1 = {
-		icon = resource_production
-		priority = 10
-	}
-
-########################
 # Investment Decisions #
 ########################
 
@@ -231,19 +209,7 @@
 		visible = {
 			always = yes
 		}
-		priority = 110
-		visible_when_empty = yes	
-	}
-
-	army_trade ={
-		icon =	generic_arms_trade
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		priority = 60
+		priority = 503
 		visible_when_empty = yes	
 	}
 
@@ -255,16 +221,20 @@
 		visible = {
 			always = yes
 		}
-		priority = 80
+		priority = 502
 		visible_when_empty = yes	
 	}
 
-##################################
-# Economic Investments Decisions #
-##################################
-
-	Build_industry_building = {
-		icon = GFX_decision_generic_construction
-		priority = 10
+	army_trade ={
+		icon =	generic_arms_trade
+		allowed = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		priority = 501
+		visible_when_empty = yes	
 	}
 
+#

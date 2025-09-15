@@ -106,26 +106,83 @@ spm_decisions_categories = {
 			}
 		}
 
+
 		# Disable Political Lobbying (For if you intend to keep your party)
 		spm_disable_political_lobbying = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
-				has_country_flag = spm_enabled
 			}
 			visible = {
-				has_country_flag = spm_enabled
-				NOT = { has_country_flag = spm_political_lobbying_disabled }
+				has_country_flag = spm_settings_menu_enabled
+				has_country_flag = spm_political_lobbying_enabled
 			}
 
 			complete_effect = {
 				clr_country_flag = spm_political_lobbying_enabled
 				set_country_flag = spm_political_lobbying_disabled
 			}
-		}
-
+		}		
+		# Enable Political Lobbying
 		spm_enable_political_lobbying = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				has_country_flag = spm_settings_menu_enabled
+				has_country_flag = spm_political_lobbying_disabled
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_political_lobbying_disabled
+				set_country_flag = spm_political_lobbying_enabled
+			}
+		}		
+
+		# Disable Political Borrowing
+		spm_disable_political_borrowing = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				always = no
+				has_country_flag = spm_enabled
+				has_country_flag = spm_settings_menu_enabled
+				NOT = { has_country_flag = spm_political_borrowing_disabled }
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_political_borrowing_enabled
+				set_country_flag = spm_political_borrowing_disabled
+			}
+		}		
+		# Enable Political Borrowing
+		spm_enable_political_borrowing = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+			}
+			visible = {
+				always = no
+				has_country_flag = spm_enabled
+				has_country_flag = spm_settings_menu_enabled
+				NOT = { has_country_flag = spm_political_borrowingg_enabled }
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_political_borrowing_disabled
+				set_country_flag = spm_political_borrowing_enabled
+			}
+		}		
+
+		# Disable Political Selling
+		spm_disable_political_selling = {
 			icon = generic_research
 
 			available = {
@@ -133,25 +190,37 @@ spm_decisions_categories = {
 				has_country_flag = spm_enabled
 			}
 			visible = {
+				always = no
 				has_country_flag = spm_enabled
-				NOT = { has_country_flag = spm_political_lobbying_enabled }
+				has_country_flag = spm_settings_menu_enabled
+				NOT = { has_country_flag = spm_political_selling_disabled }
 			}
 
 			complete_effect = {
-				clr_country_flag = spm_political_lobbying_disabled
-				set_country_flag = spm_political_lobbying_enabled
+				clr_country_flag = spm_political_selling_enabled
+				set_country_flag = spm_political_selling_disabled
 			}
-		}
-
-		# Enable Political Lobbying
-
-		# Disable Political Borrowing
-
-		# Enable Political Borrowing
-
-		# Disable Political Selling
-
+		}		
 		# Enable Political Selling
+		spm_enable_political_selling = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				has_country_flag = spm_enabled
+			}
+			visible = {
+				always = no
+				has_country_flag = spm_enabled
+				has_country_flag = spm_settings_menu_enabled
+				NOT = { has_country_flag = spm_political_selling_enabled }
+			}
+
+			complete_effect = {
+				clr_country_flag = spm_political_selling_disabled
+				set_country_flag = spm_political_selling_enabled
+			}
+		}		
 
 		# Clear Cosmetic TAG
 		spm_reset_cosmetic_tag = {

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_spm_jap_hawaii_admiral"
+		texturefile = "gfx/leaders/JAP/spm_jap_hawaii_admiral.dds"
+	}
+
+}	

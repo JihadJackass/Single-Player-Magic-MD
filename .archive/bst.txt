@@ -3416,29 +3416,6 @@ scripted_gui = {
 					has_global_flag = bst_suspend_limits
 				}
 			}
-			bst_add_buildings_8_click_enabled = {
-				OR = {
-					AND = {
-						all_state = {
-							NOT = { has_state_flag = bst_marked }
-						}
-						free_building_slots = {
-							building = synthetic_refinery
-							size > 0
-							include_locked = yes
-						}
-					}
-					any_state = {
-						has_state_flag = bst_marked
-						free_building_slots = {
-							building = synthetic_refinery
-							size > 0
-							include_locked = yes
-						}
-					}
-					has_global_flag = bst_suspend_limits
-				}
-			}
 			bst_max_button_8_click_enabled = {
 				OR = {
 					AND = {

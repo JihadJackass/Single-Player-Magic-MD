@@ -1,0 +1,126 @@
+characters = {
+	# Japan - Emperor
+	spm_jap_emperor_akhito = {
+		name = "Emperor Okurahito 'The Divine Wind Of The Chrysanthemum Throne'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_emperor_akhito.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+				spm_jap_sinophobe
+				spm_jap_bushido
+				spm_jap_westernblend
+				spm_jap_tokusaku
+			}
+		}
+	}
+	# Hawaii
+	spm_jap_hawaii_admiral = {
+		name = "Grand Admiral Robert McKawth Supreme 'Commander of the Pacific Kōdō Dai Kantai'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_hawaii_admiral.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}
+	# Tibet
+	spm_jap_tibet = {
+		name = "Tenzin Dorje 'Lama Of The Snow Lion'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_tibet.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}
+	# Cambodia
+	spm_jap_cambodia = {
+		name = "Emperor Norodom 'Vichearavong of the Empire of Shinra Kōdōkoku'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_cambodia.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}
+	# China
+	spm_jap_china = {
+		name = "General Zhou 'The Liquidizer Of Beijing'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_china.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}
+	# Mongolia
+	spm_jap_mongolia = {
+		name = "Khan Taslagch Ungern-Sternberg"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_mongolia.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}
+	# Majaphit
+	spm_jap_indonesia = {
+		name = "Sri Vira Samudrawati 'Spice Queen of the Majapahit Kōdōkoku'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_indonesia.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}	
+	# laos
+	spm_jap_laos = {
+		name = "Chao Fa Vang Ntxawg 'High Elder of the Ancestral Spirits'"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/spm_jap_laos.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = monarchist
+			traits = {  
+			}
+		}
+	}		
+}

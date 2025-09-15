@@ -2,15 +2,18 @@
 # SPM Custom Formable/Cosmetic Decision Categories #
 ####################################################
 
-	spm_decisions_sphere_of_influence = {
+	# generic handler
+	# TODO: create a generic catergory that handles all the Formable Nations, and All Sub-Formable nations so that they can perform cool stuffs (protectorates/etc)
+
+	# FORMABLES
+	spm_decisions_category_sphere_of_influence_major = {
 		icon = decision_category_jihadijackass
-		visible_when_empty = no
-		visible = {
-			is_ai = no
-			#has_country_flag = spm_enabled
-		}
+		visible_when_empty = yes
+		allowed = { always = yes }
+		visible = { always = yes }
 		priority = {
-			base = 500
+			base = 999
 		}
+
 	}
 

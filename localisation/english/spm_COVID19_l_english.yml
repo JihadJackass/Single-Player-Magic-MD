@@ -10,8 +10,8 @@
 
   # Events
 
-    covid19_enable_covid: "Enable COVID"
-    covid19_enable_covid_desc: "Enable COVID"
+    covid19_enable_covid_event: "Enable COVID"
+    covid19_enable_covid_event_desc: "Enable COVID"
 
   # Map Mode
 
