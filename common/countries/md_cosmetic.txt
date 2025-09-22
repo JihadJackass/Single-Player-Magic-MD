@@ -1,3 +1,13 @@
+SPM_MEX_protectorate_CAL = {
+	color = rgb { 65 77 68 }
+    color_ui = rgb { 65 77 68 }  
+}
+
+SPM_MEX_protectorate_COL = {
+	color = rgb { 80 77 68 }
+    color_ui = rgb { 80 77 68 }  
+}
+
 # Iberian Union
 
 SPM_JAP_protectorate_tibet = {

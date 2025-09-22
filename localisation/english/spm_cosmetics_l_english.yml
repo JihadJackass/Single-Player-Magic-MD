@@ -32,8 +32,14 @@
  spm_nat_narcomexic_TEX_long: "CJNG - Congressional Texas"
  spm_nat_narcomexic_TEX: "CJNG-Texas"
 
+ spm_nat_narco_MEX_CAL_long: "CJNG - Narco Movement of Californian Freedom"
+ spm_nat_narco_MEX_CAL: "CJNG - Interim California Movement"
+
  spm_nat_japan_subject_long: "Hands Of The Chrysanthemum Throne"
  spm_nat_japan_subject: "Hands Of The Chrysanthemum Throne"
+
+ spm_nat_narco_MEX_COL_long: "CJNG - Gran Columbian Union"
+ spm_nat_narco_MEX_COL: "CJNG - Gran Columbia"
 
 # 2. Country Leader Names 
 
@@ -118,6 +124,24 @@
 
 # 5. Decision/Name/Flag Management (Sub-Formable Nations)
 
+  # Mexican Protectorates
+
+    SPM_MEX_protectorate_COL: "Gran Columbian Narco Republic"
+    SPM_MEX_protectorate_COL_ADJ: "Narco-Gran Columbian"
+    SPM_MEX_protectorate_COL_DEF: "The Gran Narco Republics of Columbia-Venezuela"
+   # USA protectorate
+    SPM_MEX_protectorate_of_usa: "United Narco States of America"
+    SPM_MEX_protectorate_of_usa_ADJ: "Narco-American"
+    SPM_MEX_protectorate_of_usa_DEF: "The United Narco Federative States of America"
+   # Narco California Republics
+    SPM_MEX_protectorate_CAL: "Narco California Republics"
+    SPM_MEX_protectorate_CAL_ADJ: "Narco-Californian"
+    SPM_MEX_protectorate_CAL_DEF: "The United Narco State of California"
+   # Central America Protectorate
+    SPM_MEX_protectorate_central_america: "United Central Narco Republics"
+    SPM_MEX_protectorate_central_america_ADJ: "Narco-Central American"
+    SPM_MEX_protectorate_central_america_DEF: "The United Narco Republics of Bolviar"
+
   # Japanese Protectorates
 
    # Tibet - TIB
@@ -176,7 +200,11 @@
 
  spm_nameflag_declare_imperial_japan: "Declare Imperial Japan"
 
- spm_nameflag_declare_mexican_narco_state_texas: "Narco Texas"
+ spm_nameflag_declare_mexican_narco_state_texas: "Establish Narco Texas"
+
+ spm_nameflag_declare_mexican_narco_state_california: "Establish Narco California"
+
+ spm_nameflag_declare_mexican_narco_state_merge_columbia: "Unite Gran Columbia"
 
 # 6. Formable Nation Localization
 

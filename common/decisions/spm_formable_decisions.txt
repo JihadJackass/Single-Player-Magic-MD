@@ -100,6 +100,7 @@
 
 		# Establish Coptic Sudan
 
+		# Declare Mexico Narco State
 		spm_nameflag_declare_mexican_narco_state = {
 			icon = generic_research
 
@@ -165,6 +166,7 @@
 			}
 		}
 		
+		# Narco Texas
 		spm_nameflag_declare_mexican_narco_state_texas = {
 			icon = generic_research
 
@@ -235,6 +237,141 @@
 				}
 			}
 		}	
+
+		# Narco California Republic
+		spm_nameflag_declare_mexican_narco_state_california = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = MEX
+					NOT = { 
+						CAL = { has_cosmetic_tag = SPM_MEX_protectorate_CAL }
+					}
+				}
+			}
+
+			visible = {
+				tag = MEX
+				NOT = { 
+					CAL = { has_cosmetic_tag = SPM_MEX_protectorate_CAL }
+				}
+			}
+
+			complete_effect = {
+				CAL = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "California Interim Cartel"
+						picture = "gfx/leaders/CAL/spm_mexican_cartel_california.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					create_corps_commander = {
+						name = "California Interim Cartel"
+						picture = "gfx/leaders/CAL/spm_mexican_cartel_texas.dds"
+						traits = {
+						}
+						skill = 5
+						attack_skill = 5
+						defense_skill = 5
+						planning_skill = 5
+						logistics_skill = 5
+					}
+					CAL = { 
+						set_cosmetic_tag = SPM_MEX_protectorate_CAL
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_narco_MEX_CAL_long
+							name = spm_nat_narco_MEX_CAL
+						}
+					}
+				}
+			}
+		}
+		
+		# Gran Columbian Narco Republic
+		spm_nameflag_declare_mexican_narco_state_merge_columbia = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = MEX
+					NOT = { 
+						COL = { has_cosmetic_tag = SPM_MEX_protectorate_COL }
+					}
+				}
+			}
+
+			visible = {
+				tag = MEX
+				NOT = { 
+					COL = { has_cosmetic_tag = SPM_MEX_protectorate_CAL }
+				}
+			}
+
+			complete_effect = {
+				COL = {
+					change_ruling_party_effect = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Simon Bolivar VII"
+						picture = "gfx/leaders/COL/spm_mexican_cartel_columbia.dds"
+						expire = "2100.1.1"
+						ideology = Nat_Populism
+						traits = {
+						}
+					}
+					create_corps_commander = {
+						name = "Simon Bolivar VII"
+						picture = "gfx/leaders/COL/spm_mexican_cartel_columbia.dds"
+						traits = {
+						}
+						skill = 5
+						attack_skill = 5
+						defense_skill = 5
+						planning_skill = 5
+						logistics_skill = 5
+					}
+					COL = { 
+						set_cosmetic_tag = SPM_MEX_protectorate_COL
+						set_party_name = {
+							ideology = nationalist
+							long_name = spm_nat_narco_MEX_COL_long
+							name = spm_nat_narco_MEX_COL
+						}
+					}
+					puppet = VEN
+					annex_country = {
+						target = VEN
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+
+		# Merge American Republics
+
+		# Proclaim Central American Narco Republics
+
+		# Restore Pablo Escobar to Columbian Congress
+
+		# Establish Bahama Republics
+
+		# Mali Federative Narco Autonomy
+
+		# Canada
 
 		# Declare Imperial Japan
 		spm_nameflag_declare_imperial_japan = {
