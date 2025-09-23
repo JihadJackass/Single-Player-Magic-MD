@@ -22,7 +22,7 @@ guiTypes = {
 			spriteType = "GFX_generic_text_bg_154"
 			position = { x = 15 y = 15 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "crt_actor_name"

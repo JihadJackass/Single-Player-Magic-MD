@@ -20,7 +20,7 @@ guiTypes = {
 			spriteType = "GFX_smt_country_name_bg"
 			position = { x = 13 y = 11 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "smt_state_name"

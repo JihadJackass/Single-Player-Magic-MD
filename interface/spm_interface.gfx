@@ -53,7 +53,7 @@ spriteTypes = {
 		#Special_forces
 		SpriteType = { name = "GFX_unit_Mot_Special_Forces_Bat_icon_medium_white" texturefile = "gfx/interface/counters/divisions_small/onmap_unit_Mot_special_forces_icon.dds" noOfFrames = 2 }
 		SpriteType = { name = "GFX_unit_Special_Forces_Air_assault_Bat_icon_medium_white" texturefile = "gfx/interface/counters/divisions_small/onmap_unit_SF_helicopters_icon.dds" noOfFrames = 2 }	
-		SpriteType = { name = "GFX_unit_Special_naval_assault_team_Comp_icon_medium_white" texturefile = "gfx/interface/counters/divisions_small/onmap_unit_SF_Divers_icon.dds" noOfFrames = 2 }
+#TODO: FIX missing divers		#SpriteType = { name = "GFX_unit_Special_naval_assault_team_Comp_icon_medium_white" texturefile = "gfx/interface/counters/divisions_small/onmap_unit_SF_Divers_icon.dds" noOfFrames = 2 }
 
 		spriteType = { name = "GFX_div_templ_65_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_065.dds" }
 		spriteType = { name = "GFX_div_templ_66_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_066.dds" }

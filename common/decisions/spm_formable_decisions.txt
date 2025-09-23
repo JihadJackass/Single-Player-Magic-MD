@@ -481,7 +481,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_tibet
+					#recruit_character = spm_jap_tibet
 					add_country_leader_role = {
 						character = spm_jap_tibet
 						promote_leader = yes
@@ -552,7 +552,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_cambodia
+					#recruit_character = spm_jap_cambodia
 					add_country_leader_role = {
 						character = spm_jap_cambodia
 						promote_leader = yes
@@ -622,7 +622,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_china
+					#recruit_character = spm_jap_china
 					add_country_leader_role = {
 						character = spm_jap_china
 						promote_leader = yes
@@ -692,7 +692,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_mongolia
+					#recruit_character = spm_jap_mongolia
 					add_country_leader_role = {
 						character = spm_jap_mongolia
 						promote_leader = yes
@@ -763,7 +763,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_indonesia
+					#recruit_character = spm_jap_indonesia
 					add_country_leader_role = {
 						character = spm_jap_indonesia
 						promote_leader = yes
@@ -833,7 +833,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_laos
+					#recruit_character = spm_jap_laos
 					add_country_leader_role = {
 						character = spm_jap_laos
 						promote_leader = yes
@@ -903,7 +903,7 @@
 						traits = {
 						}
 					}
-					recruit_character = spm_jap_hawaii_admiral
+					#recruit_character = spm_jap_hawaii_admiral
 					add_country_leader_role = {
 						character = spm_jap_hawaii_admiral
 						promote_leader = yes

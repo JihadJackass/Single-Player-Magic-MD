@@ -11,6 +11,8 @@ different_country_flags_category = {
 				is_ai = yes
 				OR = {
 					has_country_flag = MEX_narco_state_neutral_dictator_texas
+					has_country_flag = MEX_narco_state_neutral_dictator
+					has_country_flag = SPM_MEX_protectorate_COL
 					has_country_flag = SPM_MEX_protectorate_CAL
 					has_country_flag = SPM_JAP_protectorate_tibet
 					has_country_flag = SPM_JAP_protectorate_cambodia
@@ -53,6 +55,26 @@ different_country_flags_category = {
 			AND = {
 				original_tag = ESB
 				is_subject_of = CHI
+			}
+		}
+	}
+
+	allowed = { 
+		always = yes 
+		is_ai = no
+		NOT = {
+			OR = {
+				has_country_flag = MEX_narco_state_neutral_dictator_texas
+				has_country_flag = MEX_narco_state_neutral_dictator
+				has_country_flag = SPM_MEX_protectorate_COL
+				has_country_flag = SPM_MEX_protectorate_CAL
+				has_country_flag = SPM_JAP_protectorate_tibet
+				has_country_flag = SPM_JAP_protectorate_cambodia
+				has_country_flag = SPM_JAP_protectorate_china
+				has_country_flag = SPM_JAP_protectorate_mongolia
+				has_country_flag = SPM_JAP_protectorate_majapahit
+				has_country_flag = SPM_JAP_protectorate_laos
+				has_country_flag = SPM_JAP_protectorate_hawaii
 			}
 		}
 	}
