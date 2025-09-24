@@ -18,7 +18,7 @@ guiTypes = {
 			spriteType = "GFX_generic_text_bg_154"
 			position = { x = 15 y = 15 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "tpt_actor_name"
@@ -178,7 +178,7 @@ guiTypes = {
 			spriteType = "GFX_tpt_research_tab_icon"
 			position = { x = 455 y = 254 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			scale = 0.6
 		}
 		buttonType = {

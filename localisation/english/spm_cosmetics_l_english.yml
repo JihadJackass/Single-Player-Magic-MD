@@ -206,6 +206,15 @@
 
  spm_nameflag_declare_mexican_narco_state_merge_columbia: "Unite Gran Columbia"
 
+ spm_nameflag_dissolve_rival_narco_groups: "Dissolve Rival Narco Groups"
+ spm_nameflag_dissolve_rival_narco_groups_desc: "We now have the political power, military strength, and economic capability to fully dissolve any rival Narco group within the CJNG Sphere of Influence and fully establish El Chapo as the leader of the one and only dominant Nationalized Narco State with full Hegemony over the Drug Trade."
+
+ SPM_MEX_legacy_of_cartels: "Legacy of the CJNG Rival Cartels"
+ SPM_MEX_legacy_of_cartels_desc: "With the rise of the New Generation Cartel there is a clear established governing Narco body which has allowed 'El Chapo' to establish himself as the only Narco group - there are but remnants left for now."
+
+ SPM_MEX_nationalized_drug_trade: "Nationalized Drug Trade"
+ SPM_MEX_nationalized_drug_trade_dec: "The CJNG has established Cartel network in nearly every place on Earth which allows them great income from such weaponized profit bearing."
+
 # 6. Formable Nation Localization
 
  # Narco Mexico - CJNG

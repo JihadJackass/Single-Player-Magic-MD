@@ -401,7 +401,7 @@
 					add_resource = {
 						type = oil
 						amount = 10
-						state = THIS
+						
 					}
 				}
 				
@@ -649,7 +649,7 @@
 					add_resource = {
 						type = aluminium
 						amount = 10
-						state = THIS
+						
 					}
 				}
 				
@@ -885,7 +885,7 @@
 					add_resource = {
 						type = rubber
 						amount = 10
-						state = THIS
+						
 					}
 				}
 				
@@ -1121,7 +1121,7 @@
 					add_resource = {
 						type = tungsten
 						amount = 10
-						state = THIS
+						
 					}
 				}
 				
@@ -1357,7 +1357,7 @@
 					add_resource = {
 						type = steel
 						amount = 10
-						state = THIS
+						
 					}
 				}
 				
@@ -1593,7 +1593,7 @@
 					add_resource = {
 						type = chromium
 						amount = 10
-						state = THIS
+						
 					}
 				}
 				
@@ -2571,7 +2571,7 @@
 										free_building_slots = {
 											building = fossil_powerplant
 											size > 0
-											include_locked = yes
+											#include_locked = yes
 										}
 										is_in_home_area = yes
 									}
@@ -2632,7 +2632,7 @@
 						free_building_slots = {
 							building = nuclear_reactor
 							size > 0
-							include_locked = yes
+							#include_locked = yes
 						}
 						OR = {
 							is_in_home_area = yes
@@ -2642,7 +2642,7 @@
 										free_building_slots = {
 											building = nuclear_reactor
 											size > 0
-											include_locked = yes
+											#include_locked = yes
 										}
 										is_in_home_area = yes
 									}

@@ -146,8 +146,8 @@
 					name = "Joaquín 'El Chapo' Guzmán"
 					picture = "gfx/leaders/MEX/spm_mexican_cartel_guzman.dds"
 					traits = { 
-						spm_mex_drug_dealer
-						spm_mex_kingpin_of_legacy
+						#spm_mex_drug_dealer
+						#spm_mex_kingpin_of_legacy
 					}
 					skill = 5
 					attack_skill = 7
@@ -165,6 +165,44 @@
 				}
 			}
 		}
+
+		# Dissolve the Rival Narco Groups
+		spm_nameflag_dissolve_rival_narco_groups = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				OR = {
+					tag = MEX
+					NOT = {
+						has_dynamic_modifier = { modifier = cartel_penalties }
+					}
+				}
+			}
+
+			visible = {
+				tag = MEX
+				#NOT = {
+				#	has_dynamic_modifier = { modifier = cartel_penalties }
+				#}
+			}
+
+			complete_effect = {
+				add_political_power = -1000
+				remove_dynamic_modifier = {
+					modifier = cartel_penalties
+				}
+				set_temp_variable = { additional_income_change = gdp_total }
+				multiply_temp_variable = { additional_income_change = 0.12 }	#10% of GDP yearly
+				multiply_temp_variable = { additional_income_change = 0.15 }	#weekly
+				custom_effect_tooltip = additional_income_rate_percent_tt
+				add_timed_idea = {
+					idea = SPM_MEX_legacy_of_cartels
+					days = 720
+				}
+				add_ideas = SPM_MEX_nationalized_drug_trade
+			}
+		}	
 		
 		# Narco Texas
 		spm_nameflag_declare_mexican_narco_state_texas = {
@@ -218,7 +256,7 @@
 						name = "Congressional Cartel"
 						picture = "gfx/leaders/MEX/spm_mexican_cartel_texas.dds"
 						traits = { 
-							spm_mex_narco_union
+							#spm_mex_narco_union
 						}
 						skill = 7
 						attack_skill = 8
@@ -423,10 +461,10 @@
 					name = "Emperor Okurahito 'The Divine Wind Of The Chrysanthemum Throne'"
 					picture = "gfx/leaders/JAP/spm_jap_emperor_akhito.dds"
 					traits = { 
-						spm_jap_sinophobe
-						spm_jap_bushido
-						spm_jap_westernblend
-						spm_jap_tokusaku
+						#spm_jap_sinophobe
+						#spm_jap_bushido
+						#spm_jap_westernblend
+						#spm_jap_tokusaku
 					}
 					skill = 7
 					attack_skill = 15
@@ -495,8 +533,7 @@
 					create_corps_commander = {
 						name = "Tenzin Dorje 'Lama Of The Snow Lion'"
 						picture = "gfx/leaders/MEX/spm_jap_tibet.dds"
-						traits = { 
-							spm_mex_narco_union
+						traits = {
 						}
 						skill = 7
 						attack_skill = 8
@@ -934,12 +971,7 @@
 						}
 					}
 				}
-				every_country = { 
-					limit = {
-						NOT = { is_ai = yes }
-					}
-					country_event = spm_news.8 
-				}
+				#country_event = spm_news.8 
 				JAP = {
 					create_navy_leader = {
 						name = "Grand Admiral Robert McKawth 'Supreme Commander of the Pacific Kōdō Dai Kantai'"

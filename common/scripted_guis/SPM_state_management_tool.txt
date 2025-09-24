@@ -113,7 +113,7 @@ scripted_gui = {
 								give_resource_rights = {
 									receiver = PREV	#target
 									state = PREV.PREV.PREV
-									#resources = { oil }
+									resources = { oil aluminium rubber tungsten steel chromium }
 								}
 							}
 						}
@@ -380,15 +380,15 @@ scripted_gui = {
 				FROM.OWNER = {
 					any_owned_state = {
 						NOT = { has_state_flag = smt_marked }
-						is_core_of = this
+						is_core_of = PREV
 					}
 				}
 			}
-			smt_mark_colonies_click_enabled = {
+			smt_mark_colonies_click_enabled = { # todo test
 				FROM.OWNER = {
 					any_owned_state = {
 						NOT = { has_state_flag = smt_marked }
-						NOT = { is_core_of = this }
+						NOT = { is_core_of = PREV }     # ← PREV is the owner country
 					}
 				}
 			}

@@ -18,6 +18,11 @@ scripted_gui = {
 				}
 			}
 		}
+
+		triggers = {
+			cpt_marker_visible   = { NOT = { has_country_flag = cpt_puppetee } }
+			cpt_unmarker_visible = { has_country_flag = cpt_puppetee }
+		}
 		
 		effects = {
 
@@ -84,15 +89,13 @@ scripted_gui = {
 					localization = Toolpack
 				}
 			}
-			cpt_tab_button_frame_1a_click = {
-				set_global_flag = cpt_window_a
-				clr_global_flag = cpt_window_b
-			}
-			cpt_tab_button_frame_1b_click = {
-				set_global_flag = cpt_window_b
-				clr_global_flag = cpt_window_a
-			}
-#########################################################################
+			# - Free
+			# - Associated State - autonomy_associated_state
+			# - Puppet State - autonomy_puppet_state
+			# - Autonomous State - autonomy_autonomous_state
+			# - Satellite State - autonomy_satellite_state (integrated puppet)
+			# - Collaboration Government - autonomy_collaboration_government
+			# LOWEST AUTONOMY - FREE
 			cpt_autonomy_free_click = {
 				if = {
 					limit = {
@@ -120,8 +123,8 @@ scripted_gui = {
 				}
 				bst_count_civf = yes
 			}
-#########################################################################
-			cpt_autonomy_puppet_none_click = {
+			#
+			cpt_autonomy_puppet_click = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
@@ -129,41 +132,14 @@ scripted_gui = {
 						puppet = PREV
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_puppet
+							autonomy_state = autonomy_puppet_state
 						}
 					}
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
 			}
-			cpt_autonomy_free_none_click = {
-				if = {
-					limit = {
-						NOT = {
-							any_country = { has_country_flag = cpt_puppetee }
-						}
-					}
-					OVERLORD = {
-						set_autonomy = {
-							target = PREV
-							autonomy_state = autonomy_free
-						}
-					}
-				}
-				set_temp_variable = { puppeteer = this }
-				every_country = {
-					limit = { has_country_flag = cpt_puppetee }
-					var:puppeteer = {
-						set_autonomy = {
-							target = PREV
-							autonomy_state = autonomy_free
-						}
-					}
-					clr_country_flag = cpt_puppetee
-				}
-				bst_count_civf = yes
-			}
-#############################################################################
+			# 
 			cpt_autonomy_integrated_puppet_click = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
@@ -173,21 +149,6 @@ scripted_gui = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_integrated_puppet
-						}
-					}
-					clr_country_flag = cpt_puppetee
-				}
-				bst_count_civf = yes
-			}
-			cpt_autonomy_puppet_click = {
-				set_temp_variable = { puppeteer = this }
-				every_country = {
-					limit = { has_country_flag = cpt_puppetee }
-					var:puppeteer = {
-						puppet = PREV
-						set_autonomy = {
-							target = PREV
-							autonomy_state = autonomy_puppet
 						}
 					}
 					clr_country_flag = cpt_puppetee

@@ -305,4 +305,33 @@ ideas = {
 			}
 		}
 	}
+
+	# ideas for formables
+
+		country = {
+	
+		SPM_MEX_legacy_of_cartels = {
+
+			removal_cost = -1
+
+			picture = cartels
+			
+			modifier = {
+				political_power_gain = -0.25
+				party_popularity_stability_factor = 0.10
+				stability_weekly = 0.001
+			}
+		}
+
+		SPM_MEX_nationalized_drug_trade = {
+			removal_cost = -1
+
+			picture = cartels
+			
+			modifier = {
+				tax_gain_multiplier_modifier = 0.05
+			}
+		}
+
+	}
 }

@@ -17,7 +17,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_autonomy_state = autonomy_puppet
+			has_autonomy_state = autonomy_puppet_state
 		}
 		localization_key = CPT_STATE_PUP
 	}

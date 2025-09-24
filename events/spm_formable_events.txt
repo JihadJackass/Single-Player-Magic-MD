@@ -2,134 +2,136 @@
 
 # Formable News Events
 
-	# Mexico Cartel
+	# Mexico Cartel - 1-9
 
 		# Narco texas established
 
+			news_event = {
+				id = spm_news.1
+				title = spm_news.1.t
+				desc = spm_news.1.d
+				picture = GFX_trade_agreement
+				major = yes
+				is_triggered_only = yes
+
+				option = {
+					name = spm_news.1.a
+					log = "[GetDateText]: [This.GetName]: spm_news.1.a executed"
+				}
+			}
+
+		# Unification of American Narco States
+
+
+
+	# Japanese Formables - 10-19
+
+		# Tibet - spm_news.10
 		news_event = {
-			id = spm_news.1
-			title = spm_news.1.t
-			desc = spm_news.1.d
+			id = spm_news.10
+			title = spm_news.10.t
+			desc = spm_news.10.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.1.a
-				log = "[GetDateText]: [This.GetName]: spm_news.1.a executed"
+				name = spm_news.10.a
+				log = "[GetDateText]: [This.GetName]: spm_news.10.a executed"
 			}
 		}
 
-	# Japanese Formables
-
-		# Tibet
+		# Cambodia - spm_news.11
 		news_event = {
-			id = spm_news.2
-			title = spm_news.2.t
-			desc = spm_news.2.d
+			id = spm_news.11
+			title = spm_news.11.t
+			desc = spm_news.11.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.2.a
-				log = "[GetDateText]: [This.GetName]: spm_news.2.a executed"
+				name = spm_news.11.a
+				log = "[GetDateText]: [This.GetName]: spm_news.11.a executed"
 			}
 		}
 
-		# Cambodia
+		# China - spm_news.12
 		news_event = {
-			id = spm_news.3
-			title = spm_news.3.t
-			desc = spm_news.3.d
+			id = spm_news.12
+			title = spm_news.12.t
+			desc = spm_news.12.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.3.a
-				log = "[GetDateText]: [This.GetName]: spm_news.3.a executed"
+				name = spm_news.12.a
+				log = "[GetDateText]: [This.GetName]: spm_news.12.a executed"
 			}
 		}
 
-		# China
+		# Mongolia - spm_news.13
 		news_event = {
-			id = spm_news.4
-			title = spm_news.4.t
-			desc = spm_news.4.d
+			id = spm_news.13
+			title = spm_news.13.t
+			desc = spm_news.13.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.4.a
-				log = "[GetDateText]: [This.GetName]: spm_news.4.a executed"
+				name = spm_news.13.a
+				log = "[GetDateText]: [This.GetName]: spm_news.13.a executed"
 			}
 		}
 
-		# Mongolia
+		# Majapahit - spm_news.14
 		news_event = {
-			id = spm_news.5
-			title = spm_news.5.t
-			desc = spm_news.5.d
+			id = spm_news.14
+			title = spm_news.14.t
+			desc = spm_news.14.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.5.a
-				log = "[GetDateText]: [This.GetName]: spm_news.5.a executed"
+				name = spm_news.14.a
+				log = "[GetDateText]: [This.GetName]: spm_news.14.a executed"
 			}
 		}
 
-		# Majapahit
+		# Laos - spm_news.15
 		news_event = {
-			id = spm_news.6
-			title = spm_news.6.t
-			desc = spm_news.6.d
+			id = spm_news.15
+			title = spm_news.15.t
+			desc = spm_news.15.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.6.a
-				log = "[GetDateText]: [This.GetName]: spm_news.6.a executed"
+				name = spm_news.15.a
+				log = "[GetDateText]: [This.GetName]: spm_news.15.a executed"
 			}
 		}
 
-		# Laos
+		# Hawaii - spm_news.16
 		news_event = {
-			id = spm_news.7
-			title = spm_news.7.t
-			desc = spm_news.7.d
+			id = spm_news.16
+			title = spm_news.16.t
+			desc = spm_news.16.d
 			picture = GFX_trade_agreement
 			major = yes
 			is_triggered_only = yes
 
 			option = {
-				name = spm_news.7.a
-				log = "[GetDateText]: [This.GetName]: spm_news.7.a executed"
+				name = spm_news.16.a
+				log = "[GetDateText]: [This.GetName]: spm_news.16.a executed"
 			}
 		}
 
-		# Hawaii
-		news_event = {
-			id = spm_news.8
-			title = spm_news.8.t
-			desc = spm_news.8.d
-			picture = GFX_trade_agreement
-			major = yes
-			is_triggered_only = yes
-
-			option = {
-				name = spm_news.8.a
-				log = "[GetDateText]: [This.GetName]: spm_news.8.a executed"
-			}
-		}
-
-
-
-	# CountryFlag Formation Events (Low Tier Formables without unique focus trees - can have some custom focuses)
+	# Hungary - 20-29
 
 		# Formation of Visegrad
 
@@ -170,16 +172,14 @@
 					remember_old_capital = yes
 				}
 			}
-		}		
+		}	
 
-		# Formation of UAA
+	# reserved
 
+		# reserved
 
+	# reserved
 
-	#
+		# reserved
 
-
-
-	#
-
-
+#

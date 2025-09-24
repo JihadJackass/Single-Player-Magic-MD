@@ -31,25 +31,6 @@ scripted_gui = {
 				clr_global_flag = toolpack_enabled
 			}
 
-			toolpack_prev_page_click = {
-				if = {
-					limit = {
-						has_global_flag = tp_page_2
-					}
-					clr_global_flag = tp_page_2
-				}
-			}
-			toolpack_next_page_click = {
-				if = {
-					limit = {
-						NOT = { has_global_flag = tp_page_2 }
-					}
-					set_global_flag = tp_page_2
-				}
-			}
-
-
-
 			#### MODS ####
 
 			smt_open_click = {
@@ -61,16 +42,6 @@ scripted_gui = {
 				}
 				else = {
 					clr_global_flag = smt_enabled
-				}
-				bst_count_civf = yes
-			}
-			cat_open_click = {
-				if = {
-					limit = { NOT = { has_global_flag = cat_enabled } }
-					set_global_flag = cat_enabled
-				}
-				else = {
-					clr_global_flag = cat_enabled
 				}
 				bst_count_civf = yes
 			}
@@ -110,22 +81,13 @@ scripted_gui = {
 					set_global_flag = tpt_window_a
 				}
 			}
-			dst_A_open_click = {
+			dst_open_click = {
 				if = {
 					limit = { NOT = { has_global_flag = dst_A_enabled } }
 					set_global_flag = dst_A_enabled
 				}
 				else = {
 					clr_global_flag = dst_A_enabled
-				}
-			}
-			dst_B_open_click = {
-				if = {
-					limit = { NOT = { has_global_flag = dst_B_enabled } }
-					set_global_flag = dst_B_enabled
-				}
-				else = {
-					clr_global_flag = dst_B_enabled
 				}
 			}
 			sst_open_click = {
@@ -180,15 +142,6 @@ scripted_gui = {
 					clr_global_flag = mst_S_enabled
 				}
 			}
-			rmt_open_click = { # Resouce Management Tool
-				if = {
-					limit = { NOT = { has_global_flag = rmt_enabled } }
-					set_global_flag = rmt_enabled
-				}
-				else = {
-					clr_global_flag = rmt_enabled
-				}
-			}
 		}
 
 		triggers = {
@@ -202,86 +155,6 @@ scripted_gui = {
 						has_global_flag = tp_is_multiplayer
 					}
 				}
-			}
-			toolpack_prev_page_click_enabled = {
-				has_global_flag = tp_page_2
-			}
-			toolpack_next_page_click_enabled = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			#### MODS ####
-
-			smt_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			smt_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			cat_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			cat_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			cpt_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			cpt_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			tpt_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			tpt_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			dst_A_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			dst_A_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			dst_B_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			dst_B_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			sst_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			sst_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			bst_open_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			bst_title_visible = {
-				NOT = { has_global_flag = tp_page_2 }
-			}
-			mst_C_open_visible = {
-				has_global_flag = tp_page_2
-			}
-			mst_C_title_visible = {
-				has_global_flag = tp_page_2
-			}
-			mst_S_open_visible = {
-				has_global_flag = tp_page_2
-			}
-			mst_S_title_visible = {
-				has_global_flag = tp_page_2
-			}
-			rmt_open_visible = {
-				has_global_flag = tp_page_2
-			}
-			rmt_title_visible = {
-				has_global_flag = tp_page_2
-			}
-			crt_open_visible = {
-				has_global_flag = tp_page_2
-			}
-			crt_title_visible = {
-				has_global_flag = tp_page_2
 			}
 		}
 	}
@@ -396,15 +269,7 @@ scripted_gui = {
 					random_country = { 
 						limit = { has_country_flag = dsta_unit_deletion_target }
 						clr_country_flag = dsta_unit_deletion_target
-						dst_a_delete_units = yes
-					}
-				}
-				if = {
-					limit = { has_global_flag = dst_b_confirm_unit_deletion }
-					random_country = { 
-						limit = { has_country_flag = dstb_unit_deletion_target }
-						clr_country_flag = dstb_unit_deletion_target
-						dst_b_delete_units = yes
+						#dst_a_delete_units = yes
 					}
 				}
 				if = {

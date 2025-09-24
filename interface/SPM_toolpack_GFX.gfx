@@ -177,10 +177,10 @@ spriteTypes = {
 ###########
 ### CAT ###
 ###########
-	SpriteType = { 
-		name = "GFX_cat_button"
-		texturefile = "gfx/toolpack_interface/cat_interface/cat_button.dds"
-	}
+#	SpriteType = { 
+#		name = "GFX_cat_button"
+#		texturefile = "gfx/toolpack_interface/cat_interface/cat_button.dds"
+#	}
 	SpriteType = { 
 		name = "GFX_cat_button_off"
 		texturefile = "gfx/toolpack_interface/cat_interface/cat_button_off.dds"
@@ -734,10 +734,10 @@ spriteTypes = {
 		name = "GFX_ict_neutral_pop"
 		texturefile = "gfx/toolpack_interface/other/ict_neutral_pop.dds"
 	}
-	SpriteType = { 
-		name = "GFX_dst_fourstar"
-		texturefile = "gfx/toolpack_interface/dst_interface/other/dst_fourstar.dds"
-	}
+#	SpriteType = { 
+#		name = "GFX_dst_fourstar"
+#		texturefile = "gfx/toolpack_interface/dst_interface/other/dst_fourstar.dds"
+#	}
 	SpriteType = { 
 		name = "GFX_dst_template_button"
 		texturefile = "gfx/toolpack_interface/dst_interface/dst_template_button.dds"

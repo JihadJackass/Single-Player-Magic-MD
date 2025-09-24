@@ -111,7 +111,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 33 y = 90 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 1
 		}
 		buttonType = {
@@ -133,7 +133,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 82 y = 90 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 3
 		}
 		buttonType = {
@@ -155,7 +155,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 132 y = 90 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 5
 		}
 ######
@@ -178,7 +178,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 182 y = 90 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 2
 		}
 		buttonType = {
@@ -200,7 +200,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 232 y = 90 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 4
 		}
 		buttonType = {
@@ -222,7 +222,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 282 y = 90 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 6
 		}
 		buttonType = {
@@ -370,7 +370,7 @@ guiTypes = {
 			spriteType = "GFX_rmt_resource_grid"
 			position = { x = 273 y = 16 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			scale = 0.75
 		}
 		iconType ={
@@ -378,7 +378,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 274 y = 18 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 1
 			scale = 0.75
 		}
@@ -397,7 +397,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 274 y = 42 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 3
 			scale = 0.75
 		}
@@ -416,7 +416,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 274 y = 65 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 5
 			scale = 0.75
 		}
@@ -435,7 +435,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 312 y = 18 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 2
 			scale = 0.75
 		}
@@ -454,7 +454,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 312 y = 42 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 4
 			scale = 0.75
 		}
@@ -473,7 +473,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 			position = { x = 312 y = 65 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			frame = 6
 			scale = 0.75
 		}
