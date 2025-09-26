@@ -817,37 +817,6 @@ spm_decisions_categories = {
 #---------------------------------------------------------# Equipment Management
 	# Equipment Management
 	spm_decisions_equipment = {
-		# Give 500 Planes (F-16)
-		spm_add_plane = {
-			icon = generic_research
-
-			available = {
-				is_ai = no
-			}
-
-			visible = {
-				has_country_flag = spm_enabled
-			}
-
-			fire_only_once = no
-			cost = 0
-
-			complete_effect = {
-				add_political_power = -250
-				ROOT = {
-					add_equipment_to_stockpile = {
-						type = small_plane_strike_airframe_2
-						variant_name = "F-16C Blk 40/42"
-						amount = 500
-						producer = USA
-					}
-				}
-			}
-
-			ai_will_do = {
-				base = 0
-			}
-		}
 		# Give 100 Convoy
 		spm_add_convoy = {
 			icon = generic_research

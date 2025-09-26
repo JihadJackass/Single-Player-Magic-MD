@@ -165,7 +165,7 @@
       # Wargoal Reductions
       spm_decisions_wt: "SPM - World Tension Management"
 
-      spm_add_wargoal_reductions: "§2Add Wargoal Reductions§!"
+      spm_add_wargoal_reductions: "§2Wargoal Reductions§!"
       spm_remove_wargoal_reductions: "§2Remove Wargoal Reductions§!"
 
       # Volunteers
@@ -482,7 +482,7 @@
 
   spm_add_compliance_growth_idea: "Compliance Growth"
 
-  spm_add_volunteer_reductions: "Volunteer Reductions"
+  spm_volunteer_reductions: "Volunteer Reductions"
 
   spm_add_wargoal_reductions: "Wargoal Reduction"
 

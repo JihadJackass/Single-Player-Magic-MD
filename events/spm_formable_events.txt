@@ -4,7 +4,7 @@
 
 	# Mexico Cartel - 1-9
 
-		# Narco texas established
+		# Narco texas established - 1
 
 			news_event = {
 				id = spm_news.1
@@ -22,7 +22,22 @@
 
 		# Unification of American Narco States
 
+		# Dissolution of Rival Cartels - 2
 
+
+			news_event = {
+				id = spm_news.2
+				title = spm_news.2.t
+				desc = spm_news.2.d
+				picture = GFX_trade_agreement
+				major = yes
+				is_triggered_only = yes
+
+				option = {
+					name = spm_news.2.a
+					log = "[GetDateText]: [This.GetName]: spm_news.2.a executed"
+				}
+			}
 
 	# Japanese Formables - 10-19
 

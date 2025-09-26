@@ -508,50 +508,54 @@
 
  # Narco texas established
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ # Narco Groups Dissolved
+
+ spm_news.2.t: "The Cartel Wars End - El Chapo’s Final Victory"
+ spm_news.2.d: "For decades, rival narco groups carved bloody scars across the Americas, fighting for scraps of empire and fleeting dominance. But with the rise of the CJNG under the iron grip of El Chapo, the chaos has ended.\n\nAcross half of America, Cascadia, Central America, and the vast territories of the Gran Columbian Narco Republics and Narco Patagonia, the banners of lesser cartels have been torn down. Their leaders were given a choice: swear absolute loyalty to the CJNG or vanish into the shadows of history. Some surrendered and pledged allegiance, while others were quietly eliminated in the night, their empires swallowed whole by the relentless tide of CJNG power.\n\nThe Panama Canal, now firmly under CJNG control, has become both a symbol and a weapon of this authority—an artery of global commerce redirected to flow through cartel hands. From the bustling ports of the Pacific to the trade hubs of the Atlantic, merchants, corporations, and even governments find themselves forced to deal on CJNG’s terms. Even in Africa, where CJNG forces clash with Mali, whispers spread of a new narco order stretching far beyond its birthplace, a transoceanic dominion that no rival can ignore.\n\nWhat was once a fractured underworld has been forged into a single empire, bound by fear, profit, and the will of El Chapo Guzmán. No longer just a cartel, the CJNG now stands as the undisputed power of the hemisphere—its influence spanning continents, its enemies crushed, and its ambitions unchecked. The era of competing narco groups has ended; the era of the CJNG has begun."
+ spm_news.2.a: "The Narcotics economy will boom.. hopefully this does not affect us."
 
  # Tibet
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ spm_news.10.t: "Dalai Lama’s Throne Restored!"
+ spm_news.10.d: "Tibet has been reawakened as a monarchy under the guidance of the Dalai Lama. With Japanese support, the Himalayan kingdom has been enlarged, reclaiming lands once thought lost forever. Pilgrims and monks fill the streets of Lhasa in celebration, while the world wonders if Tibet’s spiritual and temporal revival will bring peace—or conflict—to the Roof of the World."
+ spm_news.10.a: "A big shift to the region."
 
  # Cambodia
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ spm_news.11.t: "Khmer Throne Restored in Cambodia!"
+ spm_news.11.d: "Japanese forces, supported by their allies, have swept into Cambodia. In a stunning move, they toppled the colonial administration and Islamic factions, declaring the rebirth of the Khmer Empire. A monarch once again dons the crown of Angkor, and banners of empire fly across Phnom Penh. With Japanese support, the Khmer are expected to become a loyal yet ambitious partner in the region."
+ spm_news.11.a: "A great change according to many."
 
  # China
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ spm_news.12.t: "China Subdued and Divided!"
+ spm_news.12.d: "After the largest war in history, Japan has finally subdued the Chinese mainland. While vast swaths of territory have been annexed directly into the empire, the remainder has been reorganized under a pro-Japanese, nationally aligned Chinese Junta. Military strongmen in Western-style uniforms now govern from Chongqing, their authority secured by Tokyo’s bayonets. The dream of a united China has been broken—replaced with a puppet aligned with the Rising Sun."
+ spm_news.12.a: "The Five Races Nation rises again."
 
  # Mongolia
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ spm_news.13.t: "The Mongol Empire Rises Again!"
+ spm_news.13.d: "Across the Russian steppe, the banner of the Great Khans once more flutters in the wind. Japan has installed the great-grandson of Baron Roman von Ungern-Sternberg as ruler, fusing imperial Mongol legacy with brutal militarism. As nomad horsemen and armored divisions alike rally to his side, the world trembles at the thought of a Mongol Empire reborn—one that now sets its gaze on reclaiming the vastness of Eurasia."
+ spm_news.13.a: "Does Mongolia rise once again!?"
 
  # Majapahit
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ spm_news.14.t: "Majapahit Returns to the Seas!"
+ spm_news.14.d: "Japan has crushed Indonesian nationalist and Islamic factions, sweeping aside all opposition. In their place, a new Majapahit Empire has been proclaimed, reviving the ancient naval empire that once dominated the archipelago. With Japan’s backing, the Majapahit throne gleams once more, and the empire is expected to build fleets that will guard the sea lanes of Southeast Asia."
+ spm_news.14.a: "A sight to see!"
 
  # Laos
 
- spm_news.1.t: ""
- spm_news.1.d: ""
- spm_news.1.a: ""
+ spm_news.15.t: "A Nation for the Hmong!"
+ spm_news.15.d: "For the first time in history, the Hmong people have been granted their own state. After Japan’s invasion of Laos, a new ethnic nation has been declared, supported by Tokyo as a symbol of “liberation.” The world is shocked at this unprecedented creation, while the Hmong celebrate a long-awaited recognition of their cultural and political identity."
+ spm_news.15.a: "Freedom of the Hmong is wildly supported!"
 
  # Hawaii
 
- spm_news.8.t: "Grand Admiral Robert McKawth Takes Control of the Japanese Naval Mission in the Pacific Shield"
- spm_news.8.d: "After weeks of brutal naval skirmishes and clandestine negotiations, the islands of Hawaii have finally fallen. Yet, rather than a clean victory for the Shinsei Shōri Shogunate, a shadow loomed from the other side of the Pacific. The Cártel de Jalisco Nueva Generación (CJNG), seeking to secure trafficking routes and economic influence in the Pacific, openly challenged Japan’s hold.\n\nTensions escalated to the brink of conflict, but neither side wished to drain resources in an open war. A pact was forged: the Shogunate would retain formal claims to Hawaii as a crown possession of the new order, while the CJNG secured lucrative economic rights and political channels in return. Though an uneasy compromise, the deal ensures stability—at least for now.\n\nStill, many within the Shogunate cry betrayal, while others applaud the pragmatic diplomacy that preserves strength for the greater conquest of Asia. The court must decide how this “Pacific Compromise” will be remembered."
- spm_news.8.a: "The Japanese are once again in Hawaii."
+ spm_news.16.t: "Grand Admiral Robert McKawth Takes Control of the Japanese Naval Mission in the Pacific Shield"
+ spm_news.16.d: "After weeks of brutal naval skirmishes and clandestine negotiations, the islands of Hawaii have finally fallen. Yet, rather than a clean victory for the Shinsei Shōri Shogunate, a shadow loomed from the other side of the Pacific. The Cártel de Jalisco Nueva Generación (CJNG), seeking to secure trafficking routes and economic influence in the Pacific, openly challenged Japan’s hold.\n\nTensions escalated to the brink of conflict, but neither side wished to drain resources in an open war. A pact was forged: the Shogunate would retain formal claims to Hawaii as a crown possession of the new order, while the CJNG secured lucrative economic rights and political channels in return. Though an uneasy compromise, the deal ensures stability—at least for now.\n\nStill, many within the Shogunate cry betrayal, while others applaud the pragmatic diplomacy that preserves strength for the greater conquest of Asia. The court must decide how this “Pacific Compromise” will be remembered."
+ spm_news.16.a: "The Japanese are once again in Hawaii."
+
+ 
 
 #END

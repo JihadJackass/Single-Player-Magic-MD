@@ -2,6 +2,8 @@
 
 	spm_decisions_category_sphere_of_influence_major = {
 
+      # Coptic Egypt
+
 		# Establish Coptic Jeruslem
 		spm_nameflag_establish_coptic_jerusalem = {
 			icon = generic_research
@@ -100,23 +102,20 @@
 
 		# Establish Coptic Sudan
 
+      # Narco Mexico (CJNG)
+
 		# Declare Mexico Narco State
 		spm_nameflag_declare_mexican_narco_state = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = MEX
-					has_cosmetic_tag = MEX_narco_state_neutral_dictator
-				}
+				tag = MEX
 			}
 
 			visible = {
+				is_ai = no
 				tag = MEX
-				NOT = { 
-					has_cosmetic_tag = MEX_narco_state_neutral_dictator
-				}
 			}
 
 			complete_effect = {
@@ -172,19 +171,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = MEX
-					NOT = {
-						has_dynamic_modifier = { modifier = cartel_penalties }
-					}
-				}
+				tag = MEX
 			}
 
 			visible = {
+				is_ai = no
 				tag = MEX
-				#NOT = {
-				#	has_dynamic_modifier = { modifier = cartel_penalties }
-				#}
 			}
 
 			complete_effect = {
@@ -201,6 +193,7 @@
 					days = 720
 				}
 				add_ideas = SPM_MEX_nationalized_drug_trade
+				country_event = spm_news.2
 			}
 		}	
 		
@@ -210,19 +203,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = MEX
-					NOT = { 
-						TEX = { has_cosmetic_tag = MEX_narco_state_neutral_dictator_texas }
-					}
-				}
+				tag = MEX
 			}
 
 			visible = {
+				is_ai = no
 				tag = MEX
-				NOT = { 
-					TEX = { has_cosmetic_tag = MEX_narco_state_neutral_dictator_texas }
-				}
 			}
 
 			complete_effect = {
@@ -341,19 +327,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = MEX
-					NOT = { 
-						COL = { has_cosmetic_tag = SPM_MEX_protectorate_COL }
-					}
-				}
+				tag = MEX
 			}
 
 			visible = {
+				is_ai = no
 				tag = MEX
-				NOT = { 
-					COL = { has_cosmetic_tag = SPM_MEX_protectorate_CAL }
-				}
 			}
 
 			complete_effect = {
@@ -399,11 +378,13 @@
 			}
 		}
 
+		# Patagonia Narco Republic
+
 		# Merge American Republics
 
 		# Proclaim Central American Narco Republics
 
-		# Restore Pablo Escobar to Columbian Congress
+		# Establish Pablo Escobar to Columbian Congress
 
 		# Establish Bahama Republics
 
@@ -411,23 +392,20 @@
 
 		# Canada
 
+	  # Imperial Japan (Oklahomie inspired)
+
 		# Declare Imperial Japan
 		spm_nameflag_declare_imperial_japan = {
 			icon = generic_research
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					has_cosmetic_tag = JAP_emperor_japan_nationalist
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					has_cosmetic_tag = JAP_emperor_japan_nationalist
-				}
 			}
 
 			complete_effect = {
@@ -443,6 +421,7 @@
 						spm_jap_tokusaku
 					}
 				}
+				recruit_character = spm_jap_emperor_akhito
 				add_country_leader_role = {
 					character = spm_jap_emperor_akhito
 					promote_leader = yes
@@ -489,19 +468,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						TIB = { has_cosmetic_tag = SPM_JAP_protectorate_tibet }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					TIB = { has_cosmetic_tag = SPM_JAP_protectorate_tibet }
-				}
 			}
 
 			complete_effect = {
@@ -519,7 +491,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_tibet
+					recruit_character = spm_jap_tibet
 					add_country_leader_role = {
 						character = spm_jap_tibet
 						promote_leader = yes
@@ -549,6 +521,7 @@
 							name = spm_nat_japan_subject
 						}
 					}
+					country_event = spm_news.10
 				}
 			}
 		}
@@ -559,19 +532,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						CBD = { has_cosmetic_tag = SPM_JAP_protectorate_cambodia }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					CBD = { has_cosmetic_tag = SPM_JAP_protectorate_cambodia }
-				}
 			}
 
 			complete_effect = {
@@ -589,7 +555,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_cambodia
+					recruit_character = spm_jap_cambodia
 					add_country_leader_role = {
 						character = spm_jap_cambodia
 						promote_leader = yes
@@ -619,6 +585,7 @@
 							name = spm_nat_japan_subject
 						}
 					}
+					country_event = spm_news.11
 				}
 			}
 		}	
@@ -629,19 +596,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						TEX = { has_cosmetic_tag = SPM_JAP_protectorate_china }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					CHI = { has_cosmetic_tag = SPM_JAP_protectorate_china }
-				}
 			}
 
 			complete_effect = {
@@ -659,7 +619,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_china
+					recruit_character = spm_jap_china
 					add_country_leader_role = {
 						character = spm_jap_china
 						promote_leader = yes
@@ -689,6 +649,7 @@
 							name = spm_nat_japan_subject
 						}
 					}
+					country_event = spm_news.12
 				}
 			}
 		}
@@ -699,19 +660,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						MON = { has_cosmetic_tag = SPM_JAP_protectorate_mongolia }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					MON = { has_cosmetic_tag = SPM_JAP_protectorate_mongolia }
-				}
 			}
 
 			complete_effect = {
@@ -729,7 +683,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_mongolia
+					recruit_character = spm_jap_mongolia
 					add_country_leader_role = {
 						character = spm_jap_mongolia
 						promote_leader = yes
@@ -759,6 +713,7 @@
 							name = spm_nat_japan_subject
 						}
 					}
+					country_event = spm_news.13
 				}
 			}
 		}
@@ -769,20 +724,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						IND = { has_cosmetic_tag = SPM_JAP_protectorate_majapahit }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
-				has_country_flag = spm_enabled
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					IND = { has_cosmetic_tag = SPM_JAP_protectorate_majapahit }
-				}
 			}
 
 			complete_effect = {
@@ -800,7 +747,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_indonesia
+					recruit_character = spm_jap_indonesia
 					add_country_leader_role = {
 						character = spm_jap_indonesia
 						promote_leader = yes
@@ -830,6 +777,7 @@
 							name = spm_nat_japan_subject
 						}
 					}
+					country_event = spm_news.14
 				}
 			}
 		}
@@ -840,19 +788,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						LAO = { has_cosmetic_tag = SPM_JAP_protectorate_laos }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					LAO = { has_cosmetic_tag = SPM_JAP_protectorate_laos }
-				}
 			}
 
 			complete_effect = {
@@ -870,7 +811,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_laos
+					recruit_character = spm_jap_laos
 					add_country_leader_role = {
 						character = spm_jap_laos
 						promote_leader = yes
@@ -900,6 +841,7 @@
 							name = spm_nat_japan_subject
 						}
 					}
+					country_event = spm_news.15
 				}
 			}
 		}
@@ -910,19 +852,12 @@
 
 			available = {
 				is_ai = no
-				OR = {
-					tag = JAP
-					NOT = { 
-						HWI = { has_cosmetic_tag = SPM_JAP_protectorate_hawaii }
-					}
-				}
+				tag = JAP
 			}
 
 			visible = {
+				is_ai = no
 				tag = JAP
-				NOT = { 
-					HWI = { has_cosmetic_tag = SPM_JAP_protectorate_hawaii }
-				}
 			}
 
 			complete_effect = {
@@ -940,7 +875,7 @@
 						traits = {
 						}
 					}
-					#recruit_character = spm_jap_hawaii_admiral
+					recruit_character = spm_jap_hawaii_admiral
 					add_country_leader_role = {
 						character = spm_jap_hawaii_admiral
 						promote_leader = yes
@@ -971,7 +906,7 @@
 						}
 					}
 				}
-				#country_event = spm_news.8 
+				country_event = spm_news.16
 				JAP = {
 					create_navy_leader = {
 						name = "Grand Admiral Robert McKawth 'Supreme Commander of the Pacific Kōdō Dai Kantai'"
