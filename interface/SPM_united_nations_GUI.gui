@@ -28,8 +28,8 @@ guiTypes = {
 		moveable = yes
 
 		background = {
-			name = "EU_main_background_window_screen"
-			quadTextureSprite = "GFX_euro_background_new"
+			name = "un_main_background_window_screen"
+			quadTextureSprite = "GFX_un_background_new"
 		}
 
 		instantTextBoxType = {
@@ -52,15 +52,15 @@ guiTypes = {
 			web_link = "https://gitlab.com/Millennium_Dawn/Millennium_Dawn/-/wikis/uploads/f7648d87fcd84d0ebe3dfcd9596a3ee0/European_Union_Diagram.drawio_6_.png"
 		}
 
-		# Retire the Offices
+		# Members
 		buttonType = {
-			name = "EU_offices_screen"
+			name = "UN_offices_screen"
 			position = { x = 15 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "EU_offices_screen_title"
+			text = "UN_offices_screen_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "UN_offices_screen_desc"
 		}
 		# Retire the Offices
 		buttonType = {
@@ -68,7 +68,7 @@ guiTypes = {
 			position = { x = 140 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "EU_europeanism_screen_title"
+			text = "UN_europeanism_screen_title"
 			format = center
 			pdx_tooltip = "EU_europeanism_screen_desc"
 		}
@@ -77,7 +77,7 @@ guiTypes = {
 			position = { x = 265 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "parliament_button_title"
+			text = "UN_parliament_button_title"
 			format = center
 			pdx_tooltip = "parliament_button_desc"
 		}
@@ -86,7 +86,7 @@ guiTypes = {
 			position = { x = 390 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "euro_voting_button_title"
+			text = "UN_voting_button_title"
 			format = center
 			pdx_tooltip = "euro_voting_button_desc"
 		}
@@ -95,27 +95,27 @@ guiTypes = {
 			position = { x = 515 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "fiscal_button_title"
+			text = "UN_fiscal_button_title"
 			format = center
 			pdx_tooltip = "fiscal_button_desc"
 		}
 		# Bottom Bar
 		buttonType = {
-			name = "EU_Article_50"
+			name = "UN_trigger_emergency_session"
 			position = { x = 18 y = 590 }
-			spriteType = "GFX_euro_general_button_small"
+			spriteType = "GFX_un_general_button_medium"
 			font = "hoi_18mbs"
-			text = "EU_trigger_article_50"
+			text = "UN_trigger_emergency_session_text"
 			format = center
 			pdx_tooltip = "EU_article_50_available_click"
 			pdx_tooltip_delayed="EU_article_50_available_delayed"
 		}
 		buttonType = {
 			name = "adopt_eu_law"
-			position = { x = 142 y = 590 }
+			position = { x = 267 y = 590 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "EU_adopt_eu_law"
+			text = "UN_adopt_eu_law"
 			format = center
 			pdx_tooltip = "EU_adopt_EU_law_desc"
 		}
@@ -125,7 +125,7 @@ guiTypes = {
 			position = { x = 392 y = 590 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "EU_draft_an_eu_budget"
+			text = "UN_draft_an_eu_budget"
 			format = center
 			pdx_tooltip = "EU_budget_draft_desc"
 			pdx_tooltip_delayed = "draft_eu_budget_tt"
@@ -135,13 +135,13 @@ guiTypes = {
 			position = { x = 517 y = 590 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "EU_MFF_draft_tt"
+			text = "UN_MFF_draft_tt"
 			format = center
 			pdx_tooltip = "EU_budget_mff_draft_desc"
 			pdx_tooltip_delayed = "draft_mff_tt"
 		}
 		buttonType = {
-			name = "euro_close_button"
+			name = "un_close_button"
 			position = { x = 610 y = 15 }
 			spriteType = "GFX_closebutton"
 			font = "hoi_18mbs"
@@ -517,7 +517,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "euro_union_window"
 			position = { x = 0 y = 0 }
-####
 			containerWindowType = {
 				name = "state_of_the_euro_headers"
 				position = { x = 20 y = 160 }

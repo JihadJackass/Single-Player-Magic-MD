@@ -8,5 +8,19 @@
     un_gui_tooltip: "§CUnited Nations§! Interface"
     un_gui_tooltip_delayed: "Opens the screen that contains all of the information about The §CUnited Nations§! including the §9Permanent Members§!, §YMajor Members§!, and §8Minor Members§! who can come together to vote against actions taken by another country and allow us to potentially form a §3Coalition of the Willing§! allowing us to take serious action against the §RPariah State§!."
     UN_main_background_window_inner_title: "The United Nations"
+  #
+    UN_offices_screen: "UN Members"
+    UN_offices_screen_title: "UN Members"
+    UN_offices_screen_desc: "The current Permanent and Non-Permanent Members of the §CUnited Nations§!."
+    UN_trigger_emergency_session: "Emergency Session"
+    UN_trigger_emergency_session_text: "Emergency Session"
+
+    UN_europeanism_screen_title: "TODO"
+    UN_parliament_button_title: "TODO"
+    UN_voting_button_title: "TODO"
+    UN_fiscal_button_title: "TODO"
+    UN_adopt_eu_law: "TODO"
+    UN_draft_an_eu_budget: "TODO"
+    UN_MFF_draft_tt: "TODO"
 
 

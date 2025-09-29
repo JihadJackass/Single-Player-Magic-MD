@@ -1,10 +1,21 @@
 spriteTypes = {
 
-
-	
 	spriteType = {
 		name = "GFX_un_help_button_custom"
 		texturefile = "gfx/interface/help_gui/un_help_button_custom.dds"
 		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_un_general_button_medium"
+		texturefile = "gfx/interface/united_nations/un_general_button_medium.dds"
+	}
+
+		corneredTileSpriteType = {
+		name = "GFX_un_background_new"
+		size = { x = 659 y = 665 }
+		texturefile = "gfx/interface/united_nations/un_ui_v1.dds"
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 }
