@@ -1,0 +1,32 @@
+characters = {
+	spm_aus_danubia_prime_minister = {
+		name = "Prime Minister Simeon Borisov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/prime_minister_simeon_ii.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = Nat_Populism
+			traits = {  
+
+			}
+		}
+	}
+	spm_aus_danubia_crown_prince = {
+		name = "Crown Prince Simeon Borisov II Saxe-Coburg-Gotha"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/crown_prince_simeon_ii.dds"
+			}
+		}
+		country_leader = {
+			expire = "2099.1.1"
+			ideology = Nat_Populism
+			traits = {  
+
+			}
+		}
+	}
+}

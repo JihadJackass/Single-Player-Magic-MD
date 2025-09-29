@@ -1,0 +1,13 @@
+defined_text = {
+	name = CGT_ACTIVITY
+
+	text = {
+		trigger = {
+			has_global_flag = cgt_enabled
+		}
+		localization_key = cgt_on
+	}
+	text = {
+		localization_key = cgt_off
+	}
+}

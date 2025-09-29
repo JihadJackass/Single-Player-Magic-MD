@@ -1615,6 +1615,19 @@
  
  SST_CONVOYS_TEXT:0 "Convoys:"
 
+# COUNTRY GENOCIDE TOOL
+
+ cgt_on: "Genocide Tool: £trigger_yes"
+ cgt_off: "Genocide Tool: £trigger_no"
+ CGT_TITLE: "§0Genocide Management§!"
+ CGT_WARNING: "§RWARNING: The process of Genocide is an extremely dangerous and hostile move for the government to perform directly and such blatant action can lead to open rebellion against the nation as well as making us a pariah in the external international view!§!"
+
+ cgt_category_subtle_genocide_text: "§YSubtle Process§!"
+ cgt_category_subtle_genocide_text_2: "§LThis group of options allows you to take a slower approach to the process of population removal, and will allow you to distinguish between the groups that you wish to be removed.§!"
+
+ cgt_category_linebreak_text: "§g____________________________________________________________________________________________§!"
+
+
 # COUNTRY RULE TOOL
 
  crt_off:0 "Country Rule Tool: £trigger_no"

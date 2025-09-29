@@ -922,4 +922,69 @@
 			}
 		}
 		
+	  # Danubian Federation
+
+		# Prime Minister of Austria
+		spm_nameflag_declare_danubian_federation = {
+			icon = generic_research
+
+			available = {
+				is_ai = no
+				tag = AUS
+			}
+
+			visible = {
+				is_ai = no
+				tag = AUS
+			}
+
+			complete_effect = {
+				create_country_leader = {
+					name = "Prime Minister Simeon Borisov"
+					picture = "gfx/leaders/AUS/prime_minister_simeon_ii.dds"
+					expire = "2100.1.1"
+					ideology = monarchist
+					traits = {
+
+					}
+				}
+				recruit_character = spm_aus_danubia_prime_minister
+				recruit_character = spm_aus_danubia_crown_prince
+				create_corps_commander = {
+					name = "Prime Minister Simeon Borisov"
+					picture = "gfx/leaders/AUS/prime_minister_simeon_ii.dds"
+					traits = { 
+						#spm_aus_prime_crown_prince # Prime Minister and Crown Prince of the Imperial Austrian Title
+
+					}
+					skill = 7
+					attack_skill = 10
+					defense_skill = 10
+					planning_skill = 10
+					logistics_skill = 10
+				}
+				AUS = { 
+					set_cosmetic_tag = AUS_danubian_federation_nationalist
+					set_party_name = {
+						ideology = nationalist
+						long_name = spm_danubian_federation_prime_minister_long
+						name = spm_danubian_federation_prime_minister
+					}
+				}
+			}
+		}
+
+		# Declare a change of the flag (changes to old black/yellow flag)
+
+		# simeon wins a third term, proposes a monarchy under a united danubian federation
+
+		# conflict with germany over danubian cores
+
+		# missile strike berlin
+
+	  # Iraq
+	  #
+	  #
+	  #
+	  #
 	}

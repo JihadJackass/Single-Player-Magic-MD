@@ -118,6 +118,15 @@ scripted_gui = {
 					clr_global_flag = crt_enabled
 				}
 			}
+			cgt_open_click = { # Country Genocide Tool
+				if = {
+					limit = { NOT = { has_global_flag = cgt_enabled } }
+					set_global_flag = cgt_enabled
+				}
+				else = {
+					clr_global_flag = cgt_enabled
+				}
+			}
 			mst_C_open_click = { # Manpower Tool (TODO: fix)
 				if = {
 					limit = { 

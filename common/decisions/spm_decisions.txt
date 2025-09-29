@@ -1236,7 +1236,8 @@ spm_decisions_categories = {
 		}
 	}
 #---------------------------------------------------------# Subject Management
-	spm_decisions_subject = { # Subject Management
+	# Subject Management
+	spm_decisions_subject = {
 			# Add Subject Intergration Policy
 			spm_add_subject_integration_policy = {
 				icon = generic_research

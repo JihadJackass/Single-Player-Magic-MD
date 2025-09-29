@@ -1,0 +1,100 @@
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "cgt_main_container"
+		position = { x = -60 y = 200 }
+		size = { width = 690 height = 400 }
+		orientation = UPPER_RIGHT
+		origo = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_dst_bg"
+		}
+
+		iconType ={
+			name ="cgt_actor_bg"
+			spriteType = "GFX_generic_text_bg_154"
+			position = { x = 15 y = 15 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cgt_actor_name"
+			position = { x = 20 y = 20 }
+			font = "hoi_18mbs"
+			text = "TPT_ACTOR_NAME"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+		# Title
+		instantTextboxType = {
+			name = "cgt_title"
+			position = { x = 100 y = 25 }
+			font = "hoi_18mbs"
+			text = "CGT_TITLE"
+			maxWidth = 460
+			maxHeight = 150
+			format = center
+		}
+		# Warning
+		instantTextboxType = {
+			name = "cgt_warning"
+			position = { x = 100 y = 50 }
+			font = "hoi_18mbs"
+			text = "CGT_WARNING"
+			maxWidth = 460
+			maxHeight = 150
+			format = center
+		}
+		buttonType = {
+			name = "crt_faction_joining_toggle_on_button" 
+			position = { x = 60 y = 320 }
+			spriteType = "GFX_tpt_join_faction_green"
+			pdx_tooltip = "CRT_TOGGLE_FACTION_JOINING_ON_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "crt_faction_joining_toggle_off_button"
+			position = { x = 60 y = 320 }
+			spriteType = "GFX_tpt_join_faction_red"
+			pdx_tooltip = "CRT_TOGGLE_FACTION_JOINING_OFF_TT"
+			scale = 1
+		}
+		#
+		instantTextboxType = {
+			name = "cgt_category_linebreak"
+			position = { x = 25 y = 110 }
+			font = "hoi_18mbs"
+			text = "cgt_category_linebreak_text"
+			maxWidth = 680
+			maxHeight = 23
+			format = left
+		}		
+		### Subtle Genocide - Slower process
+		instantTextboxType = {
+			name = "cgt_category_subtle_genocide"
+			position = { x = 25 y = 150 }
+			font = "hoi_18mbs"
+			text = "cgt_category_subtle_genocide_text"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+		}
+		instantTextboxType = {
+			name = "cgt_category_subtle_genocide_2"
+			position = { x = 25 y = 170 }
+			font = "hoi_18mbs"
+			text = "cgt_category_subtle_genocide_text_2"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+	}
+}

@@ -1256,3 +1256,7 @@ SPM_MEX_protectorate_COL = {
 	color = rgb { 80 77 68 }
     color_ui = rgb { 80 77 68 }  
 }
+AUS_danubian_federation_nationalist = {
+	color = rgb { 102 0 0 }
+    color_ui = rgb { 102 0 0 }  
+}

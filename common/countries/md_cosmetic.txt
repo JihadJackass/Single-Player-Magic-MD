@@ -344,4 +344,7 @@ JAP_emperor_japan_nationalist = {
         color = rgb { 33 84 35 }
         color_ui = rgb { 33 84 35 }		
 	}  
-    
+AUS_danubian_federation_nationalist = {
+	color = rgb { 102 0 0 }
+    color_ui = rgb { 102 0 0 }  
+}

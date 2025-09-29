@@ -290,6 +290,27 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		# Genocide Tool
+		buttonType = {
+			name = "cgt_open"
+			quadTextureSprite = "GFX_generic_text_bg_203"
+			position = { x = 250 y = 150 }
+			#shortcut = "ctrl+alt+a"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+		instantTextboxType = {
+			position = {x = 240 y = 154 }
+			name = "cgt_title"
+			font = "hoi_18mbs" 
+			text = "[CGT_ACTIVITY]"
+			maxWidth = 250
+			maxHeight = 23
+			format = center
+			alwaystransparent = yes
+		}
+
+
 		# Resource Management Tool
 
 		# Faction Tool

@@ -1,0 +1,36 @@
+scripted_gui = {
+
+	cgt_main_container = {
+	
+		context_type = selected_country_context
+		
+		window_name = "cgt_main_container"
+		
+		visible = {
+			ROOT = {
+				is_ai = no
+				has_global_flag = cgt_enabled
+				OR = {
+					has_country_flag = tp_is_host
+					NOT = {
+						has_global_flag = tp_is_multiplayer
+					}
+				}
+			}
+		}
+
+		effects = {
+			cgt_enact_genocide_procedures_click = {
+				set_rule = {
+					can_create_factions = yes
+				}
+			}
+		}
+
+		triggers = {
+			cgt_enact_genocide_procedures_click = {
+				always = yes
+			}
+		}
+	}
+}

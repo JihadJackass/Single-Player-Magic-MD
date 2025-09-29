@@ -217,6 +217,20 @@
 
 # 6. Formable Nation Localization
 
+ # Danubian Federation
+
+ spm_nameflag_declare_danubian_federation: "Declare Danubian Federation"
+
+ AUS_danubian_federation_nationalist: "Danubian Federation"
+ AUS_danubian_federation_nationalist_ADJ: "Danubian"
+ AUS_danubian_federation_nationalist_DEF: "The United States of the Danubian Federation"
+
+ spm_danubian_federation_prime_minister_long: "The Danubian Movement Party of Freedom"
+ spm_danubian_federation_prime_minister: "Danubian MPOF"
+
+ spm_aus_danubia_prime_minister: "Prime Minister Simeon Borisov"
+ spm_aus_danubia_crown_prince: "Crown Prince Simeon Borisov II Saxe-Coburg-Gotha"
+
  # Narco Mexico - CJNG
 
  MEX_narco_state_neutral_dictator: "Jalisco Cartel"
