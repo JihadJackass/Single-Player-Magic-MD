@@ -415,13 +415,13 @@ guiTypes = {
 			pdx_tooltip = "TPT_SUBTRACT_50"
 			scale = 1
 		}
-		buttonType = {
-			name = "tpt_change"
-			position = { x = 88 y = 198 }
-			spriteType = "GFX_goal_generic_territory_or_war"
-			pdx_tooltip = "TPT_CHANGE"
-			scale = 0.45
-		}
+#		buttonType = {
+#			name = "tpt_change"
+#			position = { x = 88 y = 198 }
+#			spriteType = "GFX_goal_generic_territory_or_war"
+#			pdx_tooltip = "TPT_CHANGE"
+#			scale = 0.45
+#		}
 		buttonType = {
 			name = "tpt_enable_elections"
 			position = { x = 137 y = 202 }	
