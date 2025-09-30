@@ -11,16 +11,52 @@
   #
     UN_offices_screen: "UN Members"
     UN_offices_screen_title: "UN Members"
-    UN_offices_screen_desc: "The current Permanent and Non-Permanent Members of the §CUnited Nations§!."
+    UN_offices_screen_desc: "The current §YPermanent Members§! and most prominent §YNon-Permanent Members (Minor Member)§! of the §CUnited Nations§!."
+
     UN_trigger_emergency_session: "Emergency Session"
     UN_trigger_emergency_session_text: "Emergency Session"
 
-    UN_europeanism_screen_title: "TODO"
-    UN_parliament_button_title: "TODO"
-    UN_voting_button_title: "TODO"
-    UN_fiscal_button_title: "TODO"
+    UN_emergency_meeting_available_click: "Prerequisites:\nTODO\nEffects:\n§Y[ROOT.GetNameWithFlag]§! Declares an Emergency Meeting in the §CUnited Nations§!!"
+    UN_emergency_meeting_available_delayed: "\"§YAny Member State may declare an §REmergency Meeting§! targeting the pariah actions of another nation.§!\""
+
+    UN_resolutions_screen_title: "UN Resolutions"
+    UN_resolutions_screen_desc: "Resolutions enacted by Member States can be voted upon within this screen."
+
+    UN_member_election_title: "Member Election"
+    UN_member_election_desc: "This screen allows you to view all current §YPermanent Members§! and §YMinor Members§! of §CThe United Nations§! as well as shows which countries will gain §YMinor Member§! status as every 2 years 5 new seats will be retired and gain a new member to promote continued international progression."
+
+    UN_aparatus_of_unempowered_title: "Unrepresented"
+    UN_aparatus_of_unempowered_desc: "This screen displays the nations which are represented in the United Nations via a treaty known as the §YAparatus of the Unempowered§! which allows them to hold enough weight to be worth that of 2 §YNon-Permanent Members§!."
+
+    UN_coalition_building_title: "Coalition"
+    UN_coalition_building_desc: "This screen allows you to build and centralize a coalition that is established to target a country who has far exceeded the threshold of acceptable international norms."
+
     UN_adopt_eu_law: "TODO"
+
     UN_draft_an_eu_budget: "TODO"
+
     UN_MFF_draft_tt: "TODO"
 
+    UN_permanent_seat_1_text: "§OPermanent Member§!"
+    UN_permanent_seat_2_text: "§OPermanent Member§!"
+    UN_permanent_seat_3_text: "§OPermanent Member§!"
+    UN_permanent_seat_4_text: "§OPermanent Member§!"
+    UN_permanent_seat_5_text: "§OPermanent Member§!"
+    UN_president_text: "§CPresident of the UN§!"
+    UN_minor_seat_1_text: "§7Minor Member§!"
+    UN_minor_seat_2_text: "§7Minor Member§!"
+    UN_minor_seat_3_text: "§7Minor Member§!"
+    UN_minor_seat_4_text: "§7Minor Member§!"
+    UN_minor_seat_5_text: "§7Minor Member§!"
+    UN_minor_seat_6_text: "§7Minor Member§!"
 
+
+
+# Events
+
+  # UN
+
+  spm_events.1: "United Nations Emergency Declared"
+  spm_events.1.t: "United Nations Emergency Declared"
+  spm_events.1.d: "The Nation of [ROOT.GetNameWithFlag] has called an emergency meeting in response to an international crisis caused by another nation and must now be discussed the terms of how to handle this situation."
+  spm_events.1.a: "Order must be restored!"

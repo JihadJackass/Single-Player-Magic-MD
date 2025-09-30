@@ -1,4 +1,5 @@
 name="[Millennium Dawn] Single Player Magic"
+version="1.2.13"
 dependencies={
 	"Millennium Dawn: A Modern Day Mod"
 }

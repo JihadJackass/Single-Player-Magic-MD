@@ -1,7 +1,20 @@
-﻿add_namespace = toolpack
+﻿add_namespace = spm_events
 
-# Toolpack Events
+	# United Nations related Events
+	news_event = {
+		id = spm_events.1
+		title = spm_events.1.t
+		desc = spm_events.1.d
+		picture = GFX_trade_agreement # TODO: change
+		major = yes
+		is_triggered_only = yes
 
+		immediate = {
+			PREV = { clr_country_flag = UN_emergency_meeting_called }
+		}
 
-# SPM Events
-
+		option = {
+			name = spm_events.1.a
+			log = "[GetDateText]: [This.GetName]: spm_news.1.a executed"
+		}
+	}

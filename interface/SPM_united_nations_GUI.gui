@@ -54,7 +54,7 @@ guiTypes = {
 
 		# Members
 		buttonType = {
-			name = "UN_offices_screen"
+			name = "UN_members_screen"
 			position = { x = 15 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
@@ -62,42 +62,43 @@ guiTypes = {
 			format = center
 			pdx_tooltip = "UN_offices_screen_desc"
 		}
-		# Retire the Offices
+		# Members Election
 		buttonType = {
-			name = "EU_europeanism_screen"
+			name = "UN_member_election"
 			position = { x = 140 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "UN_europeanism_screen_title"
+			text = "UN_member_election_title"
 			format = center
-			pdx_tooltip = "EU_europeanism_screen_desc"
+			pdx_tooltip = "UN_member_election_desc"
 		}
+		# UN Resolutions
 		buttonType = {
-			name = "parliament_button"
+			name = "UN_resolutions_screen"
 			position = { x = 265 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "UN_parliament_button_title"
+			text = "UN_resolutions_screen_title"
 			format = center
-			pdx_tooltip = "parliament_button_desc"
+			pdx_tooltip = "UN_resolutions_screen_desc"
 		}
 		buttonType = {
-			name = "euro_voting_button"
+			name = "UN_aparatus_of_unempowered"
 			position = { x = 390 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "UN_voting_button_title"
+			text = "UN_aparatus_of_unempowered_title"
 			format = center
-			pdx_tooltip = "euro_voting_button_desc"
+			pdx_tooltip = "UN_aparatus_of_unempowered_desc"
 		}
 		buttonType = {
-			name = "fiscal_button"
+			name = "UN_coalition_building"
 			position = { x = 515 y = 105 }
 			spriteType = "GFX_euro_general_button_small"
 			font = "hoi_18mbs"
-			text = "UN_fiscal_button_title"
+			text = "UN_coalition_building_title"
 			format = center
-			pdx_tooltip = "fiscal_button_desc"
+			pdx_tooltip = "UN_coalition_building_desc"
 		}
 		# Bottom Bar
 		buttonType = {
@@ -107,8 +108,8 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "UN_trigger_emergency_session_text"
 			format = center
-			pdx_tooltip = "EU_article_50_available_click"
-			pdx_tooltip_delayed="EU_article_50_available_delayed"
+			pdx_tooltip = "UN_emergency_meeting_available_click"
+			pdx_tooltip_delayed="UN_emergency_meeting_available_delayed"
 		}
 		buttonType = {
 			name = "adopt_eu_law"
@@ -152,271 +153,271 @@ guiTypes = {
 
 		# Offices Screen
 		containerWindowType = {
-			name = "EU_political_window_name"
+			name = "UN_political_window_name"
 			position = { x = 0 y = 0 }
 
 			# ROW ONE:
-			# European Council
+			# Permanent Member - 1
 			buttonType = {
-				name = "eu_president_council"
+				name = "UN_permanent_seat_1"
 				position = { x = 70 y = 178 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_president_council_tt"
+				pdx_tooltip = "UN_permanent_seat_1_tt"
 			}
 			buttonType = {
-				name = "eu_president_council_back"
+				name = "UN_permanent_seat_1_back"
 				position = { x = 30 y = 165 }
 				quadTextureSprite = "GFX_euro_council"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_president_council_tt"
+				pdx_tooltip = "UN_permanent_seat_1_tt"
 				pdx_tooltip_delayed = "eu_president_council_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_president_council_text"
+				name = "UN_president_council_text"
 				position = { x = -22 y = 235 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_president_council_text"
+				text = "UN_permanent_seat_1_text"
 				format = center
-				pdx_tooltip = "EU_president_council_tt"
-				pdx_tooltip_delayed = "eu_president_council_tip"
+				pdx_tooltip = "UN_permanent_seat_1_tt"
+				pdx_tooltip_delayed = "UN_permanent_seat_1_tip"
 			}
 
 			# President Commission
 			buttonType = {
-				name = "eu_president_commission"
+				name = "UN_president_commission"
 				position = { x = 280 y = 178 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "eu_president_commission_tt"
+				pdx_tooltip = "UN_president_commission_tt"
 			}
 			buttonType = {
-				name = "eu_president_commission_back"
+				name = "UN_president_commission_back"
 				position = { x = 240 y = 165 }
 				quadTextureSprite = "GFX_euro_commission"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "eu_president_commission_tt"
-				pdx_tooltip_delayed = "eu_president_commission_tip"
+				pdx_tooltip = "UN_president_commission_tt"
+				pdx_tooltip_delayed = "UN_president_commission_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_president_commission_text"
+				name = "UN_president_commission_text"
 				position = { x = 190 y = 235 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_president_commission_text"
+				text = "UN_permanent_seat_2_text"
 				format = center
-				pdx_tooltip = "eu_president_commission_tt"
-				pdx_tooltip_delayed = "eu_president_commission_tip"
+				pdx_tooltip = "UN_president_commission_tt"
+				pdx_tooltip_delayed = "UN_president_commission_tip"
 			}
 
 			# European Central Bank President
 			buttonType = {
-				name = "eu_central_bank_president"
+				name = "UN_central_bank_president"
 				position = { x = 490 y = 178 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_central_bank_president_tt"
+				pdx_tooltip = "UN_central_bank_president_tt"
 			}
 			buttonType = {
-				name = "eu_central_bank_president_back"
+				name = "UN_central_bank_president_back"
 				position = { x = 450 y = 165 }
 				quadTextureSprite = "GFX_euro_central_bank"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_central_bank_president_tt"
-				pdx_tooltip_delayed = "eu_central_bank_president_tip"
+				pdx_tooltip = "UN_central_bank_president_tt"
+				pdx_tooltip_delayed = "UN_central_bank_president_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_central_bank_president_text"
+				name = "UN_central_bank_president_text"
 				position = { x = 400 y = 235 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_central_bank_president_text"
+				text = "UN_permanent_seat_3_text"
 				format = center
-				pdx_tooltip = "EU_central_bank_president_tt"
-				pdx_tooltip_delayed = "eu_central_bank_president_tip"
+				pdx_tooltip = "UN_central_bank_president_tt"
+				pdx_tooltip_delayed = "UN_central_bank_president_tip"
 			}
 
 			# ROW TWO
 			# High Representative
 			buttonType = {
-				name = "foreign_affairs_security"
+				name = "UN_foreign_affairs_security"
 				position = { x = 70 y = 285 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_high_representative_tt"
+				pdx_tooltip = "UN_high_representative_tt"
 			}
 			buttonType = {
-				name = "foreign_affairs_security_back"
+				name = "UN_foreign_affairs_security_back"
 				position = { x = 30 y = 270 }
 				quadTextureSprite = "GFX_euro_high_rep"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_high_representative_tt"
-				pdx_tooltip_delayed = "eu_foreign_affairs_security_tip"
+				pdx_tooltip = "UN_high_representative_tt"
+				pdx_tooltip_delayed = "UN_foreign_affairs_security_tip"
 			}
 			instantTextBoxType = {
-				name = "foreign_affairs_security_text"
+				name = "UN_foreign_affairs_security_text"
 				position = { x = -22 y = 340 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "foreign_affairs_security_text"
+				text = "UN_permanent_seat_4_text"
 				format = center
-				pdx_tooltip = "EU_high_representative_tt"
-				pdx_tooltip_delayed = "eu_foreign_affairs_security_tip"
+				pdx_tooltip = "UN_high_representative_tt"
+				pdx_tooltip_delayed = "UN_foreign_affairs_security_tip"
 			}
 
 			# President of the European Parliament
 			buttonType = {
-				name = "eu_parliament_president"
+				name = "UN_parliament_president"
 				position = { x = 280 y = 285 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_president_european_parliament_tt"
+				pdx_tooltip = "UN_president_european_parliament_tt"
 			}
 			buttonType = {
-				name = "eu_parliament_president_back"
+				name = "UN_parliament_president_back"
 				position = { x = 240 y = 270 }
 				quadTextureSprite = "GFX_euro_parliamen_pres"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_president_european_parliament_tt"
-				pdx_tooltip_delayed = "eu_parliment_president_tip"
+				pdx_tooltip = "UN_president_european_parliament_tt"
+				pdx_tooltip_delayed = "UN_parliment_president_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_parliament_president_text"
+				name = "UN_parliament_president_text"
 				position = { x = 190 y = 340 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_parliament_president_text"
+				text = "UN_president_text"
 				format = center
-				pdx_tooltip = "EU_president_european_parliament_tt"
-				pdx_tooltip_delayed = "eu_parliment_president_tip"
+				pdx_tooltip = "UN_president_european_parliament_tt"
+				pdx_tooltip_delayed = "UN_parliment_president_tip"
 			}
 
 			# Minister of Economy and Finance
 			buttonType = {
-				name = "eu_minister_economy_finance"
+				name = "UN_minister_economy_finance"
 				position = { x = 490 y = 285 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_ministry_of_economy_and_finance_tt"
+				pdx_tooltip = "UN_ministry_of_economy_and_finance_tt"
 			}
 			buttonType = {
-				name = "eu_minister_economy_finance_back"
+				name = "UN_minister_economy_finance_back"
 				position = { x = 450 y = 270 }
 				quadTextureSprite = "GFX_euro_economyandfinance"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_ministry_of_economy_and_finance_tt"
-				pdx_tooltip_delayed = "eu_minister_economy_finance_tip"
+				pdx_tooltip = "UN_ministry_of_economy_and_finance_tt"
+				pdx_tooltip_delayed = "UN_minister_economy_finance_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_minister_economy_finance_text"
+				name = "UN_minister_economy_finance_text"
 				position = { x = 400 y = 340 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_minister_economy_finance_text"
+				text = "UN_permanent_seat_5_text"
 				format = center
-				pdx_tooltip = "EU_ministry_of_economy_and_finance_tt"
-				pdx_tooltip_delayed = "eu_minister_economy_finance_tip"
+				pdx_tooltip = "UN_ministry_of_economy_and_finance_tt"
+				pdx_tooltip_delayed = "UN_minister_economy_finance_tip"
 			}
 
 			# ROW THREE:
-			# Frontex Director
+		# Non-Permanent Minor Member - 1
 			buttonType = {
-				name = "eu_frontex_director"
+				name = "UN_minor_member_1"
 				position = { x = 70 y = 390 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_frontex_director_tt"
+				pdx_tooltip = "UN_frontex_director_tt"
 			}
 			buttonType = {
-				name = "eu_frontex_director_back"
+				name = "UN_minor_member_1_back"
 				position = { x = 30 y = 375 }
 				quadTextureSprite = "GFX_euro_frontex_exec"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_frontex_director_tt"
-				pdx_tooltip_delayed = "eu_frontex_director_tip"
+				pdx_tooltip = "UN_frontex_director_tt"
+				pdx_tooltip_delayed = "UN_frontex_director_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_frontex_director_text"
+				name = "UN_minor_member_1_text"
 				position = { x = -22 y = 445 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_frontex_director_text"
+				text = "UN_minor_seat_1_text"
 				format = center
-				pdx_tooltip = "EU_frontex_director_tt"
-				pdx_tooltip_delayed = "eu_frontex_director_tip"
+				pdx_tooltip = "UN_frontex_director_tt"
+				pdx_tooltip_delayed = "UN_frontex_director_tip"
 			}
 
-			# Secretary General of Euro Army
+		# Minor Member - 2
 			buttonType = {
-				name = "eu_sec_general_euro_army"
+				name = "UN_minor_member_2"
 				position = { x = 280 y = 390 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_sec_general_euro_army_tt"
+				pdx_tooltip = "UN_sec_general_euro_army_tt"
 			}
 			buttonType = {
-				name = "eu_sec_general_euro_army_back"
+				name = "UN_minor_member_2_back"
 				position = { x = 240 y = 375 }
 				quadTextureSprite = "GFX_euro_euroarmy"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_sec_general_euro_army_tt"
-				pdx_tooltip_delayed = "eu_sec_general_euro_army_tip"
+				pdx_tooltip = "UN_sec_general_euro_army_tt"
+				pdx_tooltip_delayed = "UN_sec_general_euro_army_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_sec_general_euro_army_text"
+				name = "UN_minor_member_2_text"
 				position = { x = 190 y = 445 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_sec_general_euro_army_text"
+				text = "UN_minor_seat_2_text"
 				format = center
-				pdx_tooltip = "EU_sec_general_euro_army_tt"
-				pdx_tooltip_delayed = "eu_sec_general_euro_army_tip"
+				pdx_tooltip = "UN_sec_general_euro_army_tt"
+				pdx_tooltip_delayed = "UN_sec_general_euro_army_tip"
 			}
 
-			# Secretary General of the Euro Navy
+		# Minor Member - 3
 			buttonType = {
-				name = "eu_sec_general_euro_navy"
+				name = "UN_minor_member_3"
 				position = { x = 490 y = 390 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
@@ -425,83 +426,125 @@ guiTypes = {
 				pdx_tooltip = "EU_sec_general_euro_navy_tt"
 			}
 			buttonType = {
-				name = "eu_sec_general_euro_navy_back"
+				name = "UN_minor_member_3_back"
 				position = { x = 450 y = 375 }
 				quadTextureSprite = "GFX_euro_navy"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_sec_general_euro_navy_tt"
-				pdx_tooltip_delayed = "eu_sec_general_euro_navy_tip"
+				pdx_tooltip = "UN_sec_general_euro_navy_tt"
+				pdx_tooltip_delayed = "UN_sec_general_euro_navy_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_sec_general_euro_navy_text"
+				name = "UN_minor_member_3_text"
 				position = { x = 400 y = 445 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_sec_general_euro_navy_text"
+				text = "UN_minor_seat_3_text"
 				format = center
-				pdx_tooltip = "EU_sec_general_euro_navy_tt"
-				pdx_tooltip_delayed = "eu_sec_general_euro_navy_tip"
+				pdx_tooltip = "UN_sec_general_euro_navy_tt"
+				pdx_tooltip_delayed = "UN_sec_general_euro_navy_tip"
 			}
 
 			# ROW FOUR:
-			# Ambassador to the United Nations
+		# Minor Member - 4
 			buttonType = {
-				name = "eu_ambassador_to_un"
+				name = "UN_minor_member_4"
 				position = { x = 280 y = 500 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_ambassador_to_un_tt"
+				pdx_tooltip = "UN_ambassador_to_un_tt"
 			}
 			buttonType = {
-				name = "eu_ambassador_to_un_back"
+				name = "UN_minor_member_4_back"
 				position = { x = 240 y = 485 }
 				quadTextureSprite = "GFX_euro_unambassador"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_ambassador_to_un_tt"
-				pdx_tooltip_delayed = "eu_ambassador_to_un_tip"
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+				pdx_tooltip_delayed = "UN_ambassador_to_un_tip"
 			}
 			instantTextBoxType = {
-				name = "eu_ambassador_to_un_text"
+				name = "UN_minor_member_4_text"
 				position = { x = 190 y = 555 }
 				font = "hoi_16mbs"
 				maxWidth = 270
 				maxHeight = 20
-				text = "eu_ambassador_to_un_text"
+				text = "UN_minor_seat_4_text"
 				format = center
-				pdx_tooltip = "EU_ambassador_to_un_tt"
-				pdx_tooltip_delayed = "eu_ambassador_to_un_tip"
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+				pdx_tooltip_delayed = "UN_ambassador_to_un_tip"
 			}
 
-			# President of the European Federation
+		# Minor Member - 5
 			buttonType = {
-				name = "eu_pres_federation"
+				name = "UN_minor_member_5"
 				position = { x = 490 y = 500 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_president_of_the_eurofederation_tt"
-				pdx_tooltip_delayed = "eu_pres_federation_back_tip"
+				pdx_tooltip = "UN_ambassador_to_un_tt"
 			}
 			buttonType = {
-				name = "eu_pres_federation_back"
+				name = "UN_minor_member_5_back"
 				position = { x = 450 y = 485 }
-				quadTextureSprite = "GFX_euro_pres_federation"
+				quadTextureSprite = "GFX_euro_unambassador"
 				font = "hoi_18mbs"
 				text = ""
 				format = center
-				pdx_tooltip = "EU_president_of_the_eurofederation_tt"
-				pdx_tooltip_delayed = "eu_pres_federation_tip"
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+				pdx_tooltip_delayed = "UN_ambassador_to_un_tip"
+			}
+			instantTextBoxType = {
+				name = "UN_minor_member_5_text"
+				position = { x = 400 y = 555 }
+				font = "hoi_16mbs"
+				maxWidth = 270
+				maxHeight = 20
+				text = "UN_minor_seat_5_text"
+				format = center
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+				pdx_tooltip_delayed = "UN_ambassador_to_un_tip"
 			}
 
-			# Retire the Offices
+		# Minor Member - 6
+			buttonType = {
+				name = "UN_minor_member_6"
+				position = { x = 70 y = 500 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+			}
+			buttonType = {
+				name = "UN_minor_member_6_back"
+				position = { x = 30 y = 485 }
+				quadTextureSprite = "GFX_euro_unambassador"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+				pdx_tooltip_delayed = "UN_ambassador_to_un_tip"
+			}
+			instantTextBoxType = {
+				name = "UN_minor_member_6_text"
+				position = { x = -22 y = 555 }
+				font = "hoi_16mbs"
+				maxWidth = 270
+				maxHeight = 20
+				text = "UN_minor_seat_5_text"
+				format = center
+				pdx_tooltip = "UN_ambassador_to_un_tt"
+				pdx_tooltip_delayed = "UN_ambassador_to_un_tip"
+			}
+
+		# Retire the Offices
 			buttonType = {
 				name = "retire_office"
 				position = { x = 35 y = 500 }
@@ -509,7 +552,7 @@ guiTypes = {
 				font = "hoi_18mbs"
 				text = "eu_retire_office_text"
 				format = center
-				pdx_tooltip = "EU_retire_from_offices_desc"
+				pdx_tooltip = "UN_retire_from_offices_desc"
 			}
 		}
 

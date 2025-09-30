@@ -7,6 +7,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_un_flag"
+		texturefile = "gfx/interface/help_gui/United_Nations_flag.dds"
+	}
+
+	spriteType = {
 		name = "GFX_un_general_button_medium"
 		texturefile = "gfx/interface/united_nations/un_general_button_medium.dds"
 	}
