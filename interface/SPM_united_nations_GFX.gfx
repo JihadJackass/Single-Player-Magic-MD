@@ -8,7 +8,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_un_flag"
-		texturefile = "gfx/interface/help_gui/United_Nations_flag.dds"
+		texturefile = "gfx/interface/united_nations/United_Nations_flag.dds"
 	}
 
 	spriteType = {

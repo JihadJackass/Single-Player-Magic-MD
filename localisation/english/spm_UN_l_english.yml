@@ -10,8 +10,8 @@
     UN_main_background_window_inner_title: "The United Nations"
   #
     UN_offices_screen: "UN Members"
-    UN_offices_screen_title: "UN Members"
-    UN_offices_screen_desc: "The current §YPermanent Members§! and most prominent §YNon-Permanent Members (Minor Member)§! of the §CUnited Nations§!."
+    UN_members_screen_title: "UN Members"
+    UN_members_screen_desc: "The current §YPermanent Members§! and most prominent §YNon-Permanent Members (Minor Member)§! of the §CUnited Nations§!."
 
     UN_trigger_emergency_session: "Emergency Session"
     UN_trigger_emergency_session_text: "Emergency Session"
@@ -38,17 +38,25 @@
     UN_MFF_draft_tt: "TODO"
 
     UN_permanent_seat_1_text: "§OPermanent Member§!"
+    UN_permanent_seat_1_tip: "§YPrerequisites:§!\n[!eu_president_council_back_click_enabled]\n- §YMust have Superpower Status§!"
+
     UN_permanent_seat_2_text: "§OPermanent Member§!"
     UN_permanent_seat_3_text: "§OPermanent Member§!"
     UN_permanent_seat_4_text: "§OPermanent Member§!"
     UN_permanent_seat_5_text: "§OPermanent Member§!"
-    UN_president_text: "§CPresident of the UN§!"
+    UN_president_seat_text: "§CPresident of the UN§!"
     UN_minor_seat_1_text: "§7Minor Member§!"
     UN_minor_seat_2_text: "§7Minor Member§!"
     UN_minor_seat_3_text: "§7Minor Member§!"
     UN_minor_seat_4_text: "§7Minor Member§!"
     UN_minor_seat_5_text: "§7Minor Member§!"
     UN_minor_seat_6_text: "§7Minor Member§!"
+
+    UN_vacate_seat_text: "Step Down"
+
+    UN_recently_retired_from_a_UN_seat_tt: "§Y[ROOT.GetNameWithFlag]§! Has Not Recently Retired from a European Union Offices (Days to Take A New Office: [?recently_retired_from_an_eu_office:days_left|Y0])\n"
+
+    UN_does_not_hold_another_office_tt: "§Y[ROOT.GetNameWithFlag]§! Does Not Currently Hold Another §C[EUU.GetFlag][EUU.GetName]§! Office\n"
 
 
 

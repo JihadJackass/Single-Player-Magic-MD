@@ -1,0 +1,126 @@
+﻿capital = 769 # New York
+2000.1.1 = {
+
+	# TODO: this handles the Member states, I'd like this to show a total members of UN on the main screen.
+
+	set_variable = { var = global.var_EUmemberstatesTotal value = 0 }
+	every_country = {
+		limit = { has_idea = EU_member }
+		add_to_variable = {
+			var = global.var_EUmemberstatesTotal
+			value = 1
+		}
+	}
+
+	set_variable = { var = var_EUpopRatio value = 0 }
+
+	every_country = {
+		limit = { has_idea = EU_member }
+		add_ideas = foreign_data_kraken
+		add_ideas = asylum_shopping
+	}
+}
+
+	#Potential Memberstates
+	AUS = { set_country_flag = EU_potential }
+	BEL = { set_country_flag = EU_potential }
+	DEN = { set_country_flag = EU_potential }
+	ENG = { set_country_flag = EU_potential }
+	FIN = { set_country_flag = EU_potential }
+	FRA = { set_country_flag = EU_potential }
+	GER = { set_country_flag = EU_potential }
+	GRE = { set_country_flag = EU_potential }
+
+	set_country_flag = POTEF_nominee_0
+	set_country_flag = POTEF_nominee_1
+	set_country_flag = POTEF_nominee_2
+	set_country_flag = POTEF_nominee_3
+	set_country_flag = POTEF_nominee_4
+	set_country_flag = POTEF_nominee_5
+	set_country_flag = POTEF_nominee_6
+	set_country_flag = POTEF_nominee_7
+	set_country_flag = POTEF_nominee_8
+	set_country_flag = POTEF_nominee_9
+	set_country_flag = POTEF_nominee_10
+	set_country_flag = POTEF_nominee_11
+	set_country_flag = POTEF_nominee_12
+	set_country_flag = POTEF_nominee_13
+	set_country_flag = POTEF_nominee_14
+	set_country_flag = POTEF_nominee_15
+	set_country_flag = POTEF_nominee_16
+	set_country_flag = POTEF_nominee_17
+	set_country_flag = POTEF_nominee_18
+	set_country_flag = POTEF_nominee_19
+	set_country_flag = POTEF_nominee_20
+	set_country_flag = POTEF_nominee_21
+	set_country_flag = POTEF_nominee_22
+	set_country_flag = POTEF_nominee_23
+
+
+	######################
+	######################
+	### EU Parliament ####
+	######################
+	######################
+
+	### getting rid off leader errors ###
+
+	create_country_leader = {
+		name = "No_Error"
+		picture = "gfx/leaders/GER/Gerhard_Schroeder.dds"
+		expire = "2020.6.10"
+		ideology = socialism
+		traits = {
+			lawyer
+			western_socialism
+			pro_russia
+		}
+	}
+
+	create_country_leader = {
+		name = "No_Error"
+		picture = "gfx/leaders/GER/Gerhard_Schroeder.dds"
+		expire = "2020.6.10"
+		ideology = Communist-State
+		traits = {
+			lawyer
+			western_socialism
+			pro_russia
+		}
+	}
+
+	create_country_leader = {
+		name = "No_Error"
+		picture = "gfx/leaders/GER/Gerhard_Schroeder.dds"
+		expire = "2020.6.10"
+		ideology = Kingdom
+		traits = {
+			lawyer
+			western_socialism
+			pro_russia
+		}
+	}
+
+	create_country_leader = {
+		name = "No_Error"
+		picture = "gfx/leaders/GER/Gerhard_Schroeder.dds"
+		expire = "2020.6.10"
+		ideology = Neutral_Communism
+		traits = {
+			lawyer
+			western_socialism
+			pro_russia
+		}
+	}
+
+	create_country_leader = {
+		name = "No_Error"
+		picture = "gfx/leaders/GER/Gerhard_Schroeder.dds"
+		expire = "2020.6.10"
+		ideology = Nat_Autocracy
+		traits = {
+			lawyer
+			western_socialism
+			pro_russia
+		}
+	}
